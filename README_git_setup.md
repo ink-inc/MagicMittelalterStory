@@ -1,4 +1,4 @@
-# Setup Git/GitHub
+# Git/GitHub Setup
 Diese README beschreibt, wie du Git auf deinem Rechner installierst und unser Projekt herunterlädst.
 
 
