@@ -38,7 +38,9 @@ Also lieber kleinschrittiger committen, als zu großschrittig!
 Zu jedem Commit MUSS es eine Nachricht geben. 
 Die Commitnachrichten werden grundsätzlich der Übersicht halber in der Form "AKTION: [was habe ich getan]" geschrieben.
 Aktionen sind dabei immer in der Befehlsform zu benutzen.
-Mögliche Aktionen sind "FÜGE HINZU", "ENTFERNE" und "UPDATE".
+
+### Mögliche Aktionen sind "FÜGE HINZU", "ENTFERNE", "UPDATE".
+
 Ein Beispiel Commit wäre: "ENTFERNE: Kapitel 1" oder "FÜGE HINZU: Sagen & Legenden".
 Das Feld mit der Beschreibung kann dann zusätzliche Informationen enthalten.
 
