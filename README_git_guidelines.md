@@ -40,6 +40,7 @@ Die Commitnachrichten werden grundsätzlich der Übersicht halber in der Form "A
 Aktionen sind dabei immer in der Befehlsform zu benutzen.
 Mögliche Aktionen sind "FÜGE HINZU", "ENTFERNE" und "UPDATE".
 Ein Beispiel Commit wäre: "ENTFERNE: Kapitel 1" oder "FÜGE HINZU: Sagen & Legenden".
+Das Feld mit der Beschreibung kann dann zusätzliche Informationen enthalten.
 
 --> Beispiel: ihr teilt die Aufgaben des Zettels in eurer Gruppe auf und du bekommst Aufgabe 1 und 2: Nennen Sie zwei Tiere(1)/Pflanzen(2). Während du dich über mögliche Antworten beliest, ist es dir überlassen, ab wann du die anderen über deine bisherigen Lösungen informierst. In der Präsentation vor deiner Gruppe würdest du kurz (wenn auch ausführlicher) sagen, was du gemacht hast... "FÜGE HINZU: Antworten Frage 1" -> Biene, Elefant. "FÜGE HINZU: Antworten Frage 2" -> "Eiche, Gänseblümchen"
 Angenommen, die Aufgaben sind komplexer und du musst etwas erläutern. Dann möchtest du deine Lösung den anderen auch schrittweise erklären können. Deshalb strukturierst du deine Antwort auch in einzelne Einheiten (Commits), die du nacheinander deiner Gruppe erklärst.
@@ -56,7 +57,7 @@ Der Push lädt die gemachten Commits im aktuellen Branch ins remote-Repository (
 ## Pull Requests
 
 Nachdem man alle obigen Schritte (commit, push) abgeschlossen hat, kann man nun fordern, dass die gemachten Änderungen innerhalb des Branches dem Ursprungsbranch (normalerweise dem master) hinzugefügt werden sollen.
-Dazu muss eine Pull Request erstellt werden.
+Dazu muss eine Pull Request erstellt werden (nur auf der Website möglich).
 Damit wird beim jeweiligen Administrator angefragt, ob die gemachten Änderungen in Ordnung sind. Wenn dieser bestätigt (approved), kann der Branch mit dem Ursprungsbranch wieder gemerged (verschmolzen) werden.
 Damit sind die Änderungen im master angekommen und somit vollendet: sie werden sozusagen offiziell für angenommen und richtig erklärt und tauchen zukünftig auch bei allen anderen in allen Versionen auf.
 
@@ -67,11 +68,12 @@ All diese Aktionen bilden einen Kreis, der für jede Komponente wiederholt wird.
 Das klingt jetzt erstmal alles sehr umständlich, aber nur, weil es zur Erläuterung dient.
 Der Handlungskreis während der Arbeit besteht demnach aus:
 
-1. Pullen (aktuellste Versionen ran holen)
+1. Pullen/Fetchen (aktuellste Versionen ran holen)
 2. ggf. neuen Branch erstellen
 
 3. am Projekt arbeiten
--> dabei fertig bearbeitete logische Einheiten comitten
+-> dabei fertig bearbeitete logische Einheiten committen
+Achtung: nur commits können veröffentlicht werden. Einzelne Änderungen, die nicht committet sind, werden nicht hochgeladen!
 4. pushen (jedes Mal wenn die Arbeit beendet wird)
 
 5. wenn man mit der Arbeit fertig ist, für die man den Branch geöffnet hat, dann 
