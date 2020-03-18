@@ -70,7 +70,7 @@ All diese Aktionen bilden einen Kreis, der für jede Komponente wiederholt wird.
 Das klingt jetzt erstmal alles sehr umständlich, aber nur, weil es zur Erläuterung dient.
 Der Handlungskreis während der Arbeit besteht demnach aus:
 
-1. Pullen/Fetchen (aktuellste Versionen ran holen)
+1. Fetchen ung ggf. Pullen (aktuellste Versionen ran holen; über rechten Button in schwarzer Zeile)
 2. ggf. neuen Branch erstellen
 
 3. am Projekt arbeiten
