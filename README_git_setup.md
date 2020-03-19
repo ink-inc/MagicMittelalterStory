@@ -1,4 +1,4 @@
-# Setup Git/GitHub
+# Git/GitHub Setup
 Diese README beschreibt, wie du Git auf deinem Rechner installierst und unser Projekt herunterlädst.
 
 
@@ -29,6 +29,12 @@ Das hat mehrere Gründe: Zum einen arbeiten wir alle auf die gleiche Art und Wei
 ## Begrifflichkeiten
 An dieser Stelle bitte einmal die README_git_guidlines.md lesen. Diese erklären einige wichtige Begrifflichkeiten. Wenn euch danach noch etwas unverständlich diesbezüglich ist, dann fragt uns bitte :)
 
+Kurz:
+- Fetch = mit der online Version vergleichen: gibt es Änderungen?
+- Pull = bei Änderungen diese herunterladen
+- Commit = Änderungen in Paketen mit Kommentaren zusammenfassen
+- Push = Alle Commits hochladen in den Online-Speicher
+
 
 ## Erklärung Interface 
 Im Großen und Ganzen ist die Oberfläche selbsterklärend.
@@ -55,7 +61,7 @@ Bitte guckt euch ansonsten aufmerksam um. Die meisten Möglichkeiten findet man 
 Damit ihr den ganzen Zyklus einmal umsetzen könnt, werdet ihr jetzt euren Namen in das Dokument mit den Autoren eintragen und online stellen.
 
 1. Klicke auf den mittleren schwarzen Button "Current Branch"
-2. Gib ein: "beispiel/name" und klicke auf "New Branch". Du befindest dich nun automatisch im neuen Branch
+2. Gib ein: "beispiel/name" (exakt so) und klicke auf "New Branch". Du befindest dich nun automatisch im neuen Branch
 
 3. öffne im Dateisystem die Datei "Autoren.txt" 
 4. Schreibe deinen Namen ans Ende der Liste und speichere die Datei.
@@ -70,9 +76,14 @@ Damit ihr den ganzen Zyklus einmal umsetzen könnt, werdet ihr jetzt euren Namen
 
 11. Klicke nun auf der rechten Seite im weißen Bereich auf die blaue Fläche "Create Pull Request". Du wirst auf die Website weitergeleitet.
 12. Klicke auf den großen grünen Button "Create Pull Request". Nun ist die Anfrage bei den Admins eingegangen und sie können sich das ansehen und bestätigen.
-13. Klicke in der Programm-Befehlszeile auf "Branch -> Delete". 
-14. Auf gar keinen Fall nun den Haken setzen, sonst wird das mit der Request problematisch. Online wird der Branch automatisch gelöscht, wenn er in den master gemerged wurde.
-15. "Delete"
+
+13. Zurück im Programm: Klicke in der Programm-Befehlszeile auf "Branch -> Delete". 
+Sollte eine Frage auftauchen: Auf gar keinen Fall den Haken setzen (um es online), sonst wird das mit der Request problematisch. Online wird der Branch automatisch gelöscht, wenn er in den master gemerged wurde. 
+"Delete"
+
+
+-> Bevor du einen Branch löscht, solltest du dir sicher sein, dass du fertig mit der Bearbeitung bist. Bevor du ihn löscht, kannst du auch ein weiteres Mal Dateien ändern, committen, pushen und dann eine Pull Request stellen. Sooft du möchtest. Aber wenn du ihn einmal gelöscht hast, dann musst du ihn entweder von online neu runterladen oder warten, bis deine Änderungen dem Master hinzugefügt wurden, um dann einen neuen Branch zu öffnen und weiter zu arbeiten!
+
 
 Super, du hast jetzt erfolgreich deinen Namen hinzugefügt!
 
@@ -81,7 +92,7 @@ Während deiner Arbeit am Projekt solltest du am Besten jedes Mal, wenn du aufh�
 
 
 ## Falscher Branch!?!?!
-Hast du versehentlich mit deiner Arbeit im falschen Branch gearbeitet (zB im Master), so ist das unkompliziert SOLANGE NOCH KEIN COMMIT ERFOLGTE. 
+Hast du versehentlich mit deiner Arbeit im falschen Branch begonnen (zB im Master), so ist das unkompliziert SOLANGE NOCH KEIN COMMIT ERFOLGTE. 
 In dem Fall bitte uns ansprechen.
 Ansonsten kannst du einfach einen neuen Branch erstellen und wirst dann danach gefragt, ob du die bisherigen Änderungen mitnehmen oder auf dem Master/falschen Branch belassen möchtest.
 

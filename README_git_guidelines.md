@@ -1,5 +1,12 @@
 # Git Guidelines
 
+## Fetchen
+
+Damit überprüft das Programm, ob online Änderungen im aktuelln Branch vorliegen. 
+Sollte dem so sein, wird das angezeigt und ihr bekommt die Option, diese Änderungen zu "pullen" (siehe unten).
+Dies solltet ihr IMMER für den Master ausführen, bevor ihr einen neuen Branch erstellt.
+
+
 ## Pullen
 
 Mit Pullen bezeichnet man das Kopieren eines remote-Repositorys (also der online Version des Projekt-Ordners) auf den eigenen Rechner.
