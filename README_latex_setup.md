@@ -15,15 +15,12 @@ Achtung: Sowohl der Download (<4GB) als auch die Installation (ca. 10 min) dauer
 
 
 ### Windows
-Hier ist die Installation etwas umständlicher und erfordert zusätzliche Komponenten. Wenn du Latex für alle Nutzer installieren möchtest, musst du die Installationsdatei als Admin ausführen.
-1. Lade dir die erste verlinkte Datei dieser Seite runter: http://www.tug.org/texlive/acquire-netinstall.html
+Hier ist die Installation etwas umständlicher und es werden immer wieder mehrere Fenster offen sein - NICHT abbrechen sondern darauf warten, dass das jeweils aktuellste Fenster fertig ist und normal geschlossen werden kann. 
+Wenn du Latex für alle Nutzer installieren möchtest, musst du die Installationsdatei als Admin ausführen.
+1. Lade dir die erste verlinkte Datei dieser Seite runter: http://www.tug.org/texlive/acquire-netinstall.html (muss dir eine install-tl-windows.exe geben)
 2. Führe das Setup mit allen Voreinstellungen wie sie sind aus. Wenn du das Installationsverzeichnis änderst, musst du das in den folgenden Schritten berücksichtigen.
 
-Achtung: Die Installation dauert aufgrund des Downloads ewig (je nach Internetverbindung bis mehrere Stunden)!
-
-Nun zu zusätzlich relevanten Dingen:
-1. Ghostscript: https://www.ghostscript.com/download/gsdnld.html
-2. 
+Achtung: Die Installation dauert aufgrund des Downloads ewig (je nach Internetverbindung 1,5 bis mehrere Stunden)!
 
 
 ## Latex Editor
@@ -37,10 +34,11 @@ https://www.texstudio.org/
 ## Einrichten des Editors
 Noch ist die Arbeit nicht ganz getan: du musst deinem Editor noch mitteilen, wo er die Distribution finden kann. Folge dazu einfach diesen Schritten:
 
-### Windows
+Windows: Öffne Optionen -> TexStudio konfigurieren
+MacOS: Öffne Preferences
 
-### MacOS
-1. Öffne Preferences
-2. Gehe zu Editor: Ersetze Anführungszeichen durch Deutsche Anführungszeichen.
-3. Gehe zu Vervollständigung: Bevorzugte Kommandos: Meist genutzt.
-4. Aktiviere Erweiterte Optionen und gehe zu erweiterter Editor: Stilles Laden von gespeicherten Dateien, wenn sie ... + Symbol als Unicode-Zeichen einfügen
+1. Gehe zu Editor: Ersetze Anführungszeichen durch Deutsche Anführungszeichen.
+2. Gehe zu Vervollständigung: Bevorzugte Kommandos: Meist genutzt.
+3. Aktiviere Erweiterte Optionen und gehe zu erweiterter Editor: Stilles Laden von gespeicherten Dateien, wenn sie ... + Symbol als Unicode-Zeichen einfügen
+
+## Fertig!!!
