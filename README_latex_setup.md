@@ -40,3 +40,7 @@ Noch ist die Arbeit nicht ganz getan: du musst deinem Editor noch mitteilen, wo 
 ### Windows
 
 ### MacOS
+1. Öffne Preferences
+2. Gehe zu Editor: Ersetze Anführungszeichen durch Deutsche Anführungszeichen.
+3. Gehe zu Vervollständigung: Bevorzugte Kommandos: Meist genutzt.
+4. Aktiviere Erweiterte Optionen und gehe zu erweiterter Editor: Stilles Laden von gespeicherten Dateien, wenn sie ... + Symbol als Unicode-Zeichen einfügen
