@@ -1,23 +1,21 @@
-\documentclass[a4paper,DIV=calc,11pt,%
-BCOR=3mm,twoside,headsepline,%
-%openright,%jedes neue Kapitel beginnt auf einer rechten Seite bei doppelseitigen Druck
+\documentclass[a4paper,12pt,%
+headsepline,%
 numbers=noenddot,%entfernt die Punkte nach den Gliederungsziffern
-bibliography=totoc%fügt das Literaturverzeichnis ins Inhaltsverzeichnis ein
 ]{scrreprt}
+
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
-\usepackage{setspace}
-\usepackage{blindtext} %erzeugt sinnlosen Fülltext
-\usepackage{natbib}
-\usepackage[addtotoc]{abstract} %die Option "addtotoc" setzt das Abstract mit in das Inhaltsverzeichnis; das Paket "abstract" selbst dient der Abstract-Umgebung (siehe unten)
-\usepackage[osf]{libertine}
-\usepackage{microtype}
-\usepackage[colorlinks=true,pdfborder={0 0 0},bookmarksnumbered]{hyperref} % colorlinks=false -> keine farbigen Links; pdfborder -> keine Rahmenboxen um links; bookmarksnumbered -> im PDF haben alle Kapitel eine Nummer im Inhaltsverzeichnis am Rand
-
+\usepackage{setspace} 
 
 %-----------Grafiken-------------
 \usepackage{graphicx} %Grafiken einbinden
+
+
+%----------überprüfen------------
+\usepackage{microtype}
+\usepackage[pdfborder={0 0 0},bookmarksnumbered]{hyperref} % colorlinks=false -> keine farbigen Links; pdfborder -> keine Rahmenboxen um links; bookmarksnumbered -> im PDF haben alle Kapitel eine Nummer im Inhaltsverzeichnis am Rand
+
 
 \hypersetup{
 	pdftitle={Story},
@@ -39,31 +37,49 @@ bibliography=totoc%fügt das Literaturverzeichnis ins Inhaltsverzeichnis ein
 %	\end{minipage}
 	
 	\centering
-	\vfil
+	\vfill
 	\Large{\textbf{Stand {\today}}} \\ \bigskip
 %	\normalsize{}
-	\vfil
+	\vfill
 	\textsf{\textbf{\Huge{Wissenssammlung}}} \\ \bigskip
-	\Large{\textbf{zur Übersicht der Geschichte von MMG der Ink Inc.}} \\
-	\vfil
-	\includegraphics[width=\linewidth]{Abbildungen/logo.png}
-	\vfil
+	\Large{\textbf{zur Übersicht der Geschichte von MMG der Ink Inc.}} \\ \bigskip
+	\vfill
+	\includegraphics[width=\linewidth]{Abbildungen/logo.png} \\ \bigskip
+	\vfill
 	\large
 	bearbeitet von\\
 	Medsmiley, Thabb, Mine Schokokeks
 \end{titlepage}
 
 \pagenumbering{Roman}
-
 \tableofcontents
 
 
 %----------Inhalt-------------
+\chapter*{Einleitung}
+\pagenumbering{arabic}
+Dieses Dokument dient zur Sammlung und Aufbewahrung allen beschlossenen Wissens bezüglich des MMG Spiels der Ink Inc. Die Lore soll einen guten Hintergrund geben, damit eine Vorstellung der Welt existiert. Damit lässt sich dann die Gesellschaft aufbauen, in der der Spieler seinen Charakter das Abenteuer erleben lässt. \\
+Ebenso werden hier Mechaniken erläutert, die in das Spiel eingebaut werden sollen. \\
 
-%\include{Dateien/Welt}
-%\include{Dateien/Land}
-%\include{Dateien/Abenteuer}
-%\include{Dateien/Spiel-Mechaniken}
+Nichts zu suchen haben hier detaillierte NSC- oder Questbeschreibungen. Dieses Netzwerk aus Beziehungen erfassen wir in einer eigens dafür erstellten Plattform. 
+
+\part{Lore}
+
+\include{Dateien/Weltenbau}
+\include{Dateien/Geschichte}
+
+\part{Gesellschaft}
+\include{Dateien/Religion}
+\include{Dateien/Regierung}
+\include{Dateien/Kultur}
+\include{Dateien/Ausbildung_und_Berufe}
+\include{Dateien/Nahrung}
+
+
+\part{Abenteuer}
+
+
+\part{Mechaniken}
 
 
 %----------Anhänge------------
