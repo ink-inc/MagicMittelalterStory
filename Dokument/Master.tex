@@ -8,38 +8,40 @@ numbers=noenddot,%entfernt die Punkte nach den Gliederungsziffern
 \usepackage[ngerman]{babel}
 \usepackage{setspace} 
 
+
 %-----------Grafiken-------------
 \usepackage{graphicx} %Grafiken einbinden
 
 
 %----------überprüfen------------
 \usepackage{microtype}
-\usepackage[pdfborder={0 0 0},bookmarksnumbered]{hyperref} % colorlinks=false -> keine farbigen Links; pdfborder -> keine Rahmenboxen um links; bookmarksnumbered -> im PDF haben alle Kapitel eine Nummer im Inhaltsverzeichnis am Rand
+
+%----------zuletzt laden---------
+\usepackage[pagebackref=true]{hyperref} %
 
 
-\hypersetup{
-	pdftitle={Story},
-	pdfauthor={Ink Inc.},
-	pdfsubject={Konzept und Story}
-	}
+
+
+
+
+
+%----------eigene Befehle--------
+\newcommand{\npref}[1]{\nameref{#1} (S. \pageref{#1})} 
+%wenn \npref{referenz} aufgerufen wird, wird automatisch eine Sequenz eingefügt: "`Name (s. X)"' zB "`Sylvan (S. 3)"'
+%das sorgt dafür, dass wir nicht im ganzen Dokument die Namen ändern müssen, wenn wir etwas umbenennen
+%willst du nur den Namen, ohne einen Hinweis auf die Seite (zB weil du das schon weiter oben im Text gemacht hast)
+
+
+
+
+
 
 \begin{document}
 
 \begin{titlepage}
-	
-%	\begin{minipage}{0.5\textwidth}
-%		\includegraphics[height=3cm]{Abbildungen/logo.png}
-%	\end{minipage}
-%	\begin{minipage}{0.5\textwidth}
-%		\flushright
-%		Ink Inc.
-%		\vspace{0cm}\\
-%	\end{minipage}
-	
 	\centering
 	\vfill
 	\Large{\textbf{Stand {\today}}} \\ \bigskip
-%	\normalsize{}
 	\vfill
 	\textsf{\textbf{\Huge{Wissenssammlung}}} \\ \bigskip
 	\Large{\textbf{zur Übersicht der Geschichte von MMG der Ink Inc.}} \\ \bigskip
@@ -53,7 +55,6 @@ numbers=noenddot,%entfernt die Punkte nach den Gliederungsziffern
 
 \pagenumbering{Roman}
 \tableofcontents
-
 
 %----------Inhalt-------------
 \chapter*{Einleitung}
