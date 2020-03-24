@@ -1,5 +1,6 @@
 # Git/GitHub Setup
 Diese README beschreibt, wie du Git auf deinem Rechner installierst und unser Projekt herunterlädst.
+Relevante Voraussetzungen: du hast einen GitHub Account erstellt und bis aktiv dem Team beigetreten, zu dem du per Mail eingeladen wurdest.
 
 
 ## Installation
@@ -61,9 +62,14 @@ Bitte guckt euch ansonsten aufmerksam um. Die meisten Möglichkeiten findet man 
 Damit ihr den ganzen Zyklus einmal umsetzen könnt, werdet ihr jetzt euren Namen in das Dokument mit den Autoren eintragen und online stellen.
 
 1. Klicke auf den mittleren schwarzen Button "Current Branch"
-2. Gib ein: "beispiel/name" (exakt so) und klicke auf "New Branch". Du befindest dich nun automatisch im neuen Branch
+2. Gib ein: "beispiel/name" (exakt so) und klicke auf "New Branch". 
+Dieser soll auf master basieren, denn du weißt nicht, was andere in ihrem Branch machen und der master ist die aktuellste Version.
+Deshalb erstellst du eine Kopie von master. Du befindest dich nun automatisch im neuen Branch.
 
-3. öffne im Dateisystem die Datei "Autoren.txt" 
+3. Öffne im Dateisystem (Explorer oder Finder) die Datei "Autoren.txt".
+Der schnellste Weg wäre über GitHub Desktop: auf der rechten Seite findest du "Öffne im Explorer". 
+Ansonsten weißt du ja, wo du alles abspeicherst (Standard: Eigene Dateien) und kannst alleine dort hin navigieren.
+
 4. Schreibe deinen Namen ans Ende der Liste und speichere die Datei.
 5. Gehe in GitHub Desktop: es sollte nun auf der linken Seite die geänderte Datei und auf der rechten Seite deine Änderung zu sehen sein.
 6. Sieh zu, dass ein Haken bei "Autoren.txt" drin ist 
@@ -88,7 +94,7 @@ Sollte eine Frage auftauchen: Auf gar keinen Fall den Haken setzen (um es online
 Super, du hast jetzt erfolgreich deinen Namen hinzugefügt!
 
 
-Während deiner Arbeit am Projekt solltest du am Besten jedes Mal, wenn du aufhörst, deine Commits pushen. Damit ist ab dann jeder, der mit dir zusammen im gleichen Branch arbeitet auf dem aktuellen Stand. Beziehungsweise solltest du unerwartet länger ausfallen als gedacht, hast du zumindest alles was du tatest online gestellt und jemand anderes kann daran anknüpfen. Bevor du nicht gepusht hast, ist es nicht online!
+Während deiner Arbeit am Projekt solltest du am Besten jedes Mal, wenn du aufhörst, deine Commits pushen. Damit ist ab dann jeder, der mit dir zusammen im gleichen Branch arbeitet auf dem aktuellen Stand. Beziehungsweise solltest du unerwartet länger ausfallen als gedacht, hast du zumindest alles was du getan hast online gestellt und jemand anderes kann daran anknüpfen. Bevor du nicht gepusht hast, ist es nicht online!
 
 
 ## Falscher Branch!?!?!

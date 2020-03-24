@@ -2,7 +2,7 @@
 
 ## Fetchen
 
-Damit überprüft das Programm, ob online Änderungen im aktuelln Branch vorliegen. 
+Damit überprüft das Programm, ob online Änderungen im aktuellen Branch (siehe unten) vorliegen. 
 Sollte dem so sein, wird das angezeigt und ihr bekommt die Option, diese Änderungen zu "pullen" (siehe unten).
 Dies solltet ihr IMMER für den Master ausführen, bevor ihr einen neuen Branch erstellt.
 
