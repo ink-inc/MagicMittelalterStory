@@ -32,7 +32,7 @@ https://www.texstudio.org/
 
 
 ## Einrichten des Editors
-Noch ist die Arbeit nicht ganz getan: du musst deinem Editor noch mitteilen, wo er die Distribution finden kann. Folge dazu einfach diesen Schritten:
+Noch ist die Arbeit nicht ganz getan. Folge dazu einfach diesen Schritten:
 
 Windows: Öffne Optionen -> TexStudio konfigurieren
 MacOS: Öffne Preferences
