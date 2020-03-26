@@ -18,7 +18,7 @@ Achtung: Sowohl der Download (<4GB) als auch die Installation (ca. 10 min) dauer
 Hier ist die Installation etwas umständlicher und es werden immer wieder mehrere Fenster offen sein - NICHT abbrechen sondern darauf warten, dass das jeweils aktuellste Fenster fertig ist und normal geschlossen werden kann. 
 Wenn du Latex für alle Nutzer installieren möchtest, musst du die Installationsdatei als Admin ausführen.
 1. Lade dir die erste verlinkte Datei dieser Seite runter: http://www.tug.org/texlive/acquire-netinstall.html (muss dir eine install-tl-windows.exe geben)
-2. Führe das Setup mit allen Voreinstellungen wie sie sind aus. Wenn du das Installationsverzeichnis änderst, musst du das in den folgenden Schritten berücksichtigen.
+2. Führe das Setup mit allen Voreinstellungen wie sie sind aus (Wenn Windows Vertrauensprobleme bzgl. des Ausführens hat: klicke auf "mehr Infos". Danach erscheint auch ein bestätigender Button). Wenn du das Installationsverzeichnis änderst, musst du das in den folgenden Schritten berücksichtigen.
 
 Achtung: Die Installation dauert aufgrund des Downloads ewig (je nach Internetverbindung 1,5 bis mehrere Stunden)!
 
