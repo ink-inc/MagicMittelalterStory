@@ -2,6 +2,9 @@
 
 Hier findet ihr die aktuellen Guidelines für eine gemeinsame standardisierte Verwendung von GitHub und Latex.
 
+Eine ganz wichtige Aussage zuerst: bei der Benennung von Dateien, Ordnern oder Referenzen NIE Umlaute oder Leerzeichen verwenden!
+Das kann sonst zu Problemen bei involvierten Programmen führen.
+
 ##Latex
 Die .tex Dokumente sollen auch für unsere Augen so weit wie möglich angenehm zu lesen und damit zu bearbeiten sein. Daher:
 -> ausreichend Leerzeilen einfügen, um Bereiche voneinander abzugrenzen (Leerzeilen werden idR vom Kompiler komplett ignoriert)
