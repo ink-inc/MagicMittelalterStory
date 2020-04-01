@@ -13,7 +13,7 @@ Danach erst ist dann die README_latex_setup.md an der Reihe.
 Solltest du zwischendrin Fragen haben, dann sprich uns einfach an :)
 
 In der README_guidlines findest du die aktuellen Richtlinien, die die Arbeit an unserem Projekt strukturiert und für alle verständlich gestaltet.
-Bitte halte dich daran. Sie sind zur schnellen Refrenz auch auf Discord festgehalten :)
+Bitte halte dich daran. Sie sind zur schnellen Referenz auch auf Discord festgehalten :)
 
 
 ## Erfahrenere
@@ -22,4 +22,4 @@ Du kennst dich schon mit Latex und/oder GitHub aus?
 Insbesondere: erledige die Abschluss-Beispielaufgabe in README_git_setup! Spoiler: Du sollst deinen Namen eintragen ;)
 
 In der README_guidlines findest du die aktuellen Richtlinien, die die Arbeit an unserem Projekt strukturiert und für alle verständlich gestaltet.
-Bitte halte dich daran. Sie sind zur schnellen Refrenz auch auf Discord festgehalten :)
+Bitte halte dich daran. Sie sind zur schnellen Referenz auch auf Discord festgehalten :)
