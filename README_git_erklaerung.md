@@ -79,6 +79,16 @@ Das heißt in unserem Projekt, dass die neuen Inhalte damit "anerkannt" werden u
 Dazu muss eine Pull Request erstellt werden. Dies ist nur auf der Website möglich (aber ein Button in der App leitet euch da hin).
 Damit wird angefragt, ob die gemachten Änderungen in Ordnung sind. 
 
+Wenn ihr eine Pull Request auf der Website erstellt, könnt ihr folgende Dinge machen:
+- einen aussagekräftigen Titel wählen, damit die anderen wissen, worum es geht
+- anfordern, wer sich das ansehen soll (Reviewer anfordern).
+- Assignees auswählen. Fügt euch selbst dort ein.
+- ein Label hinzufügen, das eurem Thema entspricht. "Allgemein" bezieht sich auf alles, was nicht mit dem tatsächlichen Inhalt des Handbuchs zu tun hat.
+- ein Projekt zuordnen. Zum Zeitpunkt der Erstellung dieses Guides lautet der Name "Inhalt".
+- Kommentieren, was ihr eigentlich alles so gemacht habt. 
+In der Beschriebung/dem Kommentar könnt ihr auch die Nummer eines Issues eintragen (im Stil von #1), dessen Bearbeitung ihr damit als abgeschlossen erklärt.
+Das führt dazu, dass es im Projekt automatisch als erledigt markiert wird, sobald euer Branch mit dem master verschmolzen wurde.
+
 Nun können alle Mitglieder des Lore-Teams sich die Änderungen ansehen und ggf. kommentieren oder sogar fordern, dass etwas geändert wird.
 Wenn mindestens zwei Leute bestätigen (approven) und alle Änderungs-Forderungen erfüllt (resolved) sind, dann kann ein Mitglied des Lore-Teams die Verschmelzung vornehmen.
 Verschmelzen aka Mergen heißt, dass dieser Branch mit dem Master wieder gemerged wieder zusammengeführt wird.
