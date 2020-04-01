@@ -10,7 +10,11 @@ Dies solltet ihr IMMER für den Master ausführen, bevor ihr einen neuen Branch 
 ## Pullen (= lokale Dateien aktualisieren -> Gegenstück zum Pushen)
 
 Mit Pullen bezeichnet man das Kopieren eines remote-Repositorys (also der online Version des Projekt-Ordners) auf den eigenen Rechner.
-Änderungen, die am remote-Repository (aka online) gemacht wurden, werden nicht automatisch auch bei euch durchgeführt. Dafür müsst ihr erneut pullen.
+Änderungen, die am remote-Repository (aka online) gemacht wurden, werden nicht automatisch auch bei euch durchgeführt. 
+Das heißt, wenn der master verändert wurde, dann müsst ihr euch immer wieder die aktuelle Version anfordern.
+In eurem Branch ist das nur der Fall, wenn jemand explizit in diesem Änderungen gemacht hat. 
+Dafür müsstet ihr diesen dann auch erneut pullen, wenn das aufgetreten ist.
+
 Ihr könnt gleichzeitig immer nur einen Branch des Repository (also eine Version des Projekt-Ordners) pullen.
 Ihr könnt aber gleichzeitig mehrere auf eurem Rechner haben und über GitHub Desktop zwischen den verschiedenen Branches wechseln. 
 

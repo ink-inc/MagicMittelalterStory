@@ -94,7 +94,7 @@ Dadurch werden diese sogar eine E-Mail mit der Aufforderung erhalten, sich das a
 18. Klicke auf "Projects" und wähle das einzige verfügbare mit dem Namen "Inhalt" (zum Zeitpunkt der Erstellung dieser Readme).
 Das packt diese Request automatisch in die Aufgabenliste des Projekts.
 19. Klicke auf den großen grünen Button "Create Pull Request". 
-Nun ist die Anfrage eingegangen. Wenn mindstens 2 Leute sie sich angesehen und bestätigt (approved) haben, wird deine Änderung zum master hinzugefügt und offiziell.
+Nun ist die Anfrage eingegangen. Wenn mindestens 2 Leute sie sich angesehen und bestätigt (approved) haben, wird deine Änderung zum master hinzugefügt und offiziell.
 
 13. Zurück im Programm: Klicke in der Programm-Befehlszeile auf "Branch -> Delete". 
 Sollte eine Frage auftauchen: Auf gar keinen Fall den Haken setzen um auch den Branch online zu löschen, sonst wird das mit der Request problematisch. 
