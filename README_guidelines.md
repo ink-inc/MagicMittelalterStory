@@ -60,3 +60,25 @@ Damit ist sichergestellt, dass immer die gleiche Schreibweise (groß/klein etc) 
 Die wichtigsten sind: \g \kg \m \km \s \l \hour \minute bzw. dann als Präfix \giga \mega \kilo \hecto \deci \centi \milli etc (Motiv sollte klar sein, Google hilft)
 
 
+### Wie markiere ich einen zu referenzierenden Bereich? (Label)
+Zuerst muss ich dem Ort, den ich referenzieren möchte, ein Label zuweisen, damit Latex weiß, wohin es verweisen soll. 
+Zu Beachten ist, dass das Label immer _NACH dem Punkt erfolgen muss, auf den ich verweise, damit das System das versteht.
+Diese Punkte sind: \caption{} für Abbildungen & Tabellen und \chapter{} oder \section{} u.ä. für Überschriften.
+Dies sind übrigens auch die besonderen Befehle, die Latex dazu nutzt, die Verzeichnisse zu erstellen.
+
+Beim Erstellen von Labeln müssen wir uns an __Vorgaben halten:
+- keine Leerzeichen
+- keine Sonderzeichen
+- keine Umlaute
+- keine Unterstriche (nutze ein Minus -)
+
+Weiterhin verwenden wir die folgenden gemeinsamen __Richtlinien:
+- ein Tabellen-Label beginnt immer mit "tab:"
+- ein Abbildungs-Label beginnt immer mit "fig:"
+- ein Überschriften-Label beginnt immer mit "sec:"
+- Namen tauchen nicht in Labeln auf, da sie sich bis zum Ende ändern könnten. Wir beziehen sie auf die Funktion dahinter: \label{planet} anstatt \label{Andar}.
+
+Stelle ich fest, dass ich ein bestehendes Label anpassen muss (es folgt nicht den Richtlinien, ist nicht eindeutig etc), kann ich zuvor per Rechtsklick -> Nutzungen feststellen herausfinden, ob und wo dieses Label schon referenziert wird.
+Dann kann ich ganz einfach alle auf einmal ändern.
+Übrigens: wir ein Label doppelt verwendet, erscheint es zur Warnung in einer anderen Farbe (in TexStudio Windows lila anstatt grün).
+
