@@ -36,3 +36,27 @@ Die .tex Dokumente sollen auch für unsere Augen so weit wie möglich angenehm z
 
 Damit in Github beim Kommentieren auch in Text-Bergen zu einzelnen Zeilen Anmerkungen gemacht werden können:
 -> soweit möglich in etwa nur einen Satz pro Zeile im .tex Dokument machen
+
+
+### Leerzeichen
+Leerzeichen müssen korrekterweise zwischen Abkürzungen wie bei "z. B." oder "A 9" da das für "zum Beispiel" oder "Autobahn 9" steht.
+Keine Leerzeichen um einen "bis" Strich -
+Keine Leerzeichen um einen Schrägstrich /
+Leerzeichen vor/nach abgekürzten Symbolen wie $, §
+
+Das geschütztes Leerzeichen: die Tilde ~ (darf nicht von Leerzeichen umgeben sein!), sorgt dafür, dass die Leerstelle nicht zum Umbruch am Zeilenende verwendet wird.
+So wird auch F.~Schiller nie getrennt.
+Dadurch würde auch die Zahl nie von ihrer Einheit getrennt, _aber wir verwenden für Einheiten das Paket siunitx (siehe unten).
+
+
+### Darstellung von Zahlen
+Wir verwenden das Paket siunix zur verbesserten Darstellung von Zahlen, Wertebereichen und Einheiten.
+Wer sich darüber genauer informieren will, findet eine gute übersichtliche Erläuterung unter https://www.namsu.de/Extra/pakete/Siunitx.html.
+Das Wichtigste:
+- Bei reinen Zahlen reicht es zu beachten, dass ein Komma (kein Punkt) verwendet wird (Das Paket kann trotzdem gerne verwendet werden).
+- Für Einheiten die Befehle des Paketes verwenden: \SI{ZAHL}{EINHEIT} oder \SIrange{ZAHL}{ZAHL}{EINHEIT}: 2 kg oder 2 kg bis 7 kg
+Die Eingabe der Einheit sollte am Besten nicht "kg" sein, sondern das Makro "\kilogram". 
+Damit ist sichergestellt, dass immer die gleiche Schreibweise (groß/klein etc) genutzt wird.
+Die wichtigsten sind: \g \kg \m \km \s \l \hour \minute bzw. dann als Präfix \giga \mega \kilo \hecto \deci \centi \milli etc (Motiv sollte klar sein, Google hilft)
+
+
