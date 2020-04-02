@@ -82,3 +82,35 @@ Stelle ich fest, dass ich ein bestehendes Label anpassen muss (es folgt nicht de
 Dann kann ich ganz einfach alle auf einmal ändern.
 Übrigens: wir ein Label doppelt verwendet, erscheint es zur Warnung in einer anderen Farbe (in TexStudio Windows lila anstatt grün).
 
+### Wie referenziere ich korrekt?
+Im Allgemeinen kürzen wir ab:
+- Abbildung zu Abb. 
+- Tabelle zu Tab.
+- Seite zu S. (nur wenn nicht Teil des Fließtextes, beachte hier Lesefluss)
+
+1. Ich möchte nur auf das __Element verweisen: \ref{label}
+-> nun wird an dieser Stelle die Zahl des Elements eingefügt:
+- für eine Überschrift ihre Nummerierung (1.3.5 oder 3.4 ...)
+- für eine Tabelle oder eine Abbildung die Nummer (1.2 oder 5.9 ...)
+Verwendung: "wie in Abb. \ref{fig:planet} dargestellt" -> "wie in Abb. 1.5 dargestellt"
+
+2. Ich möchte nur auf die __Seite des Elements verweisen: \pageref{label}
+-> nun wird an dieser Stelle die Seite eingefügt, auf der das Element erscheint
+Verwendung (selten): "Wie auf Seite \pageref{sec:planet} gezeigt" -> "Wie auf Seite 10 gezeigt"
+Hinweis: Bitte nur verwenden, wenn es wirklich als nötig angesehen wird. 
+Solange man sich die PDF mit einem vernünftigen PDF-Viewer ansieht, kann man auf die Links klicken und wird direkt dort hingebracht.
+
+3. Ich möchte auf nur auf den __Namen des Elements verweisen: \nameref{label}
+-> nun wird hier der Name des Elements angezeigt
+- für eine Überschrift die tatsächliche Überschrift wie sie in den geschweiften Klammern steht
+- für eine Tabelle oder eine Abbildung die caption
+Verwendung (häufig): "hier auf \nameref{sec:planet}" -> "hier auf Andar"
+Tipp: damit könnt ihr auch den Namen in den Fließtext einbinden, ohne dass ihr wissen müsst, wie er am Ende lauten wird. 
+ABER jedes Mal entsteht dort ein Link, der dich zur entsprechenden Seite bringt. 
+Sinnvollerweise erfolgt diese Verlinkung also einmal in Textblöcken und nur an Stellen, an denen ein Link sinnvoll ist.
+
+4. Ich möchte __sowohl auf den __Namen als auch die __Seite verweisen: \npref{label}
+-> dieser Befehl ist vor Beginn des Dokumentes in Master.tex selbsterstellt und erklärt
+Verwendung (seltener): "hier auf \npref{sec:planet}" -> "hier auf Andar (S. 10)"
+Hinweis wie bei 2. zur Seite. Dies ist allerdings im Gegensatz zu 2. sinnvoll, immer bei der *ersten Referenz im Kapitel* zu verwenden.
+Denn das Handbuch liegt ja mal ggf. gedruckt vor und man kann dann keinem Hyperlinks folgen.
