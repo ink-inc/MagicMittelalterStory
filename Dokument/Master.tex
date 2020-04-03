@@ -9,15 +9,46 @@ numbers=noenddot,%entfernt die Punkte nach den Gliederungsziffern
 \usepackage{setspace} 
 
 
-%-----------Grafiken-------------
-\usepackage{graphicx} %Grafiken einbinden
 
+%-----------Format-------------
+%\usepackage{titlesec} %Titel Format bearbeiten
+\usepackage{setspace} 
+\setstretch{1,15} % 1,5 Zeilenabstand, [singlespacing] oder [doublespacing] auch möglich
+
+%-----------Grafiken und Tabellen-------------
+\usepackage{float} %float-Objekte mit Großbuchstaben an Stelle behalten
+\usepackage{caption} % Beschriftungen von Bildern & Tabellen bearbeiten
+\captionsetup{format=plain,
+	font=small,
+	labelfont=bf}
+\captionsetup[table]{singlelinecheck=false}
+
+\usepackage{graphicx} % Grafiken einbinden
+
+\usepackage{booktabs} % Tabellen ordentlich, toprule, midrule, cmidrule, bottomrule
+\usepackage{tabularx} % Tabelle eine bestimmte Breite vorgeben, automatischen Zeilenumbruch innerhalb der Spalten
+\usepackage{threeparttable} % Beschriftung von Tabellen auf Tabellenbreite, Fußnoten an Tabellen uvm; muss um die tabular Umgebung herum gesetzt werden
+
+%-----------Listen-------------
+\usepackage{outlines} %Verschachtelte Listen deutlich einfacher
+\usepackage{enumitem} %Anpassbare Enumerates/Itemizes, Listen global konfigurieren
+\setitemize{nosep} %Abstand zwischen Items, verwende auch itemsep=0p
+
+%-----------weiterer Komfort-------------
+\usepackage{textgreek} %Griechische Buchstaben mit \textalpha etc.
 
 %----------überprüfen------------
 \usepackage{microtype}
+\usepackage[per=slash,decimalsymbol=comma,loctolang=ngerman]{siunitx}
+\sisetup{detect-all} %SI-Einheiten in "normaler" Schriftart
 
 %----------zuletzt laden---------
-\usepackage[pagebackref=true]{hyperref} %
+\usepackage[%pdflatex,%
+pagebackref=true,%
+pdfauthor={Ink Inc.},%
+pdftitle={Wissenssammlung},%
+pdfsubject={Handbuch}%
+]{hyperref} %
 
 
 
