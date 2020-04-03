@@ -39,7 +39,6 @@ Damit in Github beim Kommentieren auch in Text-Bergen zu einzelnen Zeilen Anmerk
 
 
 ### Leerzeichen
-Leerzeichen müssen korrekterweise zwischen Abkürzungen wie bei "z. B." oder "A 9" da das für "zum Beispiel" oder "Autobahn 9" steht.
 Keine Leerzeichen um einen "bis" Strich -
 Keine Leerzeichen um einen Schrägstrich /
 Leerzeichen vor/nach abgekürzten Symbolen wie $, §
@@ -48,9 +47,12 @@ Das geschütztes Leerzeichen: die Tilde ~ (darf nicht von Leerzeichen umgeben se
 So wird auch F.~Schiller nie getrennt.
 Dadurch würde auch die Zahl nie von ihrer Einheit getrennt, _aber wir verwenden für Einheiten das Paket siunitx (siehe unten).
 
+Leerzeichen müssen korrekterweise zwischen Abkürzungen wie bei "z. B." oder "A 9" da das für "zum Beispiel" oder "Autobahn 9" steht.
+Hier sinnvollerweise auch das geschützte Leerzeichen verwenden.
+
 
 ### Darstellung von Zahlen
-Wir verwenden das Paket siunix zur verbesserten Darstellung von Zahlen, Wertebereichen und Einheiten.
+Wir verwenden das Paket siunitx zur verbesserten Darstellung von Zahlen, Wertebereichen und Einheiten.
 Wer sich darüber genauer informieren will, findet eine gute übersichtliche Erläuterung unter https://www.namsu.de/Extra/pakete/Siunitx.html.
 Das Wichtigste:
 - Bei reinen Zahlen reicht es zu beachten, dass ein Komma (kein Punkt) verwendet wird (Das Paket kann trotzdem gerne verwendet werden).
@@ -80,7 +82,7 @@ Weiterhin verwenden wir die folgenden gemeinsamen __Richtlinien:
 
 Stelle ich fest, dass ich ein bestehendes Label anpassen muss (es folgt nicht den Richtlinien, ist nicht eindeutig etc), kann ich zuvor per Rechtsklick -> Nutzungen feststellen herausfinden, ob und wo dieses Label schon referenziert wird.
 Dann kann ich ganz einfach alle auf einmal ändern.
-Übrigens: wir ein Label doppelt verwendet, erscheint es zur Warnung in einer anderen Farbe (in TexStudio Windows lila anstatt grün).
+Übrigens: wird ein Label doppelt verwendet, erscheint es zur Warnung in einer anderen Farbe (in TexStudio Windows lila anstatt grün).
 
 ### Wie referenziere ich korrekt?
 Im Allgemeinen kürzen wir ab:
