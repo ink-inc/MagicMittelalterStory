@@ -47,7 +47,7 @@ Das führt dazu, dass sie mit dem ihnen angeborenen Manapool mehr und stärkere 
 Ihre einzigen Grenzen sind dabei durch ihre Gene, ihre Vorstellungskraft, ihre Konzentrationsfähigkeit und den magischen Widerstand anderer Lebewesen gesetzt. 
 \\ \\
 Es gibt ein paar Prokaryoten, die sich die Magie als tatsächliche dauerhafte Energiequelle erschlossen haben und sie ständig direkt zur Herstellung von ATP (Adenosintriphosphat = "`Energie der Zelle"') nutzen können.
-Bisher ist noch kein Fall von Symbiose oder gar Endosymbiose ähnlich wie mit den Mitos ($\alpha$-Proteobakterien $\rightarrow$ Mitochondrien) oder Chloros (Cyanobakterien $\rightarrow$ Chloroplasten) bekannt, aus dem höher entwickelte Lebewesen herausgekommen sind, da dies vor nicht allzu langer Zeit (in Zeiträumen der Evolution) entstand.
+Bisher ist noch kein Fall von Symbiose oder gar Endosymbiose ähnlich wie mit den Mitos (\textalpha-Proteobakterien $\rightarrow$ Mitochondrien) oder Chloros (Cyanobakterien $\rightarrow$ Chloroplasten) bekannt, aus dem höher entwickelte Lebewesen herausgekommen sind, da dies vor nicht allzu langer Zeit (in Zeiträumen der Evolution) entstand.
 
 
 \subsection{Natürlicher magischer Widerstand}
@@ -73,36 +73,31 @@ Sie können die natürliche Resistenz des Körpers (siehe oben) umgehen.
 
 
 \section{Magie-Arten}
-Die Informationen über die Verbreitung der Magiearten unter den Lebewesen und ihrer Bekanntheit in \nameref{sec:land} finden sich einerseits bei jeder Art und andererseits in Tabelle \ref{tab:magie-verbreitung} zur Übersicht. 
+Die Informationen über die Verbreitung der Magiearten unter den Lebewesen und ihrer Bekanntheit in \nameref{sec:land} finden sich einerseits bei jeder Art und andererseits in Tab. \ref{tab:magie-verbreitung} zur Übersicht. 
 
 Die Anordnung der Magiearten ist alphabetisch, um einen schnellen Zugriff zu ermöglichen.
 
 \begin{table}[htbp]
-	\caption{Verbreitung der Magiearten unter den Lebewesen allgemein und den Menschenarten.}
-	\begin{tabular}{l||c|c|p{8cm}}
-		\textbf{Art} & \textbf{Hominini} & \textbf{Mensch} & \textbf{Bemerkungen} \\
-		\hline \hline
-		Temperatur & X & X & Am weitesten verbreitet \\
-		\hline
-		Proliferation & X & X & Unter den Menschen sehr selten \\
-		\hline
-		Druck & X & X & Zweithäufigste unter den Menschen, auch im Tierreich stark verbreitet \\
-		\hline
-		Vibration & X & - & Zwerge und Undar \\
-		\hline
-		Verhärtung & X & - & Sylvan \\
-		\hline
-		Licht & X & X & Mäßige Verbreitung unter den Menschen \\
-		\hline
-		Strahlung & - & - &  \\
-		\hline
-		Elektrizität & X & X & Mäßige Verbreitung unter den Menschen, vor allem schlecht ausgenutzt, da Elektrizität ihnen noch kein richtiger Begriff ist. Vor allem bei Pflanzen und Tieren \\
-		\hline
-		reine Energie & - & - &   \\
-		\hline
-		Absorption & - & - & Bisher nur bei Mikroorganismen \\
-	\end{tabular}
+	\centering
+	\caption{Verbreitung der Magiearten unter den Lebewesen allgemein und unter den Menschenarten.}
 	\label{tab:magie-verbreitung}
+	\begin{threeparttable}[\linewidth]
+		\begin{tabularx}{\textwidth}{l|ccX}
+			\toprule
+			\textbf{Art} & \textbf{Hominini} & \textbf{Mensch} & \textbf{Bemerkungen} \\
+		    \midrule
+			Absorption & - & - & Bisher nur bei Mikroorganismen \\
+			Druck & X & X & Zweithäufigste unter den Menschen, auch im Tierreich stark verbreitet \\
+			Elektrizität & X & X & Mäßige Verbreitung unter den Menschen, vor allem schlecht ausgenutzt, da Elektrizität ihnen noch kein richtiger Begriff ist. Vor allem bei Pflanzen und Tieren \\
+			Licht & X & X & Mäßige Verbreitung unter den Menschen \\
+			Proliferation & X & X & Unter den Menschen sehr selten \\
+			Strahlung & - & - &  \\
+			Temperatur & X & X & Am weitesten verbreitet \\
+			Verhärtung & X & - & Sylvan \\
+			Vibration & X & - & Zwerge und Undar \\
+			\bottomrule
+		\end{tabularx}
+	\end{threeparttable}
 \end{table}
 
 
@@ -426,26 +421,77 @@ Hominine nutzen das zur Kommunikation oder Orientierung in der Dunkelheit.
 
 
 \section{Die Genetik der Magie}
-\begin{itemize}
-	\item Magie wird vererbt und zwar (der Einfachheit halber) mendelsch. D.h. es existeren in jedem Tier (bei Pflanzen ist das alles komplizierter und bei Bakterien ganz anders) je ein Allel von der Mama und ein Allel vom Papa durch welches festgelegt ist, welche Magie man ausprägen kann. Wenn also beide Eltern homozygot (aka beide Allele gleich) Elementaristen sind, dann kann das Kind auch nur ein Elementarist sein.
-	\item kurz gesagt: seltene Magie Arten sind rezessiv, häufige dominant. Ansonsten gibt es Magie-Arten, die sich so aufgrund der Kombination zweier dominanter Allele ausprägen
-\end{itemize}
+Wie zuvor angesprochen ist das Nutzen der Magie evolutionär entstanden und dementsprechend vererbbar.
+Der Einfachheit halber wird mit der mendelschen Vererbung über Allele gearbeitet.
+D.h. in jedem Wesen gibt es \textbf{zwei Allele}: je ein Allel von der Mutter und eines vom Vater.
+Diese nennt man den \textbf{Genotypen}: er stellt dar, was an genetischem Material vorhanden ist.
+Abhängig von der "`Durchsetzungskraft"' der beiden Allele kommt es nun zu einer bestimmten \textbf{Ausprägung} der elterlichen Gaben beim Nachkommen - also auf welche Art er Magie nutzen kann.
+Dies nennt man den \textbf{Phänotypen}: er zeigt auf, was am Ende ausgebildet wird.
+
+Bei Bakterien ist das alles komplett anders, aber hier nicht von Belang.
+
+
 \subsection{Allele der Menschen unseres Landes} %todo hübsche Tabelle + Beschriftung!
-Unter den Menschen in unserem Fokus sind 5 Gene verbreitet: \\ \\
-\begin{tabular}{|c|c|c|c|c|}
-	\hline
-	& dominant-rezessiv & intermediär & kodominant* & Häufigkeit  \\ \hline
-	Temperatur   &         -         &     DL      &      -      & sehr häufig \\ \hline
-	Druck     &      DD, Dp       &      -      &     DE      &   häufig    \\ \hline
-	Licht     &      LL, Lp       &      -      &     LE      &   häufig    \\ \hline
-	Elektrizität  &      EE, Ep       &      -      &   LE, DE    & mittelmäßig \\ \hline
-	Proliferation &        pp         &      -      &      -      &   selten    \\ \hline
-\end{tabular} \\ *äußert, äußerst selten \\
-\\
+Die X %todo
+unter den Menschen in \nameref{sec:land} verbreiteten Arten der Kontrolle über Magie finden sich in Tab. \ref{tab:landmagie}.
+Von den dargestellten Magiearten nutzt der Soldat Temperatur, %todo
+die Spionin Licht %todo
+und die Diplomatin zuerst Druck und später auch Elektrizität. %todo
+
+\begin{table}[hbtp]
+	\centering
+	\caption[Verbreitete Magiearten in \nameref{sec:land}]%
+	{\textbf{Die Arten der Magiekontrolle, die unter den Menschen aus \nameref{sec:land} verbreitet sind. } \\
+		Die Tabelle liest sich zeilenweise wie folgt: gibt es ein eigenes Allel für die Magieart, so findet sich ein Eintrag in reinerbig.
+		Wird die Art auch alleinig ausgeprägt, wenn ihr Allel mit einem anderen kombiniert vorliegt, so ist diese Kombination unter dominant-rezessiv zu finden.
+		Sollte es passieren, dass die Kombination zweier Allele zu einem Mix beim Phänotypen sorgt und somit eine neue Art entsteht, so ist dies bei dieser neuen Art hier aufgeführt.
+		Es kann auch den äußert selten auftretenden Fall der Kodominanz geben.
+		Dann ist in dieser Spalte die Kombination mit der anderen Magieart aufgeführt, mit welcher dies passieren kann.
+		Die Häufigkeit gibt einen Hinweis auf die Verbreitung in der Bevölkerung.
+		} 
+	\label{tab:landmagie}
+	\begin{threeparttable}
+		\begin{tabularx}{\textwidth}{l|cccc|c}
+			\toprule
+			              & reinerbig & dominant-rezessiv & intermediär & kodominant* & Häufigkeit  \\ \midrule
+			 Temperatur   &     -      &         -         &     DL      &      -      & sehr häufig \\
+			    Druck     & DD        &        Dp         &      -      &     DE      &   häufig    \\
+			    Licht     & LL        &        Lp         &      -      &     LE      &   häufig    \\
+			Elektrizität  & EE        &        Ep         &      -      &   LE, DE    & mittel \\
+			Proliferation & pp        &         -          &      -      &      -      &   selten    \\ \bottomrule
+		\end{tabularx}
+	\end{threeparttable} 
+\end{table}
+
+
+
+\subsection{Grundlagen der Vererbung}
+Die oben genannte Durchsetzungskraft bezieht sich auf die Dominanz eines Allels im Angesicht eines anderen. 
+Besitzt der Nachkomme zwei identische Allele, so gibt es keine Dominanz und er ist reinerbig aka homozygot (homo = gleich; zygot = Keimzelle aus Verschmelzung von Spermium und Eizelle $\rightarrow$ gleicherbig).
+Hat er jedoch zwei unterschiedliche Allele und ist damit heterozygot (hetero = verschieden $\rightarrow$ verschiedenerbig), so gibt es drei Möglichkeiten, was passieren kann:
+
+\begin{enumerate}
+	\item \textbf{Dominant-Rezessiv} bedeutet, dass ein Allel das andere dominiert und als einziges umgesetzt wird. 
+	Der Phänotyp, also das Endprodukt zeigt einen Nachkommen mit nur den Eigenschaften des dominanten Partners.
+	Das sieht man bei der Blutgruppe A oder B.
+	In beiden Fällen hat der Nachkomme Blutgruppe A, sowohl wenn er von beiden Eltern das A-Allel bekommen hat, als auch wenn er es nur von einem Elternteil erhielt und vom anderen ein 0-Allel.
+	Ein zweites Beispiel ist die Farbe von Erbsen: vermehrt man eine gelbe mit einer grünen Erbse, so dominiert das Gelb und es kommen nur gelbe Erbsen heraus.
+	
+	Das "`schwächere"' Allel, welches sich dominieren lässt und daher als rezessiv bezeichnet wird, kann nur in dem Fall ausgebildet werden, dass es reinerbig vorliegt: es also von beiden Eltern kommt.
+	So verhält es sich auch mit der Blutgruppe 0.
+	Diese kann sich nicht gegen A oder B durchsetzen und wird nur ausgebildet, wenn von beiden Eltern ein 0-Allel kommt.
+	Deshalb ist es auch die seltenste Blutgruppe.
+	\item \textbf{Kodominant} heißt, dass beide Allele dominierend sind: keines will nachgeben, weshalb beim Nachkommen \textit{beide}  Merkmale ausgeprägt sind.
+	Dies kann man bei der Blutgruppe AB beobachten: es wird einfach alles von den Eltern ausgeprägt.
+	\item \textbf{Intermediär} wiederum ist eine Mischform, bei der je Teile der elterlichen Merkmale ausgeprägt werden. 
+	Dafür gibt es kein Beispiel bei unseren Blutgruppen, allerdings werden aus den roten und weißen Bluten der elterlichen Wunderblumen beim Nachfahren rosa Blüten.
+\end{enumerate}
+
+
+
 \textbf{Dominant-Rezessiv}: Alle Nachkommen in F1 haben den gleichen Phänotyp eines Elternteils. In F2 dann nur 75 zu 25 \% (zB. rote + weiße -> roten Blüten bei Erbsen). \\
 \textbf{Intermediär}: Alle Nachkommen in F1 haben eine Mischform der Eltern, in F2 dann nur 50 \%. Je 25 \% sind reinerbig (z.B. rote + weiße -> rosa Blüten bei der Wunderblume). \\
-\textbf{Kodominant}: Ähnlich wie intermediär, nur dass die Merkmale der Eltern separat und parallel ausgebildet werden (z.B. Blutgruppe AB).\\ \\
-Davon nutzt der Soldat Temperatur, die Spionin Licht und die Diplomatin zuerst Druck und später auch Elektrizität.
+\textbf{Kodominant}: Ähnlich wie intermediär, nur dass die Merkmale der Eltern separat und parallel ausgebildet werden (z.B. Blutgruppe AB).
 
 
 \href{http://www.weltenbau-wissen.de/2015/12/magie-weltenbau-magiesystem-mystik-wissenschaft-teil-1/}{Magie soll Mystik behalten}\\

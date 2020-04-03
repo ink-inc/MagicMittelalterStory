@@ -9,15 +9,46 @@ numbers=noenddot,%entfernt die Punkte nach den Gliederungsziffern
 \usepackage{setspace} 
 
 
-%-----------Grafiken-------------
-\usepackage{graphicx} %Grafiken einbinden
 
+%-----------Format-------------
+%\usepackage{titlesec} %Titel Format bearbeiten
+\usepackage{setspace} 
+\setstretch{1,15} % 1,5 Zeilenabstand, [singlespacing] oder [doublespacing] auch möglich
+
+%-----------Grafiken und Tabellen-------------
+\usepackage{float} %float-Objekte mit Großbuchstaben an Stelle behalten
+\usepackage{caption} % Beschriftungen von Bildern & Tabellen bearbeiten
+\captionsetup{format=plain,
+	font=small,
+	labelfont=bf}
+\captionsetup[table]{singlelinecheck=false}
+
+\usepackage{graphicx} % Grafiken einbinden
+
+\usepackage{booktabs} % Tabellen ordentlich, toprule, midrule, cmidrule, bottomrule
+\usepackage{tabularx} % Tabelle eine bestimmte Breite vorgeben, automatischen Zeilenumbruch innerhalb der Spalten
+\usepackage{threeparttable} % Beschriftung von Tabellen auf Tabellenbreite, Fußnoten an Tabellen uvm; muss um die tabular Umgebung herum gesetzt werden
+
+%-----------Listen-------------
+\usepackage{outlines} %Verschachtelte Listen deutlich einfacher
+\usepackage{enumitem} %Anpassbare Enumerates/Itemizes, Listen global konfigurieren
+\setitemize{nosep} %Abstand zwischen Items, verwende auch itemsep=0p
+
+%-----------weiterer Komfort-------------
+\usepackage{textgreek} %Griechische Buchstaben mit \textalpha etc.
 
 %----------überprüfen------------
 \usepackage{microtype}
+\usepackage[per=slash,decimalsymbol=comma,loctolang=ngerman]{siunitx}
+\sisetup{detect-all} %SI-Einheiten in "normaler" Schriftart
 
 %----------zuletzt laden---------
-\usepackage[pagebackref=true]{hyperref} %
+\usepackage[%pdflatex,%
+pagebackref=true,%
+pdfauthor={Ink Inc.},%
+pdftitle={Wissenssammlung},%
+pdfsubject={Handbuch}%
+]{hyperref} %
 
 
 
@@ -33,6 +64,44 @@ numbers=noenddot,%entfernt die Punkte nach den Gliederungsziffern
 
 
 
+%----------Vorlagen--------
+%Tabelle
+%\begin{table}[htbp]
+%	\centering
+%	\caption[Knapper Titel]{Sehr informativer Titel}
+%	\label{tab:key}
+%		\begin{threeparttable}
+%			\begin{tabularx}{\textwidth}{l|ccX}
+%				\toprule
+%				\textbf{1st Column} & \textbf{2nd Colimn} & \textbf{3rd Colimn} & \textbf{4th Colimn} \\ 
+%				\midrule
+%				QWERTY\tnote{1}   &                     &                     &  \\
+%				ASDFGH   &                     &                     &  \\ 
+%				\bottomrule
+%			\end{tabularx}
+%			\begin{tablenotes}
+%				\item[1] qwerty
+%			\end{tablenotes}
+%		\end{threeparttable}
+%\end{table}
+
+%  Aufzählung (1.,2.,...)
+%\begin{enumerate}
+%	\item 
+%\end{enumerate}
+
+% Liste mit Symbolen
+%\begin{outline}
+%	\1 This is a first item.
+%	\1[!!!] This is a second, with a custom label.
+%		\2 A level-2 item.
+%			\3 A level 3.
+%				\4 Deepest is level 4.\
+%		2 Back to level 2.
+%\0 A normal paragraph in the middle.\
+%	1 A couple more
+%		\2 items.
+%\end{outline}
 
 
 
