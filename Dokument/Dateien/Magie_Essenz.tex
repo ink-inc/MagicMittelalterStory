@@ -86,24 +86,34 @@ Die Informationen über die Verbreitung der Magiearten unter den Lebewesen und i
 
 Die Anordnung der Magiearten ist alphabetisch, um einen schnellen Zugriff zu ermöglichen.
 
-\begin{table}[htbp]
+\begin{table}[htb]
 	\centering
-	\caption{Verbreitung der Magiearten unter den Lebewesen allgemein und unter den Menschenarten.}
+	\caption{\textbf{Verbreitung der Magiearten unter den Lebewesen allgemein und unter den Menschenarten.}}
 	\label{tab:magie-verbreitung}
 	\begin{threeparttable}[\linewidth]
-		\begin{tabularx}{\textwidth}{l|ccX}
+		\begin{tabularx}{\textwidth}{l|ccc}
 			\toprule
-			\textbf{Art} & \textbf{Hominini} & \textbf{Mensch} & \textbf{Bemerkungen} \\
+			\textbf{Art} & \textbf{Eukaryoten} & \textbf{Hominini} & \textbf{Mensch} \\
 		    \midrule
-			Absorption & - & - & Bisher nur bei Mikroorganismen \\
-			Druck & X & X & Zweithäufigste unter den Menschen, auch im Tierreich stark verbreitet \\
-			Elektrizität & X & X & Mäßige Verbreitung unter den Menschen, vor allem schlecht ausgenutzt, da Elektrizität ihnen noch kein richtiger Begriff ist. Vor allem bei Pflanzen und Tieren \\
-			Licht & X & X & Mäßige Verbreitung unter den Menschen \\
-			Proliferation & X & X & Unter den Menschen sehr selten \\
-			Strahlung & - & - &  \\
-			Temperatur & X & X & Am weitesten verbreitet \\
-			Verhärtung & X & - & Sylvan \\
-			Vibration & X & - & Zwerge und Undar \\
+			\nameref{sec:nullmagie}  & - & - & (x)  \\
+			\nameref{sec:bindungsmagie} & X & Sylvan & -  \\
+			(statischer) \nameref{sec:druckmagie} & X & X & X  \\
+			\nameref{sec:gleichstrommagie}  & X & X & X  \\
+			\nameref{sec:gravitationsmagie} & - & - & - \\ \midrule[0.1px]
+			\nameref{sec:hydrodynamikmagie} X & X & X &\\
+			\nameref{sec:infrarotmagie} & X & & \\
+			\nameref{sec:lichtmagie}  & X & X & X  \\
+			\nameref{sec:mikrowellenmagie} & X & &\\
+			\nameref{sec:proliferationsmagie} & X & X & X \\ \midrule[0.1px]
+			\nameref{sec:quantenmechanikmagie} & X & ? & - \\
+			\nameref{sec:roentgenmagie} & X & - & - \\
+			\nameref{sec:rundfunkmagie} & X & - & - \\
+			\nameref{sec:schubmagie} & X & X & \\
+			\nameref{sec:temperaturmagie} & X & X & X  \\ \midrule[0.1px]
+			\nameref{sec:terahertzmagie} & X & & \\
+			\nameref{sec:uvmagie} & X & Höhlenmenschen & ggf. \\
+			\nameref{sec:vibrationsmagie} & X & Zwerge, Undar & -  \\
+			\nameref{sec:wechselstrommagie} & X & X & X \\
 			\bottomrule
 		\end{tabularx}
 	\end{threeparttable}
@@ -114,11 +124,8 @@ Die Anordnung der Magiearten ist alphabetisch, um einen schnellen Zugriff zu erm
 \subsection{Absorption oder Nullmagie}\label{sec:nullmagie}
 Diese Art der Kontrolle sorgt für einen ständigen Entzug von Magie aus der Umwelt, da zumindest beim Menschen die eigenen Zellen nicht mehr fähig sind, diese zu halten und somit versuchen, auszugleichen. 
 
-\subsubsection{Verbreitung}
-Zu Beginn des Spiels beherrschen nur Mikroorganismen diese Fähigkeit. Am Ende wurde eine neue Art Mensch geschaffen, die diese Fähigkeit ebenso beherrschen. Sie ist daher anfangs vollkommen unbekannt.
-
-\subsubsection{Bedeutung im Spiel}
-Zum aktuellen Zeitpunkt nicht existent, denn sie entsteht erst bei der Gottwerdung in den Überlebenden.
+\subsubsection{Verbreitung und Bedeutung im Spiel}
+Zu Beginn des Spiels beherrschen nur Mikroorganismen diese Fähigkeit. Sie ist daher anfangs vollkommen unbekannt. Am Ende des Spiels wird eine neue Art Mensch geschaffen, die diese Fähigkeit ebenso beherrschen.
 
 \subsubsection{Intuitive Nutzung}
 Die Bakterien nutzen es als Energiequelle mittels eines speziellen Zellorgans. Es lässt sich ähnlich vorstellen wie die Nutzung von Sonnenenergie mittels Chloroplasten oder chemischer Energie mittels Mitochondrien. 
@@ -127,20 +134,52 @@ Die Menschen werden durch das heftige Ziehen sämtlicher Magie relativ unbeeinfl
 
 \subsubsection{Erlernbare Steigerungen}
 Es wird sehr lange dauern, bis die Menschen begreifen, dass auch dies eine Möglichkeit zur Steigerung bietet.
-\begin{itemize}
-	\item Aktives Absorbieren von Magie aus Lebewesen, was diese daran hindert, ihre Magie einsetzen zu können.
-	\item ...
-\end{itemize}
+\begin{outline}
+	\1 Magie, die gerade auf die erweiterte Umgebung gewirkt wird, wird annulliert.
+	\1 Es ist ein verlängertes Fasten möglich.
+	\1 ...
+\end{outline}
 
 \subsubsection{Meisterliche Beherrschung} 
-\begin{itemize}
-	\item ...
-\end{itemize}
+\begin{outline}
+	\1 Aktives Absorbieren von Magie aus Lebewesen, was diese daran hindert, ihre Magie einsetzen zu können.
+	\1 ...
+\end{outline}
+Zurück zu Tab. \ref{tab:magie-verbreitung}.
 
 
 
+\subsection{Bindungsstärke}\label{sec:bindungsmagie} \ref{tab:magie-verbreitung}
+Mittels dieser Fähigkeit lassen sich Atombindungen stärken oder schwächen, wodurch ein Verhärtungs- oder Erweichungseffekt hervorgerufen wird. Als erweiterte und veränderte Form der \nameref{sec:druckmagie} wird dabei gleichzeitig ein starker negativer (Verhärtung) oder positiver (Erweichung) Druck von außen appliziert, wodurch sich das veränderte Material nicht plötzlich um den gleichen Faktor verkleinert oder vergrößert.
 
-\subsection{Druck}\label{sec:druckmagie}
+\subsubsection{Verbreitung}
+Dies ist vor allem unter Tieren verbreitet und bei den Hominini können nur Sylvan auf diese Art Magie kontrollieren.
+
+\subsubsection{Bedeutung im Spiel}
+Derzeit keine Bedeutung im Spiel. Eventuell durch Tiere oder sollte man die Sylvan tatsächlich treffen können.
+
+\subsubsection{Intuitive Nutzung}
+Intuitiv nutzen Lebewesen dies, um den eigenen Körper zu stärken, wenn es um eingehende Verletzungen geht, zB. beim Kampf oder beim Fallen (Schockabsorption). Einige machen ihren Körper dadurch zeitweise etwas beweglicher, um durch kleinere Spalte hindurch zu passen. Dies ist auch anwendbar auf Oberflächen, die direkt berührt werden. Auf diese Art sorgen zB. die Sylvan dafür, dass sie auch bei etwas dünneren Blättern oder Ästen nicht durch krachen.
+
+\subsubsection{Erlernbare Steigerungen}
+\begin{outline}
+	\1 Zerreißen von Dingen.
+	\1 Extremes Erhärten von Luft, um sie als stabile Wand zu nutzen.
+	\1 Bewusstes Weglassen des Drucks von außen führt zu einer Volumenänderung des betroffenen Bereichs. Dies bedeutet einerseits starkes Anwachsen oder extremes Verkleinern. Das Gewicht ändert sich dabei nicht. Die Weiterleitung von Signalen an Nervenzellen u.ä. ist allerdings auch beeinträchtigt: wenn größer, dann langsamer, wenn kleiner, dann schneller.
+	\1 ...
+\end{outline}
+
+\subsubsection{Meisterliche Beherrschung} 
+\begin{outline}
+	\1 Erschaffen temporärer Löcher im Körper, durch die zB etwas durch kann, bevor dies wieder rückgängig gemacht wird.
+	\1 Anwendung in Alchemie: Stoffe werden dazu gebracht Verbindungen einzugehen, die normalerweise eine zu hohe Energiebarriere haben.
+	\1 ...
+\end{outline}
+Zurück zu Tab. \ref{tab:magie-verbreitung}.
+
+
+
+\subsection{Druck}\label{sec:druckmagie} \ref{tab:magie-verbreitung}
 Diese Eigenschaft erlaubt die Kontrolle über den lokalen Druck und damit verbunden die Entstehung von Wind. Es existiert die präzisere Unterform \nameref{sec:vibrationsmagie}, sowie die weiterentwickelte Form \nameref{sec:haertungsmagie}.
 
 \subsubsection{Verbreitung}
@@ -157,28 +196,29 @@ Die Lebewesen können somit in einer Art Reaktion Gefahren, die zu nah an sie he
 Bei den Menschen findet sich eine zusätzliche Verwendung meist nur darin, lustige Effekte mit den Haaren hervor zu rufen.
 
 \subsubsection{Erlernbare Steigerungen}
-\begin{itemize}
-	\item Es sind deutlich weitere und höhere Sprünge möglich.
-	\item Das Erzeugen kleiner Windhosen bzw. Staubteufel.
-	\item Es wird Druck auf andere Dinge angewendet, womit sie entweder auseinander gerissen oder zerquetscht werden.
-	\item Gegenstände oder Lebewesen werden kontrolliert an Ort und Stelle gehalten oder durch die Gegend gedrückt.
-	\item Der eigene Körper kann etwas über den Boden schweben.
-	\item Einkommender Druck kann abgefangen und auf eine größere Fläche verteilt werden: zuerst nur bei größerflächigen Dingen wie Steinen oder Stöcke. Später auch gegen Waffen, die genau so was ausnutzen: Klingenwaffen. Dadurch wird weniger Schaden genommen.
-	\item ...
-\end{itemize}
+\begin{outline}
+	\1 Es sind deutlich weitere und höhere Sprünge möglich.
+	\1 Das Erzeugen kleiner Windhosen bzw. Staubteufel.
+	\1 Es wird Druck auf andere Dinge angewendet, womit sie entweder auseinander gerissen oder zerquetscht werden.
+	\1 Gegenstände oder Lebewesen werden kontrolliert an Ort und Stelle gehalten oder durch die Gegend gedrückt.
+	\1 Der eigene Körper kann etwas über den Boden schweben.
+	\1 Einkommender Druck kann abgefangen und auf eine größere Fläche verteilt werden: zuerst nur bei größerflächigen Dingen wie Steinen oder Stöcke. Später auch gegen Waffen, die genau so was ausnutzen: Klingenwaffen. Dadurch wird weniger Schaden genommen.
+	\1 ...
+\end{outline}
 
 \subsubsection{Meisterliche Beherrschung} 
-\begin{itemize}
-	\item Den Druck im Kopf erhöhen, bis er platzt.
-	\item Den Blutdruck plötzlich extrem absenken, so dass der Gegenüber bewusstlos zusammenbricht. 
-	\item Den Druck in der Umgebung so stark beeinflussen, dass sich dadurch das Wetter ändern kann. Damit lassen sich zB. Regenwolken lenken. 
-	\item Eine Art Fliegen, aber mehr im Sinne eines erweiterten Schwebens.
-	\item ...
-\end{itemize}
+\begin{outline}
+	\1 Den Druck im Kopf erhöhen, bis er platzt.
+	\1 Den Blutdruck plötzlich extrem absenken, so dass der Gegenüber bewusstlos zusammenbricht. 
+	\1 Den Druck in der Umgebung so stark beeinflussen, dass sich dadurch das Wetter ändern kann. Damit lassen sich zB. Regenwolken lenken. 
+	\1 Eine Art Fliegen, aber mehr im Sinne eines erweiterten Schwebens.
+	\1 ...
+\end{outline}
+Zurück zu Tab. \ref{tab:magie-verbreitung}.
 
 
 
-\subsection{Elektrizität und Magnetismus}\label{sec:elektromagie}
+\subsection{Gleichstrom}\label{sec:gleichstrommagie} \ref{tab:magie-verbreitung} %todo Aufteilung auf Gleich und Wechselstrom
 Mit dieser Eigenschaft lassen sich elektrische Ströme und Ladungen beeinflussen. Ebenso kann dies für Elektromagnetismus genutzt werden.
 
 \subsubsection{Verbreitung}
@@ -191,24 +231,76 @@ Die \npref{sec:mc_diplomatin} hat diese Eigenschaft von Beginn an.
 Die meisten Lebewesen nutzen Schockstöße zur Abwehr von Räubern und Fraßfeinden. Werden sie von Blitzen getroffen, so sterben sie nicht, sondern dienen als eine Art Ableiter. 
 
 \subsubsection{Erlernbare Steigerungen}
-\begin{itemize}
-	\item Metallische (magnetische) Gegenstände von entsprechender Größe sind frei bewegbar.
-	\item Metalle werden (ent-)magnetisiert.
-	\item Das Erzeugen von elektrischer Energie, die an die Umwelt abgegeben werden kann.
-	\item ...
-\end{itemize}
+\begin{outline}
+	\1 Metallische (magnetische) Gegenstände von entsprechender Größe sind frei bewegbar.
+	\1 Metalle werden (ent-)magnetisiert.
+	\1 Das Erzeugen von elektrischer Energie, die an die Umwelt abgegeben werden kann.
+	\1 ...
+\end{outline}
 
 \subsubsection{Meisterliche Beherrschung} 
-\begin{itemize}
-	\item Die Signale von Nervenzellen werden an ihnen selbst mittels Elektrizität weitergeleitet. Dieser Fluss lässt sich stören, womit zum Beispiel eine Reaktion des Gegenübers verhindert wird. Das ist allerdings recht unpräzise, da die Funktionsweise des Körpers noch nicht so weit bekannt ist. Durch das spüren der Ströme allerdings konnten einige Erkenntnisse gewonnen werden. So lässt sich zB sämtlicher elektrischer Fluss in einzelne Gliedmaßen ausschalten, wodurch diese nicht mehr bewegt werden können.
-	\item Ebenso kann man damit das Gehirn von jemanden lahm legen und ihn damit effektiv töten.
-	\item Das Herz wird von einem Nervenknoten, dem Sinus, kontrolliert. Bei Herzstillstand kann man es wieder zum schlagen bringen, indem man diesem Knoten einen elektrischen Impuls gibt, damit das Herz wieder zu arbeiten beginnt (siehe auch Defibrillator).
-	\item ...
-\end{itemize}
+\begin{outline}
+	\1 Die Signale von Nervenzellen werden an ihnen selbst mittels Elektrizität weitergeleitet. Dieser Fluss lässt sich stören, womit zum Beispiel eine Reaktion des Gegenübers verhindert wird. Das ist allerdings recht unpräzise, da die Funktionsweise des Körpers noch nicht so weit bekannt ist. Durch das spüren der Ströme allerdings konnten einige Erkenntnisse gewonnen werden. So lässt sich zB sämtlicher elektrischer Fluss in einzelne Gliedmaßen ausschalten, wodurch diese nicht mehr bewegt werden können.
+	\1 Ebenso kann man damit das Gehirn von jemanden lahm legen und ihn damit effektiv töten.
+	\1 Das Herz wird von einem Nervenknoten, dem Sinus, kontrolliert. Bei Herzstillstand kann man es wieder zum schlagen bringen, indem man diesem Knoten einen elektrischen Impuls gibt, damit das Herz wieder zu arbeiten beginnt (siehe auch Defibrillator).
+	\1 ...
+\end{outline}
+Zurück zu Tab. \ref{tab:magie-verbreitung}.
 
 
 
-\subsection{Strahlung}\label{sec:strahlungsmagie}
+\subsection{Gravitation}\label{sec:gravitationsmagie} Tab. \ref{tab:magie-verbreitung} %todo
+...
+
+\subsubsection{Verbreitung}
+...\\
+Keine Verbreitung unter den Hominini.
+
+\subsubsection{Bedeutung im Spiel}
+Derzeit keine Bedeutung im Spiel.
+
+\subsubsection{Intuitive Nutzung}
+...
+
+\subsubsection{Erlernbare Steigerungen}
+\begin{outline}
+	\1 ...
+\end{outline}
+
+\subsubsection{Meisterliche Beherrschung} 
+\begin{outline}
+	\1 ...
+\end{outline}
+Zurück zu Tab. \ref{tab:magie-verbreitung}.
+
+
+
+\subsection{Hydrodynamik}\label{sec:hydrodynamikmagie} Tab. \ref{tab:magie-verbreitung} %todo
+...
+
+\subsubsection{Verbreitung}
+...\\
+
+\subsubsection{Bedeutung im Spiel}
+...
+
+\subsubsection{Intuitive Nutzung}
+...
+
+\subsubsection{Erlernbare Steigerungen}
+\begin{outline}
+	\1 ...
+\end{outline}
+
+\subsubsection{Meisterliche Beherrschung} 
+\begin{outline}
+	\1 ...
+\end{outline}
+Zurück zu Tab. \ref{tab:magie-verbreitung}.
+
+
+
+\subsection{Infrarot}\label{sec:infrarotmagie} \ref{tab:magie-verbreitung} %todo
 Diese Eigenschaft ermöglicht die Kontrolle von Strahlung: Aussenden und Absorbieren. Das umfasst alle Strahlungsfrequenzen von  über ... bis hin zu y.
 ermöglicht das Aussenden und Absorbieren von hochenergetischer Strahlung: energiereicher als Licht aka UV, alpha-, beta-, gamma-Strahlung. Aufteilung in verschiedene Bereiche, wie schon Licht abgetrennt ist? 
 
@@ -223,19 +315,22 @@ Derzeit keine Bedeutung im Spiel.
 Lebewesen mit nackter Oberfläche bekommen keinen Sonnenbrand.
 
 \subsubsection{Erlernbare Steigerungen}
-\begin{itemize}
-	\item Das Aussenden entsprechender Strahlung führt zu gehäuften Mutationen, was zu Tumoren führen kann.
-	\item Erweitertes Sehen mittels UV-Strahlung?
-	\item ...
-\end{itemize}
+\begin{outline}
+	\1 Das Aussenden entsprechender Strahlung führt zu gehäuften Mutationen, was zu Tumoren führen kann.
+	\1 Erweitertes Sehen mittels UV-Strahlung?
+	\1 ...
+\end{outline}
 
 \subsubsection{Meisterliche Beherrschung} 
-\begin{itemize}
-	\item Das Hervorrufen der Strahlungskrankheit.
-	\item ...
-\end{itemize}
+\begin{outline}
+	\1 Das Hervorrufen der Strahlungskrankheit.
+	\1 ...
+\end{outline}
+Zurück zu Tab. \ref{tab:magie-verbreitung}.
 
-\subsection{Licht und Dunkelheit} \label{sec:lichtmagie}
+
+
+\subsection{Licht und Dunkelheit} \label{sec:lichtmagie} \ref{tab:magie-verbreitung}
 Diese Eigenschaft ermöglicht die Kontrolle von Licht bzw. dessen Abwesenheit.
 
 \subsubsection{Verbreitung}
@@ -266,10 +361,41 @@ Menschen nutzen dies insbesonders um sich selbst attraktiver zu machen.
 	\item Die Kontrolle über die An- oder Abwesenheit von Licht in einem gewissen Bereich.
 	\item ...
 \end{itemize}
+Zurück zu Tab. \ref{tab:magie-verbreitung}.
 
 
 
-\subsection{Proliferation}\label{sec:proliferationsmagie}
+\subsection{Mikrowellen}\label{sec:mikrowellenmagie} \ref{tab:magie-verbreitung} %todo
+Diese Eigenschaft ermöglicht die Kontrolle von Strahlung: Aussenden und Absorbieren. Das umfasst alle Strahlungsfrequenzen von  über ... bis hin zu y.
+ermöglicht das Aussenden und Absorbieren von hochenergetischer Strahlung: energiereicher als Licht aka UV, alpha-, beta-, gamma-Strahlung. Aufteilung in verschiedene Bereiche, wie schon Licht abgetrennt ist? 
+
+\subsubsection{Verbreitung}
+...\\
+Keine Verbreitung unter den Menschen.
+
+\subsubsection{Bedeutung im Spiel}
+Derzeit keine Bedeutung im Spiel.
+
+\subsubsection{Intuitive Nutzung}
+Lebewesen mit nackter Oberfläche bekommen keinen Sonnenbrand.
+
+\subsubsection{Erlernbare Steigerungen}
+\begin{outline}
+	\1 Das Aussenden entsprechender Strahlung führt zu gehäuften Mutationen, was zu Tumoren führen kann.
+	\1 Erweitertes Sehen mittels UV-Strahlung?
+	\1 ...
+\end{outline}
+
+\subsubsection{Meisterliche Beherrschung} 
+\begin{outline}
+	\1 Das Hervorrufen der Strahlungskrankheit.
+	\1 ...
+\end{outline}
+Zurück zu Tab. \ref{tab:magie-verbreitung}.
+
+
+
+\subsection{Proliferation}\label{sec:proliferationsmagie} \ref{tab:magie-verbreitung} %todo Überarbeitung
 Diese Eigenschaft ist eher chemischer Natur und erlaubt die Beeinflussung der Reaktionsgeschwindigkeit.
 
 \subsubsection{Verbreitung}
@@ -296,35 +422,117 @@ Nur extrem wenige Menschen haben lange genug gelebt, um diese Stufe zu erreichen
 	\item Das Verlangsamen der eigenen Alterung durch das Umkehren der obigen Prozesse. Das kehrt auch die anderen Folgen um. Es heißt, es liegt ein solcher Magier irgendwo in einer Art Winterschlaf und er wird aufwachen, wenn die Welt ihn wieder benötigt (Ref: König Barbarossa? Ggf. unter Märchen und Quests ausfeilen). %todo
 	\item ...
 \end{itemize}
+Zurück zu Tab. \ref{tab:magie-verbreitung}.
 
 
 
-\subsection{reine Energie}\label{sec:energiemagie}
-...
+\subsection{Quantenmechanik}\label{sec:quantenmechanikmagie} \ref{tab:magie-verbreitung} %todo
 
 \subsubsection{Verbreitung}
 ...\\
-Keine Verbreitung unter den Hominini.
+Keine Verbreitung unter den Menschen.
 
 \subsubsection{Bedeutung im Spiel}
 Derzeit keine Bedeutung im Spiel.
 
 \subsubsection{Intuitive Nutzung}
-...
 
 \subsubsection{Erlernbare Steigerungen}
-\begin{itemize}
-	\item ...
-\end{itemize}
+\begin{outline}
+	\1 ...
+\end{outline}
 
 \subsubsection{Meisterliche Beherrschung} 
-\begin{itemize}
-	\item ...
-\end{itemize}
+\begin{outline}
+	\1 ...
+\end{outline}
+Zurück zu Tab. \ref{tab:magie-verbreitung}.
 
 
 
-\subsection{Temperatur}\label{sec:temperaturmagie}
+\subsection{Röntgen}\label{sec:roentgenmagie} \ref{tab:magie-verbreitung} %todo
+Diese Eigenschaft ermöglicht die Kontrolle von Strahlung: Aussenden und Absorbieren. Das umfasst alle Strahlungsfrequenzen von  über ... bis hin zu y.
+ermöglicht das Aussenden und Absorbieren von hochenergetischer Strahlung: energiereicher als Licht aka UV, alpha-, beta-, gamma-Strahlung. Aufteilung in verschiedene Bereiche, wie schon Licht abgetrennt ist? 
+
+\subsubsection{Verbreitung}
+...\\
+Keine Verbreitung unter den Menschen.
+
+\subsubsection{Bedeutung im Spiel}
+Derzeit keine Bedeutung im Spiel.
+
+\subsubsection{Intuitive Nutzung}
+Lebewesen mit nackter Oberfläche bekommen keinen Sonnenbrand.
+
+\subsubsection{Erlernbare Steigerungen}
+\begin{outline}
+	\1 Das Aussenden entsprechender Strahlung führt zu gehäuften Mutationen, was zu Tumoren führen kann.
+	\1 Erweitertes Sehen mittels UV-Strahlung?
+	\1 ...
+\end{outline}
+
+\subsubsection{Meisterliche Beherrschung} 
+\begin{outline}
+	\1 Das Hervorrufen der Strahlungskrankheit.
+	\1 ...
+\end{outline}
+Zurück zu Tab. \ref{tab:magie-verbreitung}.
+
+
+
+\subsection{Rundfunk}\label{sec:rundfunkmagie} \ref{tab:magie-verbreitung} %todo
+Diese Eigenschaft ermöglicht die Kontrolle von Strahlung: Aussenden und Absorbieren. Das umfasst alle Strahlungsfrequenzen von  über ... bis hin zu y.
+ermöglicht das Aussenden und Absorbieren von hochenergetischer Strahlung: energiereicher als Licht aka UV, alpha-, beta-, gamma-Strahlung. Aufteilung in verschiedene Bereiche, wie schon Licht abgetrennt ist? 
+
+\subsubsection{Verbreitung}
+...\\
+Keine Verbreitung unter den Menschen.
+
+\subsubsection{Bedeutung im Spiel}
+Derzeit keine Bedeutung im Spiel.
+
+\subsubsection{Intuitive Nutzung}
+Lebewesen mit nackter Oberfläche bekommen keinen Sonnenbrand.
+
+\subsubsection{Erlernbare Steigerungen}
+\begin{outline}
+	\1 Das Aussenden entsprechender Strahlung führt zu gehäuften Mutationen, was zu Tumoren führen kann.
+	\1 Erweitertes Sehen mittels UV-Strahlung?
+	\1 ...
+\end{outline}
+
+\subsubsection{Meisterliche Beherrschung} 
+\begin{outline}
+	\1 Das Hervorrufen der Strahlungskrankheit.
+	\1 ...
+\end{outline}
+Zurück zu Tab. \ref{tab:magie-verbreitung}.
+
+
+
+\subsection{Schub}\label{sec:schubmagie} \ref{tab:magie-verbreitung} %todo
+
+\subsubsection{Verbreitung}
+...\\
+
+\subsubsection{Bedeutung im Spiel}
+
+\subsubsection{Intuitive Nutzung}
+
+\subsubsection{Erlernbare Steigerungen}
+\begin{outline}
+	\1 ...
+\end{outline}
+
+\subsubsection{Meisterliche Beherrschung} 
+\begin{outline}
+	\1 ...
+\end{outline}
+Zurück zu Tab. \ref{tab:magie-verbreitung}.
+
+
+
+\subsection{Temperatur}\label{sec:temperaturmagie} \ref{tab:magie-verbreitung}
 Diese Eigenschaft erlaubt die Kontrolle über die thermische Energie der Umgebung, sowohl das Erhitzen als auch das Abkühlen.
 
 \subsubsection{Verbreitung}
@@ -361,39 +569,71 @@ Nun Beispiele für das Abkühlen:
 	\item Körperteile des Gegners können erfroren werden.
 	\item ...
 \end{itemize}
+Zurück zu Tab. \ref{tab:magie-verbreitung}.
 
 
 
-\subsection{Verhärtung}\label{sec:haertungsmagie}
-Mittels dieser Fähigkeit lassen sich Atombindungen stärken oder schwächen, wodurch ein Verhärtungs- oder Erweichungseffekt hervorgerufen wird. Als Unterform der \nameref{sec:druckmagie} wird dabei gleichzeitig ein starker negativer (Verhärtung) oder positiver (Erweichung) Druck von außen appliziert, wodurch sich das veränderte Material nicht plötzlich um den gleichen Faktor verkleinert oder vergrößert.
+\subsection{Terahertz}\label{sec:terahertzmagie} \ref{tab:magie-verbreitung} %todo
+Diese Eigenschaft ermöglicht die Kontrolle von Strahlung: Aussenden und Absorbieren. Das umfasst alle Strahlungsfrequenzen von  über ... bis hin zu y.
+ermöglicht das Aussenden und Absorbieren von hochenergetischer Strahlung: energiereicher als Licht aka UV, alpha-, beta-, gamma-Strahlung. Aufteilung in verschiedene Bereiche, wie schon Licht abgetrennt ist? 
 
 \subsubsection{Verbreitung}
-Dies ist vor allem unter Tieren verbreitet und bei den Hominini können nur Sylvan auf diese Art Magie kontrollieren.
+...\\
+Keine Verbreitung unter den Menschen.
 
 \subsubsection{Bedeutung im Spiel}
-Derzeit keine Bedeutung im Spiel. Eventuell durch Tiere oder sollte man die Sylvan tatsächlich treffen können.
+Derzeit keine Bedeutung im Spiel.
 
 \subsubsection{Intuitive Nutzung}
-Intuitiv nutzen Lebewesen dies, um den eigenen Körper zu stärken, wenn es um eingehende Verletzungen geht, zB. beim Kampf oder beim Fallen (Schockabsorption). Einige machen ihren Körper dadurch zeitweise etwas beweglicher, um durch kleinere Spalte hindurch zu passen. Dies ist auch anwendbar auf Oberflächen, die direkt berührt werden. Auf diese Art sorgen zB. die Sylvan dafür, dass sie auch bei etwas dünneren Blättern oder Ästen nicht durch krachen.
+Lebewesen mit nackter Oberfläche bekommen keinen Sonnenbrand.
 
 \subsubsection{Erlernbare Steigerungen}
-\begin{itemize}
-	\item Zerreißen von Dingen.
-	\item Extremes Erhärten von Luft, um sie als stabile Wand zu nutzen.
-	\item Bewusstes Weglassen des Drucks von außen führt zu einer Volumenänderung des betroffenen Bereichs. Dies bedeutet einerseits starkes Anwachsen oder extremes Verkleinern. Das Gewicht ändert sich dabei nicht. Die Weiterleitung von Signalen an Nervenzellen u.ä. ist allerdings auch beeinträchtigt: wenn größer, dann langsamer, wenn kleiner, dann schneller.
-	\item ...
-\end{itemize}
+\begin{outline}
+	\1 Das Aussenden entsprechender Strahlung führt zu gehäuften Mutationen, was zu Tumoren führen kann.
+	\1 Erweitertes Sehen mittels UV-Strahlung?
+	\1 ...
+\end{outline}
 
 \subsubsection{Meisterliche Beherrschung} 
-\begin{itemize}
-	\item Erschaffen temporärer Löcher im Körper, durch die zB etwas durch kann, bevor dies wieder rückgängig gemacht wird.
-	\item Anwendung in Alchemie: Stoffe werden dazu gebracht Verbindungen einzugehen, die normalerweise eine zu hohe Energiebarriere haben.
-	\item ...
-\end{itemize}
+\begin{outline}
+	\1 Das Hervorrufen der Strahlungskrankheit.
+	\1 ...
+\end{outline}
+Zurück zu Tab. \ref{tab:magie-verbreitung}.
 
 
 
-\subsection{Vibration bzw. Schall}\label{sec:vibrationsmagie}
+\subsection{UV}\label{sec:uvmagie} \ref{tab:magie-verbreitung} %todo
+Diese Eigenschaft ermöglicht die Kontrolle von Strahlung: Aussenden und Absorbieren. Das umfasst alle Strahlungsfrequenzen von  über ... bis hin zu y.
+ermöglicht das Aussenden und Absorbieren von hochenergetischer Strahlung: energiereicher als Licht aka UV, alpha-, beta-, gamma-Strahlung. Aufteilung in verschiedene Bereiche, wie schon Licht abgetrennt ist? 
+
+\subsubsection{Verbreitung}
+...\\
+Keine Verbreitung unter den Menschen.
+
+\subsubsection{Bedeutung im Spiel}
+Derzeit keine Bedeutung im Spiel.
+
+\subsubsection{Intuitive Nutzung}
+Lebewesen mit nackter Oberfläche bekommen keinen Sonnenbrand.
+
+\subsubsection{Erlernbare Steigerungen}
+\begin{outline}
+	\1 Das Aussenden entsprechender Strahlung führt zu gehäuften Mutationen, was zu Tumoren führen kann.
+	\1 Erweitertes Sehen mittels UV-Strahlung?
+	\1 ...
+\end{outline}
+
+\subsubsection{Meisterliche Beherrschung} 
+\begin{outline}
+	\1 Das Hervorrufen der Strahlungskrankheit.
+	\1 ...
+\end{outline}
+Zurück zu Tab. \ref{tab:magie-verbreitung}.
+
+
+
+\subsection{Vibration bzw. Schall}\label{sec:vibrationsmagie} \ref{tab:magie-verbreitung}
 Diese Fähigkeit ist eine Weiterentwicklung der \nameref{sec:druckmagie} im Sinne einer präziseren Manipulation.\\
 Der Körper ist dazu in der Lage, verschieden-frequentige Vibrationen zu erzeugen. Häufig ging daher auch eine Evolution von feineren Sinnesorganen zur Rezeption dieser damit einher.
 
@@ -425,7 +665,38 @@ Hominine nutzen das zur Kommunikation oder Orientierung in der Dunkelheit.
 	\item Knochen des Gegenübers zum Zerbröseln bringen.
 	\item ...
 \end{itemize}
+Zurück zu Tab. \ref{tab:magie-verbreitung}.
 
+
+
+\subsection{Wechselstrom}\label{sec:wechselstrommagie} \ref{tab:magie-verbreitung} %todo Aufteilung auf Gleich und Wechselstrom
+Mit dieser Eigenschaft lassen sich elektrische Ströme und Ladungen beeinflussen. Ebenso kann dies für Elektromagnetismus genutzt werden.
+
+\subsubsection{Verbreitung}
+Dies ist weit unter Tieren und insbesondere Pflanzen verbreitet. Doch auch die Hominini besitzen diese Fähigkeit, allerdings ist ihnen Elektrizität oder im weiteren Sinne noch kein Begriff, weshalb das Ausbauen und Ausnutzen dieser Kontrolle recht schlecht ist.
+
+\subsubsection{Bedeutung im Spiel}
+Die \npref{sec:mc_diplomatin} hat diese Eigenschaft von Beginn an. 
+
+\subsubsection{Intuitive Nutzung}
+Die meisten Lebewesen nutzen Schockstöße zur Abwehr von Räubern und Fraßfeinden. Werden sie von Blitzen getroffen, so sterben sie nicht, sondern dienen als eine Art Ableiter. 
+
+\subsubsection{Erlernbare Steigerungen}
+\begin{itemize}
+	\item Metallische (magnetische) Gegenstände von entsprechender Größe sind frei bewegbar.
+	\item Metalle werden (ent-)magnetisiert.
+	\item Das Erzeugen von elektrischer Energie, die an die Umwelt abgegeben werden kann.
+	\item ...
+\end{itemize}
+
+\subsubsection{Meisterliche Beherrschung} 
+\begin{itemize}
+	\item Die Signale von Nervenzellen werden an ihnen selbst mittels Elektrizität weitergeleitet. Dieser Fluss lässt sich stören, womit zum Beispiel eine Reaktion des Gegenübers verhindert wird. Das ist allerdings recht unpräzise, da die Funktionsweise des Körpers noch nicht so weit bekannt ist. Durch das spüren der Ströme allerdings konnten einige Erkenntnisse gewonnen werden. So lässt sich zB sämtlicher elektrischer Fluss in einzelne Gliedmaßen ausschalten, wodurch diese nicht mehr bewegt werden können.
+	\item Ebenso kann man damit das Gehirn von jemanden lahm legen und ihn damit effektiv töten.
+	\item Das Herz wird von einem Nervenknoten, dem Sinus, kontrolliert. Bei Herzstillstand kann man es wieder zum schlagen bringen, indem man diesem Knoten einen elektrischen Impuls gibt, damit das Herz wieder zu arbeiten beginnt (siehe auch Defibrillator).
+	\item ...
+\end{itemize}
+Zurück zu Tab. \ref{tab:magie-verbreitung}.
 
 
 
