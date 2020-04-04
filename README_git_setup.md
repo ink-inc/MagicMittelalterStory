@@ -22,7 +22,8 @@ Das hat mehrere Gründe: Zum einen arbeiten wir alle auf die gleiche Art und Wei
 
 2. Wähle im Reiter "GitHub.com" unser Projekt (Repository) aus der Liste: "ink-inc/MagicMittelalterStory" und lege ggf. einen anderen Ordnerpfad fest. Hier wird das ganze Projekt gespeichert. Klicke nun auf "Clone".
 
--> habt ihr versehentlich auf das Falsche geklickt, könnt ihr es entfernen, indem ihr nun oben links auf "Current Repository" und dann mit Rechtsklick -> "Remove..." auf das Falsche klickt. Nun unbedingt auch den Haken in "Also move this repository to Trash" setzen.
+-> habt ihr versehentlich auf das Falsche geklickt, könnt ihr es entfernen, indem ihr nun oben links auf "Current Repository" und dann mit Rechtsklick -> "Remove..." auf das Falsche klickt. 
+Nun unbedingt auch den Haken in "Also move this repository to Trash" setzen.
 
 -> die Dokumente zum Projekt findet ihr nun im entsprechenden Verzeichnis, wo ihr diese bearbeiten könnt. ABER davor weiterlesen und unbedingt das Beispiel ausführen!
 
@@ -49,14 +50,18 @@ Schwarzer Button 2: Current Branch
 Der Haken ist bei dem Branch, in dem ihr euch gerade befindet und arbeitet. Achtung: bevor ihr den Branch wechselt, solltet ihr keine der Dateien mehr offen haben!
 Das System funktioniert nun folgendermaßen: je nachdem, welcher Branch hier ausgewählt wurde, ändern sich auch die Dateien im Ordner.
 Es gibt einen versteckten Ordner ".git", in dem all das Nötige dazu gespeichert wird. Hier darfst du NICHTS VERÄNDERN, sonst funktioniert bei dir nichts mehr, wie es soll. 
-Die weitere versteckte Datei ".gitignore" sorgt übrigens dafür, dass bestimmte Dateien und Ordner nicht abgeglichen werden. Damit werden nur die wichtigen Dateien übertragen und alles, was durch Latex oder durch euer Betriebssystem an z.B. temporären Dateien entsteht bleibt bei euch und stört nicht die anderen. Am Besten: unverändert lassen!
+Die weitere versteckte Datei ".gitignore" sorgt übrigens dafür, dass bestimmte Dateien und Ordner nicht abgeglichen werden. 
+Damit werden nur die wichtigen Dateien übertragen und alles, was durch Latex oder durch euer Betriebssystem an z.B. temporären Dateien entsteht bleibt bei euch und stört nicht die anderen. 
+Am Besten: unverändert lassen!
 
 Schwarzer Button 3: Fetch origin
 -> dieser Button ist für verschiedenes da. 
 1. Fetchen: Ihr könnt euch damit die aktuelle online Version eures Branches (falls ihr auf mehreren Rechnern arbeitet oder zu zweit in einem Branch) und/oder des Masters (allgemein relevant) holen. 
 2. Pushen: Sobald ihr commits links unten gemacht habt, könnt ihr über diesen Button auch eure bisherigen Commits zum online Server pushen.
 
-Bitte guckt euch ansonsten aufmerksam um. Die meisten Möglichkeiten findet man einfach über die Befehlszeile (File, Edit, View...) oder ergeben sich während der Bearbeitung. Ansonsten scheut euch nicht davor, zu fragen.
+Bitte guckt euch ansonsten aufmerksam um. 
+Die meisten Möglichkeiten findet man einfach über die Befehlszeile (File, Edit, View...) oder ergeben sich während der Bearbeitung. 
+Ansonsten scheut euch nicht davor, zu fragen.
 
 
 ## Beispiel
@@ -110,7 +115,10 @@ Aber wenn du ihn einmal gelöscht hast, dann musst du ihn entweder von online ne
 Super, du hast jetzt erfolgreich deinen Namen hinzugefügt!
 
 
-Während deiner Arbeit am Projekt solltest du am Besten jedes Mal, wenn du aufhörst, deine Commits pushen. Damit ist ab dann jeder, der mit dir zusammen im gleichen Branch arbeitet auf dem aktuellen Stand. Beziehungsweise solltest du unerwartet länger ausfallen als gedacht, hast du zumindest alles was du getan hast online gestellt und jemand anderes kann daran anknüpfen. Bevor du nicht gepusht hast, ist es nicht online!
+Während deiner Arbeit am Projekt solltest du am Besten jedes Mal, wenn du aufhörst, deine Commits pushen. 
+Damit ist ab dann jeder, der mit dir zusammen im gleichen Branch arbeitet auf dem aktuellen Stand. 
+Beziehungsweise solltest du unerwartet länger ausfallen als gedacht, hast du zumindest alles was du getan hast online gestellt und jemand anderes kann daran anknüpfen. 
+Bevor du nicht gepusht hast, ist es nicht online!
 
 
 ## Falscher Branch!?!?!
