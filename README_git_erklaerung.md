@@ -133,6 +133,16 @@ Wenn man mit der Arbeit fertig ist, für die man den Branch geöffnet hat, dann
 6. Pull Request stellen
 7. Discord: lore-todo: Link posten und das Lore Team zum angucken auffordern
 
--> sind bereits Anmerkungen von anderen gewünscht, so kann man auch eine Pull Request erstellen, wenn man diese Stufe erreicht hat. 
-Einfach vor den Namen ein "WIP" für Work in Progress einfügen und andere auffordern, sich das anzusehen.
+
+## Work in Progress
+Sind bereits Anmerkungen von anderen gewünscht, so kann man auch eine Pull Request erstellen, wenn man noch nicht fertig ist. 
+Weißt du nämlich direkt zur Erstellung der Request, dass du noch nicht mit dem Branch fertig bist, kannst du die Anfrage beim grünen Button "Create Pull Request" über den grünen Pfeil als "Draft Pull Request" erstellen.
+Bis du den Branch nicht als bereit markierst, kann ihn keiner (versehentlich) mergen, auch wenn schon zwei Leute ihr Approve gegeben haben.
+
+Weiterhin ist es gut, zu Verdeutlichung vor den Namen ein "WIP" für Work in Progress einzufügen.
+Dann kannst du auch schon andere auffordern, sich die ersten Punkte deiner Arbit anzusehen und ggf. zu korrigieren oder diskutieren.
 Alles, was man in seinem Branch dann weiter bearbeitet, committet und pushed wird automatisch mit hinzugefügt und eure Pull Request aktualisiert sich!
+Wenn du später soweit bist, kannst du das WIP aus dem Namen streichen und bestätigen, dass du bereit bist.
+
+Leider kann man noch nicht rückwirkend aus einer normalen Request eine Draft Request machen. 
+Daher bleibt da nur die Abänderung im Namen.
