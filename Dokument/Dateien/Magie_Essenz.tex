@@ -83,39 +83,40 @@ Sie können die natürliche Resistenz des Körpers (siehe oben) umgehen.
 
 \paragraph{Magie-Arten}
 Die Informationen über die Verbreitung der Magiearten unter den Lebewesen und ihrer Bekanntheit in \nameref{sec:land} finden sich einerseits bei jeder Art und andererseits in Tab. \ref{tab:magie-verbreitung} zur Übersicht.
+Für eine genaue Auflistung der Magiearten in \nameref{sec:land} siehe Tab. \ref{tab:landmagie}.
 
 Die Anordnung der Magiearten ist alphabetisch, um einen schnellen Zugriff zu ermöglichen.
 
 \begin{table}[htb]
 	\centering
-	\caption{\textbf{Verbreitung der Magiearten unter den Lebewesen allgemein und unter den Menschenarten.}}
+	\caption{\textbf{Verbreitung der Magiearten unter den Lebewesen allgemein und unter den Menschenarten auf dem Kontinent.}}
 	\label{tab:magie-verbreitung}
 	\begin{threeparttable}[\linewidth]
-		\begin{tabularx}{\textwidth}{l|ccc}
+		\begin{tabular}{l|ccc}
 			\toprule
 			\textbf{Art} & \textbf{Eukaryoten} & \textbf{Hominini} & \textbf{Mensch} \\
 		    \midrule
 			\nameref{magie:absorption}  & - & - & (x)  \\
 			\nameref{magie:bindung} & X & \nameref{rasse:sylvan} & -  \\
 			(statischer) \nameref{magie:druck} & X & X & X  \\
-			\nameref{magie:gleichstrom}  & X & X & X  \\
+			\nameref{magie:gleichstrom}  & X & X & \nameref{sec:mc-diplomatin}  \\
 			\nameref{magie:gravitation} & - & - & - \\ \midrule[0.1px]
-			\nameref{magie:hydrodynamik} X & X & X &\\
-			\nameref{magie:infrarot} & X & & \\
-			\nameref{magie:licht}  & X & X & X  \\
-			\nameref{magie:mikrowelle} & X & &\\
+			\nameref{magie:hydrodynamik} & X & X &\\
+			\nameref{magie:infrarot} & X & X & X \\
+			\nameref{magie:licht}  & X & X & \nameref{sec:mc-spionin}  \\
+			\nameref{magie:mikrowelle} & X & X & X \\
 			\nameref{magie:proliferation} & X & X & X \\ \midrule[0.1px]
 			\nameref{magie:quantenmechanik} & X & ? & - \\
 			\nameref{magie:roentgen} & X & - & - \\
 			\nameref{magie:rundfunk} & X & - & - \\
-			\nameref{magie:schub} & X & X & \\
-			\nameref{magie:temperatur} & X & X & X  \\ \midrule[0.1px]
-			\nameref{magie:terahertz} & X & & \\
-			\nameref{magie:uv} & X & \nameref{rasse:ferus} & ggf. \\
+			\nameref{magie:schub} & X & X & \nameref{sec:mc-diplomatin} \\
+			\nameref{magie:temperatur} & X & X & \nameref{sec:mc-soldat} \\ \midrule[0.1px]
+			\nameref{magie:terahertz} & X & X & X \\
+			\nameref{magie:uv} & X & \nameref{rasse:ferus} & - \\
 			\nameref{magie:vibration} & X & \nameref{rasse:zwerg}, \nameref{rasse:unda} & -  \\
 			\nameref{magie:wechselstrom} & X & X & X \\
 			\bottomrule
-		\end{tabularx}
+		\end{tabular}
 	\end{threeparttable}
 \end{table}
 
@@ -197,29 +198,37 @@ Zurück zu Tab. \ref{tab:magie-verbreitung}.
 
 \subsection{Druck}\label{magie:druck}
 Diese Eigenschaft erlaubt die Kontrolle über den lokalen, statischen Druck. 
-Es existiert die präzisere Unterform \nameref{magie:vibration}, sowie die Neuentwicklung der Magie der \nameref{magie:bindung}.
+Im Sinne der aufzubringenden Energie ist Druck daher auf Gase, Flüssigkeiten und weiche Feststoffe bzw. welche, die sich wie Flüssigkeiten verhalten (Sand, Erde, ...), begrenzt.
+
+Es existiert die präzisere Unterform \nameref{magie:vibration}, sowie als Neuentwicklung die Magie der \nameref{magie:bindung}.
+
+\paragraph{Unterscheidung zum Schub}
+Es gibt mehrere Punkte, in denen sich Druck grundlegend von Schub unterscheidet.
+So wird Druck zur Bewegung von außen auf einen Körper gewirkt, während Schub an einem Punkt im Körper ansetzt und sich der Rest des Körpers durch die stoffliche Beschaffenheit mitbewegt.
+Der Druck von außen beeinflusst aber auch alle anderen Objekte in der Umgebung, da er nicht nur in eine Richtung wirkt.
+Dabei kann er unbeabsichtigt auch zerstörerisch auf gewählte Strukturen wirken, denn um die nötige Energie aufzubringen, muss der Druck in der Regel recht schnell gewirkt werden.
+
+Im Gegenzug lassen sich mit Druck Dinge an einem Punkt halten oder zerquetschen, was mit Schub nicht so gut möglich ist.
 
 \subsubsection{Verbreitung}
 Ähnlich wie bei der thermischen Energie ist diese Form recht weit verbreitet. 
 Die homininen Arten beherrschen diese Kontrolle. 
 
-In unserem Land ist die Magieform allerdings nicht ganz so häufig wie die der Temperatur anzutreffen. 
-Sie ist dennoch den meisten Menschen bekannt.
+In \nameref{sec:land} ist die Magieform allerdings nicht ganz so häufig andere anzutreffen. 
 
 \subsubsection{Bedeutung im Spiel}
-Die \npref{sec:mc-diplomatin} hat diese Eigenschaft ab ihrem Schlüsselmoment. %todo
+Bisher ist keine besondere Bedeutung vorgesehen.
 
 \subsubsection{Intuitive Nutzung}
-Einige Lebewesen können somit in einer Art Reaktion Gefahren, die zu nah an sie herankommen, von sich wegschubsen, ohne sie zu berühren, oder sich selbst aus einem gefährlichen Bereich heraus drängen. 
+Einige Lebewesen können somit in einer Art Reaktion Gefahren, die zu nah an sie herankommen, von sich wegschubsen bzw. sich selbst wegdrücken, ohne etwas zu berühren. 
 Andere nutzen dies, um das Kauen harter Pflanzen und Früchte zu unterstützen und somit zusätzliche Nahrungsquellen zu erschließen.
 Manche Vogel- und Fischarten können durch eine feinere Perzeption von Druck am Körper nun Druckgradienten besser erkennen und nutzen.
 
 \subsubsection{Erlernbare Steigerungen}
 \begin{outline}
-	\1 Es sind deutlich weitere und höhere Sprünge möglich.
 	\1 Es wird Druck auf andere Dinge angewendet, womit sie entweder auseinander gerissen oder zerquetscht werden.
-	\1 Gegenstände oder Lebewesen werden kontrolliert an Ort und Stelle gehalten oder durch die Gegend gedrückt.
-	\1 Der eigene Körper kann etwas über den Boden schweben.
+	\1 Gegenstände oder Lebewesen werden kontrolliert an Ort und Stelle gehalten.
+	\1 Gegenstände oder Lebewesen werden durch die Gegend gedrückt.
 	\1 Einkommender Druck kann abgefangen und auf eine größere Fläche verteilt werden: zuerst nur bei größerflächigen Dingen wie Steinen oder Stöcke. 
 	Später auch gegen Waffen, die genau so was ausnutzen: Klingenwaffen. 
 	Dadurch wird weniger Schaden genommen.
@@ -231,8 +240,8 @@ Manche Vogel- und Fischarten können durch eine feinere Perzeption von Druck am 
 \begin{outline}
 	\1 Den Druck im Kopf erhöhen bis er platzt.
 	\1 Den Blutdruck plötzlich extrem absenken, so dass das Gegenüber bewusstlos zusammenbricht. 
-	\1 Den Druck in der Umgebung so stark beeinflussen, dass sich dadurch das Wetter ändern kann. Damit lassen sich zB. Regenwolken lenken. 
-	\1 Eine Art Fliegen, aber mehr im Sinne eines erweiterten Schwebens.
+	\1 Den Druck in der Umgebung so stark beeinflussen, dass sich dadurch das Wetter ändern kann. 
+	Damit lassen sich zB. Regenwolken lenken.
 	\1 ...
 \end{outline}
 Zurück zu Tab. \ref{tab:magie-verbreitung}.
@@ -257,7 +266,6 @@ Die \npref{sec:mc-diplomatin} erhält den Zugriff auf diese Fähigkeit nach ihre
 Da die Weiterleitung von elektrischen Impulsen an Nerven dem Prinzip des Gleichstroms folgt, ist dies bei den Besitzern beschleunigt.
 Daraus folgt eine etwas schnellere körperliche Reaktion auf Situationen.
 Zudem schweben die anwendenden Lebewesen durch einen Blitzeinschlag nicht in Lebensgefahr.  
-
 
 \subsubsection{Erlernbare Steigerungen}
 Die Hominini kennen Strom hauptsächlich von Blitzen und versuchen deshalb, sie nachzuahmen. 
@@ -329,9 +337,10 @@ Die Kontrolle über Hydrodynamik entsteht aus einem Mix der Fähigkeiten von \na
 
 \subsubsection{Verbreitung}
 An sich ist dies eine durchaus verbreitete Magieart unter den Lebewesen.
+In \nameref{sec:land} ist es eine eher seltenere Art, die sich nur bei Zusammentreffen eines Allels von Druck und eines von Temperatur ergibt.
 
 \subsubsection{Bedeutung im Spiel}
-Dies ist eine Fähigkeit, die normal unter der Bevölkerung verbreitet ist.
+Bisher ist keine besondere Bedeutung vorgesehen.
 
 \subsubsection{Intuitive Nutzung}
 Lebewesen können damit direkt um sich herum Wind erzeugen oder diesen negieren und sind daher von stürmischen Auswirkungen meist weniger betroffen.
@@ -366,7 +375,6 @@ Dies ist bereits in Tieren natürlich entstanden, doch einige nutzen für den gl
 
 \subsubsection{Verbreitung}
 Nur Tiere haben diese Fähigkeit entwickelt, auch ein paar Menschenstämme in extremen Temperaturgebieten.
-% Menschen sind auch Tiere. Pflanzen, Pilze und Mikroorganismen sind damit aber ausgeschlossen.
 
 \subsubsection{Bedeutung im Spiel}
 Derzeit keine Bedeutung im Spiel geplant außer über Tiere.
@@ -374,12 +382,14 @@ Derzeit keine Bedeutung im Spiel geplant außer über Tiere.
 \subsubsection{Intuitive Nutzung}
 Tiere auf der Jagd, der Lauer oder beim Wachdienst nutzen eine regelmäßige Überprüfung der Umgebung mittels Infrarotstrahlung, um die wärmeren Körper ihrer Ziele zu sehen.
 
+Menschen können Wärmesignaturen als eine Art sechsten Sinn fühlen: das kann beispielsweise bei der Verfolgung von Spuren nützlich sein.
 
 \subsubsection{Erlernbare Steigerungen}
 \begin{outline}
 	\1 In besonders kalten Gegenden hat es zu einem gegenseitigen Wettrennen zwischen Jäger und Beute geführt, bei der der Jäger die Beute mittels dieser Sicht aufspüren will, während diese damit die Abgabe ihrer Körperwärme überdeckt.
 	\1 Das Erzeugen von "`falschen"' Wärmebildern, indem an anderen Orten Infrarotstrahlung erzeugt wird.
 	So kann \zB ein Jäger auf die falsche Fährte geführt werden.
+	\1 Mittels Erzeugen der Strahlung lässt sich die Temperatur ein wenig heben - allerdings nicht annähernd wie bei anderen Temperatur beeinflussenden Fähigkeiten .
 	\1 ...
 \end{outline}
 
@@ -391,13 +401,13 @@ Zurück zu Tab. \ref{tab:magie-verbreitung}.
 
 
 
-\subsection{Licht und Dunkelheit} \label{magie:licht}
+\subsection{Licht} \label{magie:licht}
 Diese Eigenschaft ermöglicht die Kontrolle von Licht bzw. dessen Abwesenheit.
 Mit "`Licht"' ist hier als die für Menschen sichtbare elektromagnetische Strahlung gemeint.
 
 \subsubsection{Verbreitung}
 Eine recht weit verbreitete Kontrollfähigkeit unter diversen Lebewesen. 
-Bei den Hominini ist sie nicht so stark verbreitet wie andere.
+Unter den Menschen in \nameref{sec:land} ist es eine recht weit verbreitete Magieart.
 
 \subsubsection{Bedeutung im Spiel}
 Die \npref{sec:mc-spionin} beherrscht diese Eigenschaft. 
@@ -437,15 +447,19 @@ Das gilt demnach für alles, was Wassermoleküle enthält.
 Weiterhin ermöglichen Mikrowellen ein Radarsystem.
 
 \subsubsection{Verbreitung}
-Vor allem Tiere.
+Vor allem bei Tieren, aber auch den Menschen in \nameref{sec:land} tritt dies auf.
+Bei ihnen beherrschen Leute, in denen sich die Gene für Licht und Wechselstrom mischen, die Kontrolle über Mikrowellen.
+Durch ein Crossing-Over-Event entstand auch ein eigenes Allel.
 
 \subsubsection{Bedeutung im Spiel}
-...
+Bisher keine besondere Bedeutung im Spiel geplant.
 
 \subsubsection{Intuitive Nutzung}
 Viele Tiere mit dieser Eigenschaft haben parallel ein Radarsystem entwickelt.
 Die Sensoren befinden sich mit bei den Ohren.
 Das erlaubt Herdentieren oder Rudeln, sich auch über weitere Strecken hinweg zu lokalisieren, wiederzufinden oder in Bezug auf Beute zu wissen, in welche Richtung ihr noch niemand auflauert.
+
+Ansonsten halten sich Lebewesen damit warm oder kühl, je nachdem wie die Umstände es erfordern (siehe auch \nameref{magie:temperatur} dazu).
 
 \subsubsection{Erlernbare Steigerungen}
 \begin{outline}
@@ -470,12 +484,10 @@ Folgen von beschleunigten Reaktionen finden sich dann auch bei den Zellen wieder
 
 \subsubsection{Verbreitung}
 Wenige Pflanzen- und Tierarten sind dieser Fähigkeit mächtig. 
-Unter den Hominini haben nur die Menschen dies entwickelt und auch bei ihnen ist es eine seltene Gabe. 
-Denn diese Fähigkeit leitet sich zwar von den recht häufig verbreiteten Arten Temperatur und Gleichstrom ab, doch nicht immer, wenn im Nachfahren diese Kombination vorliegt, beherrscht dieser die Proliferation.
-Daher ist sie so selten und hoch geschätzt.
-
-Diese Menschen leben länger als ihre Verwandten, abhängig von der Intensität ihrer Begabung sogar bis zu \SI{200}{\percent} der durchschnittlichen Lebensdauer.
-Allerdings kommt mit dieser Fähigkeit ein ungünstiger Nachteil: sie sind fast unfähig, sich mit ihren Artangehörigen zu vermehren, da ihre Keimzellen "`nicht auf gleicher Geschwindigkeit laufen"'.
+Unter den Hominini haben nur die Menschen dies entwickelt und auch bei ihnen ist es eine seltenere Gabe. 
+Denn diese Fähigkeit leitet sich zwar von den recht häufig verbreiteten Arten Temperatur und Gleichstrom ab, doch die Fortpflanzung dieser Menschen ist eingeschränkt.
+Zwar leben diese Menschen länger als ihre Verwandten, abhängig von der Intensität ihrer Begabung sogar bis zu \SI{200}{\percent} der durchschnittlichen Lebensdauer, allerdings kommt mit dieser Fähigkeit ein ungünstiger Nachteil:
+sie sind fast unfähig, sich mit ihren Artangehörigen zu vermehren, da ihre Keimzellen "`nicht auf gleicher Geschwindigkeit laufen"'.
 Das führt dazu, dass sich die Wahrscheinlichkeit für ein Kind drastisch verringert je nachdem wie begabt der Anwender und wie ausgebaut seine Fähigkeiten sind.
 
 \subsubsection{Bedeutung im Spiel}
@@ -571,6 +583,9 @@ Keine Verbreitung unter den Lebewesen.
 
 \subsubsection{Bedeutung im Spiel}
 Derzeit keine Bedeutung im Spiel.
+
+\subsubsection{Intuitive Nutzung}
+Manche Insekten haben darüber eine besondere Art von Schwarmintelligenz aufgebaut.
 \\ \\
 Zurück zu Tab. \ref{tab:magie-verbreitung}.
 
@@ -578,31 +593,43 @@ Zurück zu Tab. \ref{tab:magie-verbreitung}.
 
 \subsection{Schub}\label{magie:schub}
 Schub steht für die mechanische Energie, die auf etwas appliziert werden kann.
-Diese Magieart entspricht damit dem Bild einer erweiterten Hand, die diese Kraft ausübt.
-\\ \\
-Zur Unterscheidung von \nameref{magie:druck} kann man sich hier vor Augen halten, dass der Druck auf alles an der entsprechenden Stelle gilt, da er außerhalb angesetzt wird (das kann auch Auswirkungen auf das Objekt selbst haben!). 
-Die mechanische Kraft wirkt jedoch nur auf ein bestimmtes Objekt.
-Damit sind bei ähnlichen Anwendungen präzisere Ausführungen möglich.
-Zudem kann je nach Umstand der Druck an seine Grenzen kommen, wo die mechanische Kraft noch keine Grenzen hat.
+Es geht also um Bewegung bzw. das Aufwenden der Energie, die für die jeweilige Bewegung nötig wäre.
+Dabei wird jedoch immer ein Punkt verschoben, mit dem sich alles Verbundene mitbewegt.
+In seiner Bewegung kann der gesamte Körper natürlich Anderes anstoßen oder beeinflussen.
+Das führt dazu, dass das Bewegen von Gasen, Flüssigkeiten und Feststoffen, die sich wie letztere verhalten (Sand, Erde, ...), nicht wirklich möglich ist.
 
-Weiterhin unterscheidet sie sich vom Druck darin, dass es immer um eine Bewegung geht.
-Kann mittels Druck etwas zerquetscht werden, so ist dies mit Schub nicht möglich: dazu müsste man andere Dinge nehmen, die den Schub in Richtung des zu Zerquetschenden aufrecht erhalten.
+\paragraph{Unterscheidung zu \nameref{magie:druck}} 
+Es gibt mehrere Punkte, in denen sich Schub von Druck abgrenzt. 
+So wird Druck nicht im zu bewegenden Körper, sondern von außen drauf gewirkt.
+Dabei ist der Druck von außen nicht in eine Richtung konzentriert sondern wirkt von seinem Punkt aus in alle Richtungen -- also auch auf weitere Objekte, die nichts mit dem Zielobjekt zu tun haben müssen.
+In der Bewegung von Objekten ist also Schub die zuverlässige präzise Variante.
+
+Beim Thema Anheben hat Druck den Nachteil, dass er physikalisch bereits an Grenzen stoßen oder zerstörerisch auf die gewählte Struktur wirken kann, während Schub nichts dergleichen hervorruft.
+Das kommt daher, dass sich Luft unter dem Objekt befinden muss, die ausreichend ausgedehnt wird, damit dadurch das Objekt angehoben wird.
+Ist es zu schwer, so kann es sein, dass der Druck in der Luft nicht so weit erhöht werden kann.
+Da der erzeugte Druck recht schnell (um nicht zu sagen explosiv) die gewünschte Stärke erreichen muss, damit er sich nicht in die Umgebung verteilt, kann es sein, dass er eher den Gegenstand beschädigt, anstatt ihn zu bewegen.
+
+Anders herum hat der Schub das Nachsehen, wenn es um Zerquetschen oder Ähnliches geht: dazu müssen hier zusätzliche Objekte auf das Ziel geschoben werden.
+Mit Druck sind keine weiteren Dinge nötig.
 
 \subsubsection{Verbreitung}
-Eine normale, weit verbreitete Fähigkeit.
+Ähnlich wie die Temperatur eine alte und weit verbreitete Fähigkeit unter den Lebewesen.
+In \nameref{sec:land} ist es eine der wenn nicht sogar die häufigste Magiearten.
 
 \subsubsection{Bedeutung im Spiel}
-Eine normale Fähigkeit unter der Bevölkerung.
+Die \nameref{sec:mc-diplomatin} beherrscht dies als ihre primäre Fähigkeit.
 
 \subsubsection{Intuitive Nutzung}
 Diese Anwender können den Schub auf ihre eigenen Körper wirken.
-Dadurch sind kontrollierte weitere Sprünge möglich.
+Dadurch sind etwas weitere Sprünge möglich.
 Zudem können sie vor dem Auftreffen einen gegensätzlichen Schub auf sich wirken, wodurch ihre Einschlagkraft am Zielort reduziert ist.
-Das führt dazu, dass sie \zB aus größeren Höhen fallen können, bevor sie körperliche Schäden erhalten.
+Das führt dazu, dass sie \zB aus leicht größeren Höhen fallen können, bevor sie körperliche Schäden erhalten.
 Die Puffermenge ist natürlich weiterhin abhängig von dem verfügbaren Manapool.
 
 \subsubsection{Erlernbare Steigerungen}
 \begin{outline}
+	\1 Der intuitive Nutzen in gesteigerter aktiver Form.
+	\1 Eine leichte Steigerungsform, die daher auch unter der Bevölkerung oft gesehen wird, ist das kleine Schieben von Last auf die Art, dass das Anheben leichter gelingt.
 	\1 Levitation
 	\1 Telekinese
 	\1 Anstoßen von \zB (Geröll-)Lawinen.
@@ -613,6 +640,7 @@ Die Puffermenge ist natürlich weiterhin abhängig von dem verfügbaren Manapool
 \subsubsection{Meisterliche Beherrschung} 
 \begin{outline}
 	\1 Herumschieben von anderen Personen.
+	\1 Auseinanderreißen von anderen Personen, indem in den Gliedmaßen gegensätzliche Schübe appliziert werden.
 	\1 ...
 \end{outline}
 Zurück zu Tab. \ref{tab:magie-verbreitung}.
@@ -623,11 +651,12 @@ Zurück zu Tab. \ref{tab:magie-verbreitung}.
 Diese Eigenschaft erlaubt die Kontrolle über die thermische Energie der Umgebung, sowohl das Erhitzen als auch das Abkühlen.
 
 \subsubsection{Verbreitung}
-Diese Manipulation der thermischen Energie ist uralt und daher weit verbreitet unter allen Arten von Lebewesen; Somit auch unter den homininen Arten. 
-Sie ist gut bekannt.
+Diese Manipulation der thermischen Energie ist uralt und daher weit verbreitet unter allen Arten von Lebewesen; 
+Somit auch unter den homininen Arten. 
+In \nameref{sec:land} ist es eine der am weitesten verbreiteten Arten unter der Bevölkerung, wobei allerdings die Magie der Mikrowellen und Infrarot-Strahlung auf intuitivem Level häufig damit verwechselt werden.
 
 \subsubsection{Bedeutung im Spiel}
-Diese Magiekontrolle beherrscht der \npref{sec:mc-soldat}. Es ist ansonsten eine der am weitesten verbreiteten Arten unter der Bevölkerung.
+Diese Magiekontrolle beherrscht der \npref{sec:mc-soldat}.
 
 \subsubsection{Intuitive Nutzung}
 Diese Lebewesen haben weniger Temperaturprobleme, da sie den Temperaturaustausch mit der Umgebung reduzieren können.
@@ -667,14 +696,17 @@ Zurück zu Tab. \ref{tab:magie-verbreitung}.
 
 \subsection{Terahertz}\label{magie:terahertz}
 Mittels Terahertz-Strahlung lässt sich wenige Zentimeter in weiches bzw. organisches Gewebe blicken, ohne Strahlungsschäden zu riskieren.
-Diese Wellenlänge wird allerdings schon von Wasser absorbiert.
+Diese Wellenlänge wird allerdings schon von Wasser absorbiert (und damit auch von allem, was eine höhere Dichte hat).
 Das erklärt die geringe Reichweite und Unschädlichkeit.
 
 \subsubsection{Verbreitung}
-Gerade unter den intelligenteren Tieren verbreitet, aufgrund des guten intuitiven Nutzens.
+Diese Art ist gerade unter den intelligenteren Tieren verbreitet, aufgrund ihres guten intuitiven Nutzens.
+
+Die Menschen in \nameref{sec:land} kennen diese Art bisher nicht, da sie sich erst vor zwei bis drei Generationen bei einer mittelständigen Familie entwickelt hat.
+Sie ist daher Objekt der Forschung.
 
 \subsubsection{Bedeutung im Spiel}
-Je nachdem inwiefern es den Menschen in Mantodea zur Verfügung steht. %todo
+Es wird eine Questreihe zur Entdeckung und Erforschung dieser neuen Magieart geben.
 
 \subsubsection{Intuitive Nutzung}
 Diese Fähigkeit ermöglicht es, sehr schnell Parasiten zu finden oder sich der genaueren Natur einer Verletzung gewahr zu werden.
@@ -682,6 +714,7 @@ Diese Fähigkeit ermöglicht es, sehr schnell Parasiten zu finden oder sich der 
 \subsubsection{Erlernbare Steigerungen}
 \begin{outline}
 	\1 Material-/Probenanalyse zum einen in Handwerksberufen und zum anderen in der Alchemie und Medizin (\zB Salben, Kräuter, Gifte, etc.).
+	\1 Aktives Einsetzen der Sicht, \zB zur Diagnose oder zum Erkennen, ob jemand Waffen unter seinen textilen Klamotten trägt.
 	\1 ...
 \end{outline}
 
@@ -769,6 +802,7 @@ Zurück zu Tab. \ref{tab:magie-verbreitung}.
 Beim Wechselstrom wird die Polung in regelmäßiger Wiederholung umgekehrt, wodurch der Strom im \textit{zeitlichen} Mittel null ist - faktisch durchlaufen aber die abwechselnden Wellen das Objekt.
 Das kann zur Erhitzung führen - oder ein metallisches Objekt magnetisieren.
 
+\paragraph{Unterschied zum Gleichstrom}
 Der Wechselstrom ist im Vergleich zum \nameref{magie:gleichstrom} eine Form von Strahlung und für Lebewesen gefährlicher:
 die Gefahr besteht nämlich zu einem wichtigen Teil in dem Stören der Erregungsleitung am Herzen.
 In einer ganz bestimmten Phase dieser Leitung am Herzen ist der Rhythmus angreifbar und bei zusätzlicher Erregung von außen kann es zur ungeordneten Erregung, dem sogenannten Kammerflimmern, kommen $\rightarrow$ es kann kein Blut mehr gepumpt werden.
@@ -834,78 +868,343 @@ Zurück zu Tab. \ref{tab:magie-verbreitung}.
 \section{Die Genetik der Magie}
 Wie zuvor angesprochen ist das Nutzen der Magie evolutionär entstanden und dementsprechend vererbbar.
 Der Einfachheit halber wird mit der mendelschen Vererbung über Allele gearbeitet.
-D.h. in jedem Wesen gibt es \textbf{zwei Allele}: je ein Allel von der Mutter und eines vom Vater.
-Diese nennt man den \textbf{Genotypen}: er stellt dar, was an genetischem Material vorhanden ist.
-Abhängig von der "`Durchsetzungskraft"' der beiden Allele kommt es nun zu einer bestimmten \textbf{Ausprägung} der elterlichen Gaben beim Nachkommen - also auf welche Art er Magie nutzen kann.
-Dies nennt man den \textbf{Phänotypen}: er zeigt auf, was am Ende ausgebildet wird.
+D.h. in jedem Hominini gibt es \textbf{zwei Allele}: je ein Allel von der Mutter und eines vom Vater.
+Diese zwei nennt man den \textbf{Genotypen}: er stellt dar, was an genetischem Material vorhanden ist.
+Abhängig von der "`Durchsetzungskraft"' der beiden Allele kommt es nun zu einer bestimmten \textbf{Ausprägung} der elterlichen Fähigkeiten beim Nachkommen - also auf welche Art er Magie nutzen kann.
+Dies nennt man den \textbf{Phänotypen}: er zeigt auf, was am Ende ausgebildet wurde.
 
-Bei Bakterien ist das alles komplett anders, aber hier nicht von Belang.
-
-
-\subsection{Allele der Menschen unseres Landes} %todo hübsche Tabelle + Beschriftung!
-Die X %todo
-unter den Menschen in \nameref{sec:land} verbreiteten Arten der Kontrolle über Magie finden sich in Tab. \ref{tab:landmagie}.
-Von den dargestellten Magiearten nutzt der Soldat Temperatur, %todo
-die Spionin Licht %todo
-und die Diplomatin zuerst Druck und später auch Elektrizität. %todo
-
-\begin{table}[hbtp]
-	\centering
-	\caption[Verbreitete Magiearten in \nameref{sec:land}]%
-	{\textbf{Die Arten der Magiekontrolle, die unter den Menschen aus \nameref{sec:land} verbreitet sind. } \\
-		Die Tabelle liest sich zeilenweise wie folgt: gibt es ein eigenes Allel für die Magieart, so findet sich ein Eintrag in "`reinerbig"'.
-		Wird die Art auch alleinig ausgeprägt, wenn ihr Allel mit einem anderen kombiniert vorliegt, so ist diese Kombination unter "`dominant-rezessiv"' zu finden.
-		Sollte es passieren, dass die Kombination zweier Allele zu einem Mix beim Phänotypen sorgt und somit eine neue Art entsteht, so ist dies bei dieser neuen Art unter "`intermediär"' aufgeführt.
-		Es kann auch den äußert selten auftretenden Fall der "`Kodominanz"' geben.
-		Dann ist in dieser Spalte die Kombination mit der anderen Magieart aufgeführt, mit welcher dies passieren kann.
-		Die "`Häufigkeit"' gibt einen Hinweis auf die Verbreitung in der Bevölkerung.
-		} 
-	\label{tab:landmagie}
-	\begin{threeparttable}
-		\begin{tabularx}{\textwidth}{l|cccc|c}
-			\toprule
-			              & reinerbig & dominant-rezessiv & intermediär & kodominant & Häufigkeit  \\ \midrule
-			 Temperatur   &     -      &         -         &     DL      &      -      & sehr häufig \\
-			    Druck     & DD        &        Dp         &      -      &     DE      &   häufig    \\
-			    Licht     & LL        &        Lp         &      -      &     LE      &   häufig    \\
-			Elektrizität  & EE        &        Ep         &      -      &   LE, DE    & mittel \\
-			Proliferation & pp        &         -          &      -      &      -      &   selten    \\ \bottomrule
-		\end{tabularx}
-	\end{threeparttable} 
-\end{table}
-
+Bei anderen Wesen kann das anders sein (bei Bakterien definitiv), aber das ist hier nicht von Belang.
 
 
 \subsection{Grundlagen der Vererbung}
 Die oben genannte Durchsetzungskraft bezieht sich auf die Dominanz eines Allels im Angesicht eines anderen. 
-Besitzt der Nachkomme zwei identische Allele, so gibt es keine Dominanz und er ist reinerbig aka homozygot (homo = gleich; zygot = Keimzelle aus Verschmelzung von Spermium und Eizelle $\rightarrow$ gleicherbig).
-Hat er jedoch zwei unterschiedliche Allele und ist damit heterozygot (hetero = verschieden $\rightarrow$ verschiedenerbig), so gibt es drei Möglichkeiten, was passieren kann:
+Besitzt der Nachkomme zwei identische Allele, so gibt es keine Wahl und er kann nur eine Sache ausprägen: 
+er ist \textbf{reinerbig} aka homozygot (homo = gleich; zygot = Keimzelle aus Verschmelzung von Spermium und Eizelle $\rightarrow$ gleicherbig).
+Bekommt man \zB je von Vater und von Mutter das Allel für Blutgruppe A, dann hat man AA (Genotyp) und kann damit nur Blutgruppe A ausbilden (Phönotyp). \\
+Hat der Nachkomme jedoch zwei unterschiedliche Allele und ist damit heterozygot (hetero = verschieden $\rightarrow$ verschiedenerbig), so gibt es drei Möglichkeiten, die passieren können:
 
 \begin{enumerate}
 	\item \textbf{Dominant-Rezessiv} bedeutet, dass ein Allel das andere dominiert und als einziges umgesetzt wird. 
-	Der Phänotyp, also das Endprodukt zeigt einen Nachkommen mit nur den Eigenschaften des dominanten Partners.
-	Das sieht man bei der Blutgruppe A oder B.
-	In beiden Fällen hat der Nachkomme Blutgruppe A, sowohl wenn er von beiden Eltern das A-Allel bekommen hat, als auch wenn er es nur von einem Elternteil erhielt und vom anderen ein 0-Allel.
-	Ein zweites Beispiel ist die Farbe von Erbsen: vermehrt man eine gelbe mit einer grünen Erbse, so dominiert das Gelb und es kommen nur gelbe Erbsen heraus.
+	Der Phänotyp, also das Endprodukt, zeigt einen Nachkommen mit nur den Eigenschaften des dominanten Partners.
+	Das sieht man bei der Blutgruppe A in Kombination mit dem Allel der Blutgruppe 0.
+	Der Nachkomme hat immer Blutgruppe A, auch wenn er von einem Elternteil ein 0-Allel bekommt und somit im Genotyp A0 vorliegt.
+	Gleiches gilt übrigens auch bei Blutgruppe B für B0.
+	Ein zweites Beispiel ist die Farbe von Erbsen: vermehrt man eine reinerbig gelbe mit einer reinerbig grünen Erbse, so dominiert das Gelb und es kommen nur gelbe Erbsen heraus.
 	
 	Das "`schwächere"' Allel, welches sich dominieren lässt und daher als rezessiv bezeichnet wird, kann nur in dem Fall ausgebildet werden, dass es reinerbig vorliegt: es also von beiden Eltern kommt.
-	So verhält es sich auch mit der Blutgruppe 0.
+	So verhält es sich demnach auch mit der Blutgruppe 0.
 	Diese kann sich nicht gegen A oder B durchsetzen und wird nur ausgebildet, wenn von beiden Eltern ein 0-Allel kommt.
 	Deshalb ist die Wahrscheinlichkeit im Vergleich zu A oder B kleiner, diese Blutgruppe bei der Vererbung zu bekommen.
-	\item \textbf{Kodominant} heißt, dass beide Allele dominierend sind: keines will nachgeben, weshalb beim Nachkommen \textit{beide}  Merkmale ausgeprägt sind.
+	
+	Bei unserer Magie liegt dieser Fall ab und an mal vor, denn es gibt nur bei der Kategorie Strahlung ein paar später entstandene Arten.
+	Diese verhalten sich rezessiv gegenüber allen anderen und werden daher nur ausgeprägt, wenn sie reinerbig vorliegen. 
+	
+	\item \textbf{Kodominant} heißt, dass beide Allele dominierend sind: keines gibt nach, weshalb beim Nachkommen \textit{beide}  Merkmale ausgeprägt sind.
 	Dies kann man bei der Blutgruppe AB beobachten: es wird einfach alles von den Eltern ausgeprägt.
+	
+	In unserem Fall haben wir dies abgewandelt: eins von beiden Allelen prägt sich primär aus und liegt im Vergleich zu einem reinerbigen Magieanwender bei \SI{90}{\percent}.
+	Es ist also auch die einzige Art, die im intuitiven Level erlebbar ist.
+	Denn die andere wird nur zu \SI{10}{\percent} ausgeprägt und ist nur für Magie-Begabte erlebbar.
+	
 	\item \textbf{Intermediär} wiederum ist eine Mischform, bei der je Teile der elterlichen Merkmale ausgeprägt werden. 
-	Dafür gibt es kein Beispiel bei unseren Blutgruppen, allerdings werden aus den roten und weißen Bluten der elterlichen Wunderblumen beim Nachfahren rosa Blüten.
+	Dafür gibt es zwar kein Beispiel bei unseren Blutgruppen, allerdings werden aus den roten und weißen Blüten der elterlichen Wunderblumen beim Nachfahren rosa Blüten.
+	
+	In unserem Fall heißt es, dass durch die Mischung der elterlichen Magie eine neue Magieart entsteht, die physikalisch auf den beiden vorherigen basiert.
 \end{enumerate}
+Möchte man eine gute Übersicht darüber haben, welche Kinder bei den vorliegenden Eltern herauskommen können, erstellt man am Besten eine Vererbungstabelle. 
+Dabei werden die einzelnen Allele der Eltern einander in Zeilen und Spalten gegenüber gestellt. 
+Ein Beispiel in Bezug auf unsere Blutgruppen findet sich in Tab. \ref{tab:blutgruppen}.
+Sind mehr Informationen zu Vererbungsmustern bei den verschiedenen Möglichkeiten auch über zwei Generationen hinweg gewünscht, seien Artikel zur Mendelschen Vererbung empfohlen.
 
--------------------------------- \\
-Meine Notizen für später: \\ \\
+\begin{table}[htb]
+	\centering
+	\caption[Vererbungstabelle mit Blutgruppen]{\textbf{Vererbungstabelle mit Blutgruppen.} \\
+	In diesen Beispielen von Vererbungstabellen werden die Fortpflanzung von verschiedenen Müttern und Vätern miteinander betrachtet.
+	Dazu werden ihre einzelnen Allele separiert geschrieben und dann in den Zellen neu kombiniert.
+	Das ist am Ende genau das, was bei der Entstehung von Spermien/Eizellen (Trennung) und deren Verschmelzung zur Zygote (Kombination) geschieht.
+	In den einzelnen Zellen steht nun der Genotyp des jeweiligen möglichen Kindes.
+	Aufgrund von Informationen über die Durchsetzungskraft kann man daraus dann den Phänotyp, also die resultierende Blutgruppe bestimmen.
+	Eine solche Tabelle zeigt auch gleichzeitig die prozentuale Verteilung von Ausprägungen bei den Kindern, wenn man ganz viele solcher Elternpaare kombiniert.}
+	\label{tab:blutgruppen}
+		\begin{threeparttable}
+			\begin{tabular}{lcr}
+			\begin{tabular}{cc|cc}
+				                                  &   & \multicolumn{2}{c}{\textbf{Mutter 1}} \\
+				                                  &   & A  &                0                 \\ \midrule
+				\multirow{2}{*}{\textbf{Vater 1}} & A & AA &                A0                \\
+				                                  & 0 & A0 &                00                \\ \bottomrule
+			\end{tabular}
+			&
+			\begin{tabular}{cc|cc}
+				                                  &   & \multicolumn{2}{c}{\textbf{Mutter 1}} \\
+				                                  &   & A  &                0                 \\ \midrule
+				\multirow{2}{*}{\textbf{Vater 2}} & A & AA &                A0                \\
+				                                  & B & BA &                B0                \\ \bottomrule
+			\end{tabular}
+			&
+			\begin{tabular}{cc|cc}
+				&   & \multicolumn{2}{c}{\textbf{Mutter 2}} \\
+				&   & A  &                B                 \\ \midrule
+				\multirow{2}{*}{\textbf{Vater 2}} & A & AA &                AB                \\
+				& B & BA &                BB                \\ \bottomrule
+			\end{tabular}
+			\end{tabular}
+		\end{threeparttable}
+\end{table}
 
-\textbf{Dominant-Rezessiv}: Alle Nachkommen in F1 haben den gleichen Phänotyp eines Elternteils. In F2 dann nur 75 zu 25 \% (zB. rote + weiße -> roten Blüten bei Erbsen). \\
-\textbf{Intermediär}: Alle Nachkommen in F1 haben eine Mischform der Eltern, in F2 dann nur 50 \%. Je 25 \% sind reinerbig (z.B. rote + weiße -> rosa Blüten bei der Wunderblume). \\
-\textbf{Kodominant}: Ähnlich wie intermediär, nur dass die Merkmale der Eltern separat und parallel ausgebildet werden (z.B. Blutgruppe AB).
 
+\subsection{Allele der Menschen unseres Landes}
+Die 11 unter den Menschen in \nameref{sec:land} verbreiteten Arten der Kontrolle über Magie finden sich in Tab. \ref{tab:landmagie}.
+Dort ist dargestellt, bei welchen genetischen Kombinationen welche Magieart ausgeprägt wird.
+Die gleichen Informationen lassen sich auch in Tab. \ref{tab:landmagievererbung} finden; 
+dort allerdings in Form einer großen Vererbungstabelle, bei der man schnell überprüfen kann, was sich aus einer bestimmten Allel-Kombination ergibt.
+Von den dargestellten Magiearten nutzt der Soldat die Temperatur,
+die Spionin das Licht
+und die Diplomatin zuerst Schub und später auch Gleichstrom.
 
+------------------------------------------------------------------ \\
+Interessante Links: \\
 \href{http://www.weltenbau-wissen.de/2015/12/magie-weltenbau-magiesystem-mystik-wissenschaft-teil-1/}{Magie soll Mystik behalten}\\
 \href{http://www.weltenbau-wissen.de/2016/01/6-konsequenzen-magie/}{Konsequenzen von Magie}\\
 \href{https://meisterperson.wordpress.com/2016/05/05/magie-fortschritt/?pk_campaign=pifeed\&pk_kwd=magie-fortschritt}{Magie und Fortschritt}
+
+\begin{table}[hbt]
+	\centering
+	\caption[Magiearten in \nameref{sec:land}]%
+	{\textbf{Magiearten in \nameref{sec:land}}. \\
+		Die Tabelle liest sich spaltenweise wie folgt: gibt es ein eigenes Allel für die Magieart, so findet sich ein Eintrag in "`reinerbig"'.
+		Die Großschreibung gibt darüber Aufschluss, ob die Fähigkeit unabhängig entstand.
+		Wird die Art auch alleinig ausgeprägt, wenn ihr Allel mit einem anderen kombiniert vorliegt, so ist diese Kombination unter "`dominant-rezessiv"' zu finden.
+		Sollte es passieren, dass die Kombination zweier Allele zu einem Mix beim Phänotypen sorgt und somit eine neue Art entsteht, so ist dies bei dieser neuen Art unter "`intermediär"' aufgeführt.
+		Üblicherweise prägen die Nachkommen bei zwei unterschiedlichen dominanten Allelen eines zu \SI{90}{\percent} aus und das andere zu \SI{10}{\percent}, weshalb dies bei den kodominanten Fällen bei der Art aufgeführt ist, die primär vorliegt.} 
+	\label{tab:landmagie}
+	\begin{threeparttable}
+		\begin{tabularx}{0.9\textwidth}{lcXcX}
+			\toprule
+			\textbf{Magieart} & \textbf{reinerbig} & \textbf{dominant-rezessiv} & \textbf{intermediär} & \textbf{kodominant 90:10} \\ \midrule
+			Licht     &    LL     &    Li, Lt, Lm     &      -      &      LG, LD      \\ 
+			Infrarot\tnote{2}    &    ii     &         -         &      -      &        -         \\ 
+			Terahertz\tnote{3}   &    tt     &         -         &      -      &        -         \\ 
+			Mikrowellen\tnote{1}  &    mm     &      mi, mt       &     LW      &        -         \\ 
+			Wechselstrom  &    WW     &    Wm, Wi, Wt     &      -      &      WG, WD      \\ \midrule
+			Gleichstrom  &    GG     &    Gi, Gt, Gm     &      -      &        -         \\ 
+			Schub     &    SS     &    Si, St, Sm     &      -      &  SL, SW, SG, SD  \\ 
+			Druck     &    DD     &    Di, Dt, Dm     &      -      &        DG        \\ 
+			Temperatur   &    TT     &    Ti, Tt, Tm     &      -      &    TL, TW, TS    \\ \midrule
+			Hydrodynamik  &     -     &         -         &     DT      &        -         \\
+			Proliferation &     -     &         -         &     GT      &        - \\ 
+			\bottomrule
+		\end{tabularx}
+		\begin{tablenotes}
+			\item[1] Diese Art entstand wie heute immer noch aus der Überlagerung von Licht und Wechselstrom.
+			Durch ein Crossing-Over entwickelte sie sich auch zu einer eigenständigen Art und kann daher heutzutage auf beiden Wegen erlangt werden.
+			\item[2] Nach dem obigen Ereignis kam es vor ein paar hundert Jahren zwischen Mikrowellen und Licht zu einem ähnlichen Ereignis.
+			\item[3] Terahertz ist wie Infrarot entstanden, allerdings erst vor 2-3 Generationen.
+		\end{tablenotes}
+	\end{threeparttable} 
+\end{table}
+
+\begin{landscape}
+\begin{table}[hbt]
+	\centering
+	\caption[Alle Allel-Kombinationen der Magiearten in \nameref{sec:land}]%
+	{\textbf{Alle Allel-Kombinationen der Magiearten in \nameref{sec:land}.} \\
+	Die Kombination von Infrarot und Terahertz tritt bisher nicht auf, da Terahertz zu neu ist.} 
+	\label{tab:landmagievererbung}
+	\begin{threeparttable}
+		\begin{tabularx}{\linewidth}{c|XXXXXXXXX} \toprule
+			\textbf{} &
+			\textbf{L} &
+			\textbf{i} &
+			\textbf{t} &
+			\textbf{m} &
+			\textbf{W} &
+			\textbf{G} &
+			\textbf{S} &
+			\textbf{D} &
+			\textbf{T} \\ \midrule
+			&
+			\cellcolor[HTML]{32CB00}\textbf{LL} &
+			\cellcolor[HTML]{32CB00}\textbf{Li} &
+			\cellcolor[HTML]{32CB00}\textbf{Lt} &
+			\cellcolor[HTML]{32CB00}\textbf{Lm} &
+			\cellcolor[HTML]{38FFF8}\textbf{LW} &
+			\cellcolor[HTML]{32CB00}\textbf{LG} &
+			\cellcolor[HTML]{F8FF00}\textbf{LS} &
+			\cellcolor[HTML]{32CB00}\textbf{LD} &
+			\cellcolor[HTML]{FB0404}\textbf{LT} \\
+			\multirow{-2}{*}{\textbf{L}} &
+			\cellcolor[HTML]{32CB00}Licht &
+			\cellcolor[HTML]{32CB00}Licht &
+			\cellcolor[HTML]{32CB00}Licht &
+			\cellcolor[HTML]{32CB00}Licht &
+			\cellcolor[HTML]{38FFF8}Mikro-welle &
+			\cellcolor[HTML]{32CB00}Licht &
+			\cellcolor[HTML]{F8FF00}Schub &
+			\cellcolor[HTML]{32CB00}Licht &
+			\cellcolor[HTML]{FB0404}Tempe-ratur \\
+			&
+			\cellcolor[HTML]{32CB00}\textbf{iL} &
+			\cellcolor[HTML]{9AFF99}\textbf{ii} &
+			\textbf{it} &
+			\cellcolor[HTML]{38FFF8}\textbf{im} &
+			\cellcolor[HTML]{54C1F2}\textbf{iW} &
+			\cellcolor[HTML]{4156EE}\textbf{iG} &
+			\cellcolor[HTML]{F8FF00}\textbf{iS} &
+			\cellcolor[HTML]{FFCB2F}\textbf{iD} &
+			\cellcolor[HTML]{FB0404}\textbf{iT} \\
+			\multirow{-2}{*}{\textbf{i}} &
+			\cellcolor[HTML]{32CB00}Licht &
+			\cellcolor[HTML]{9AFF99}Infrarot &
+			? &
+			\cellcolor[HTML]{38FFF8}Mikro-welle &
+			\cellcolor[HTML]{54C1F2}Wechsel-strom &
+			\cellcolor[HTML]{4156EE}Gleich-strom &
+			\cellcolor[HTML]{F8FF00}Schub &
+			\cellcolor[HTML]{FFCB2F}Druck &
+			\cellcolor[HTML]{FB0404}Tempe-ratur \\
+			&
+			\cellcolor[HTML]{32CB00}\textbf{tL} &
+			\textbf{ti} &
+			\cellcolor[HTML]{00D288}\textbf{tt} &
+			\cellcolor[HTML]{38FFF8}\textbf{tm} &
+			\cellcolor[HTML]{54C1F2}\textbf{tW} &
+			\cellcolor[HTML]{4156EE}\textbf{tG} &
+			\cellcolor[HTML]{F8FF00}\textbf{tS} &
+			\cellcolor[HTML]{FFCB2F}\textbf{tD} &
+			\cellcolor[HTML]{FB0404}\textbf{tT} \\
+			\multirow{-2}{*}{\textbf{t}} &
+			\cellcolor[HTML]{32CB00}Licht &
+			? &
+			\cellcolor[HTML]{00D288}Terahertz &
+			\cellcolor[HTML]{38FFF8}Mikro-welle &
+			\cellcolor[HTML]{54C1F2}Wechsel-strom &
+			\cellcolor[HTML]{4156EE}Gleich-strom &
+			\cellcolor[HTML]{F8FF00}Schub &
+			\cellcolor[HTML]{FFCB2F}Druck &
+			\cellcolor[HTML]{FB0404}Tempe-ratur \\
+			&
+			\cellcolor[HTML]{32CB00}\textbf{mL} &
+			\cellcolor[HTML]{38FFF8}\textbf{mi} &
+			\cellcolor[HTML]{38FFF8}\textbf{mt} &
+			\cellcolor[HTML]{38FFF8}\textbf{mm} &
+			\cellcolor[HTML]{54C1F2}\textbf{mW} &
+			\cellcolor[HTML]{4156EE}\textbf{mG} &
+			\cellcolor[HTML]{F8FF00}\textbf{mS} &
+			\cellcolor[HTML]{FFCB2F}\textbf{mD} &
+			\cellcolor[HTML]{FB0404}\textbf{mT} \\
+			\multirow{-2}{*}{\textbf{m}} &
+			\cellcolor[HTML]{32CB00}Licht &
+			\cellcolor[HTML]{38FFF8}Mikro-welle &
+			\cellcolor[HTML]{38FFF8}Mikro-welle &
+			\cellcolor[HTML]{38FFF8}Mikro-welle &
+			\cellcolor[HTML]{54C1F2}Wechsel-strom &
+			\cellcolor[HTML]{4156EE}Gleich-strom &
+			\cellcolor[HTML]{F8FF00}Schub &
+			\cellcolor[HTML]{FFCB2F}Druck &
+			\cellcolor[HTML]{FB0404}Tempe-ratur \\
+			&
+			\cellcolor[HTML]{38FFF8}\textbf{WL} &
+			\cellcolor[HTML]{54C1F2}\textbf{Wi} &
+			\cellcolor[HTML]{54C1F2}\textbf{Wt} &
+			\cellcolor[HTML]{54C1F2}\textbf{Wm} &
+			\cellcolor[HTML]{54C1F2}\textbf{WW} &
+			\cellcolor[HTML]{54C1F2}\textbf{WG} &
+			\cellcolor[HTML]{F8FF00}\textbf{WS} &
+			\cellcolor[HTML]{54C1F2}\textbf{WD} &
+			\cellcolor[HTML]{FB0404}\textbf{WT} \\
+			\multirow{-2}{*}{\textbf{W}} &
+			\cellcolor[HTML]{38FFF8}Mikro-welle &
+			\cellcolor[HTML]{54C1F2}Wechsel-strom &
+			\cellcolor[HTML]{54C1F2}Wechsel-strom &
+			\cellcolor[HTML]{54C1F2}Wechsel-strom &
+			\cellcolor[HTML]{54C1F2}Wechsel-strom &
+			\cellcolor[HTML]{54C1F2}Wechsel-strom &
+			\cellcolor[HTML]{F8FF00}Schub &
+			\cellcolor[HTML]{54C1F2}Wechsel-strom &
+			\cellcolor[HTML]{FB0404}Tempe-ratur \\
+			&
+			\cellcolor[HTML]{32CB00}\textbf{GL} &
+			\cellcolor[HTML]{4156EE}\textbf{Gi} &
+			\cellcolor[HTML]{4156EE}\textbf{Gt} &
+			\cellcolor[HTML]{4156EE}\textbf{Gm} &
+			\cellcolor[HTML]{54C1F2}\textbf{GW} &
+			\cellcolor[HTML]{4156EE}\textbf{GG} &
+			\cellcolor[HTML]{F8FF00}\textbf{GS} &
+			\cellcolor[HTML]{FFCB2F}\textbf{GD} &
+			\cellcolor[HTML]{9B68F2}\textbf{GT} \\
+			\multirow{-2}{*}{\textbf{G}} &
+			\cellcolor[HTML]{32CB00}Licht &
+			\cellcolor[HTML]{4156EE}Gleich-strom &
+			\cellcolor[HTML]{4156EE}Gleich-strom &
+			\cellcolor[HTML]{4156EE}Gleich-strom &
+			\cellcolor[HTML]{54C1F2}Wechsel-strom &
+			\cellcolor[HTML]{4156EE}Gleich-strom &
+			\cellcolor[HTML]{F8FF00}Schub &
+			\cellcolor[HTML]{FFCB2F}Druck &
+			\cellcolor[HTML]{9B68F2}Prolife-ration \\
+			&
+			\cellcolor[HTML]{F8FF00}\textbf{SL} &
+			\cellcolor[HTML]{F8FF00}\textbf{Si} &
+			\cellcolor[HTML]{F8FF00}\textbf{St} &
+			\cellcolor[HTML]{F8FF00}\textbf{Sm} &
+			\cellcolor[HTML]{F8FF00}\textbf{SW} &
+			\cellcolor[HTML]{F8FF00}\textbf{SG} &
+			\cellcolor[HTML]{F8FF00}\textbf{SS} &
+			\cellcolor[HTML]{F8FF00}\textbf{SD} &
+			\cellcolor[HTML]{FB0404}\textbf{ST} \\
+			\multirow{-2}{*}{\textbf{S}} &
+			\cellcolor[HTML]{F8FF00}Schub &
+			\cellcolor[HTML]{F8FF00}Schub &
+			\cellcolor[HTML]{F8FF00}Schub &
+			\cellcolor[HTML]{F8FF00}Schub &
+			\cellcolor[HTML]{F8FF00}Schub &
+			\cellcolor[HTML]{F8FF00}Schub &
+			\cellcolor[HTML]{F8FF00}Schub &
+			\cellcolor[HTML]{F8FF00}Schub &
+			\cellcolor[HTML]{FB0404}Tempe-ratur \\
+			&
+			\cellcolor[HTML]{32CB00}\textbf{DL} &
+			\cellcolor[HTML]{FFCB2F}\textbf{Di} &
+			\cellcolor[HTML]{FFCB2F}\textbf{Dt} &
+			\cellcolor[HTML]{FFCB2F}\textbf{Dm} &
+			\cellcolor[HTML]{54C1F2}\textbf{DW} &
+			\cellcolor[HTML]{FFCB2F}\textbf{DG} &
+			\cellcolor[HTML]{F8FF00}\textbf{DS} &
+			\cellcolor[HTML]{FFCB2F}\textbf{DD} &
+			\cellcolor[HTML]{DF812B}\textbf{DT} \\
+			\multirow{-2}{*}{\textbf{D}} &
+			\cellcolor[HTML]{32CB00}Licht &
+			\cellcolor[HTML]{FFCB2F}Druck &
+			\cellcolor[HTML]{FFCB2F}Druck &
+			\cellcolor[HTML]{FFCB2F}Druck &
+			\cellcolor[HTML]{54C1F2}Wechsel-strom &
+			\cellcolor[HTML]{FFCB2F}Druck &
+			\cellcolor[HTML]{F8FF00}Schub &
+			\cellcolor[HTML]{FFCB2F}Druck &
+			\cellcolor[HTML]{DF812B}Hydro-dynamik \\
+			&
+			\cellcolor[HTML]{FB0404}\textbf{TL} &
+			\cellcolor[HTML]{FB0404}\textbf{Ti} &
+			\cellcolor[HTML]{FB0404}\textbf{Tt} &
+			\cellcolor[HTML]{FB0404}\textbf{Tm} &
+			\cellcolor[HTML]{FB0404}\textbf{TW} &
+			\cellcolor[HTML]{9B68F2}\textbf{TG} &
+			\cellcolor[HTML]{FB0404}\textbf{TS} &
+			\cellcolor[HTML]{DF812B}\textbf{TD} &
+			\cellcolor[HTML]{FB0404}\textbf{TT} \\
+			\multirow{-2}{*}{\textbf{T}} &
+			\cellcolor[HTML]{FB0404}Tempe-ratur &
+			\cellcolor[HTML]{FB0404}Tempe-ratur &
+			\cellcolor[HTML]{FB0404}Tempe-ratur &
+			\cellcolor[HTML]{FB0404}Tempe-ratur &
+			\cellcolor[HTML]{FB0404}Tempe-ratur &
+			\cellcolor[HTML]{9B68F2}Prolife-ration &
+			\cellcolor[HTML]{FB0404}Tempe-ratur &
+			\cellcolor[HTML]{DF812B}Hydro-dynamik &
+			\cellcolor[HTML]{FB0404}Tempe-ratur \\ \bottomrule
+		\end{tabularx}
+	\end{threeparttable} 
+\end{table}
+\end{landscape}
+
