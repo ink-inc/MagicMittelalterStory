@@ -8,20 +8,51 @@ numbers=noenddot,% entfernt die Punkte nach den Gliederungsziffern
 \usepackage[ngerman]{babel}
 \usepackage{setspace} 
 
+%-----------Format-------------
+%\usepackage{titlesec} %Titel Format bearbeiten
+\usepackage{setspace} 
+\setstretch{1,15} % 1,5 Zeilenabstand, [singlespacing] oder [doublespacing] auch möglich
+\usepackage{lscape} % für Querformat
 
 %-----------hübsche Darstellung -------------
-\usepackage{siunitx} % SI-Einheiten werden schick dargestellt
+\usepackage[per=slash,decimalsymbol=comma,loctolang=ngerman]{siunitx} % SI-Einheiten werden schick dargestellt
 \sisetup{locale = DE} % Komma als Trenner bei Dezimalzahl erkannt
+\sisetup{detect-all} %SI-Einheiten in "normaler" Schriftart
 
-%-----------Grafiken-------------
+%-----------weiterer Komfort-------------
+\usepackage{textgreek} %Griechische Buchstaben mit \textalpha etc.
+
+%-----------Grafiken und Tabellen-------------
+\usepackage{float} %float-Objekte mit Großbuchstaben an Stelle behalten
+\usepackage{caption} % Beschriftungen von Bildern & Tabellen bearbeiten
+\captionsetup{format=plain,
+	font=small,
+	labelfont=bf}
+\captionsetup[table]{singlelinecheck=false}
+
 \usepackage{graphicx} % Grafiken einbinden
 
+\usepackage{booktabs} % Tabellen ordentlich, toprule, midrule, cmidrule, bottomrule
+\usepackage{tabularx} % Tabelle eine bestimmte Breite vorgeben, automatischen Zeilenumbruch innerhalb der Spalten
+\usepackage{threeparttable} % Beschriftung von Tabellen auf Tabellenbreite, Fußnoten an Tabellen uvm; muss um die tabular Umgebung herum gesetzt werden
+\usepackage{multirow} % erlaubt es, Zeilen bzw. Spalten miteinander zu verschmelzen
+\usepackage[table,xcdraw]{xcolor} % farbige Zellen
+
+%-----------Listen-------------
+\usepackage{outlines} %Verschachtelte Listen deutlich einfacher
+\usepackage{enumitem} %Anpassbare Enumerates/Itemizes, Listen global konfigurieren
+\setitemize{nosep} %Abstand zwischen Items, verwende auch itemsep=0p
 
 %----------überprüfen------------
 \usepackage{microtype}
 
 %----------zuletzt laden---------
-\usepackage[pagebackref=true]{hyperref} %
+\usepackage[%pdflatex,%
+pagebackref=true,%
+pdfauthor={Ink Inc.},%
+pdftitle={Wissenssammlung},%
+pdfsubject={Handbuch}%
+]{hyperref} %
 
 
 
@@ -36,8 +67,46 @@ numbers=noenddot,% entfernt die Punkte nach den Gliederungsziffern
 \newcommand{\epref}[1]{\ref{#1} (S. \pageref{#1})} 
 % Tabellen und Abbildungen
 % wenn \epref{referenz} aufgerufen wird, wird automatisch eine Sequenz eingefügt: "`Zahl (s. X)"' zB "`3.5 (S. 3)"'
+\newcommand{\zB}{z.~B.} %automatisches Ersetzen von zB
 
+%----------Vorlagen--------
+%Tabelle
+%\begin{table}[htb]
+%	\centering
+%	\caption[Knapper Titel]{Sehr informativer Titel}
+%	\label{tab:key}
+%		\begin{threeparttable}
+%			\begin{tabularx}{\textwidth}{l|ccX} %wenn die Tabelle eh schmaler als die Textbreite ist und eine rein vom Inhalt dynamische Breite gewünscht ist, muss hier und unten das x hinter tabularx sowie die zweite geschweifte Klammer entfernt werden!
+%				\toprule
+%				\textbf{1st Column} & \textbf{2nd Colimn} & \textbf{3rd Colimn} & \textbf{4th Colimn} \\ 
+%				\midrule
+%				QWERTY\tnote{1}   &                     &                     &  \\
+%				ASDFGH   &                     &                     &  \\ 
+%				\bottomrule
+%			\end{tabularx}
+%			\begin{tablenotes}
+%				\item[1] qwerty
+%			\end{tablenotes}
+%		\end{threeparttable}
+%\end{table}
 
+%  Aufzählung (1.,2.,...)
+%\begin{enumerate}
+%	\item 
+%\end{enumerate}
+
+% Liste mit Symbolen
+%\begin{outline}
+%	\1 This is a first item.
+%	\1[!!!] This is a second, with a custom label.
+%		\2 A level-2 item.
+%			\3 A level 3.
+%				\4 Deepest is level 4.\
+%		2 Back to level 2.
+%\0 A normal paragraph in the middle.\
+%	1 A couple more
+%		\2 items.
+%\end{outline}
 
 
 
@@ -55,8 +124,8 @@ numbers=noenddot,% entfernt die Punkte nach den Gliederungsziffern
 	\vfill
 	\large
 	bearbeitet von\\
-	Medsmiley, Thabb, Mine Schokokeks \\ \bigskip
-	Concept-Art von Fossor
+	Medsmiley, Thabb, Mine Schokokeks, MiMi, LuckerStyle, Dommmmmi \\ \bigskip
+	Concept-Art von Fossor, Kriluny
 \end{titlepage}
 
 \pagenumbering{Roman}
@@ -75,7 +144,8 @@ Nichts zu suchen haben hier detaillierte NSC- oder Questbeschreibungen. Dieses N
 
 \part{Weltenbau}
 \include{Dateien/Karte_Oekologie} 
-\include{Dateien/Magie_Essenz} 
+\include{Dateien/Magie_Essenz}
+\include{Dateien/Essenz}
 \include{Dateien/Lebensformen}
 
 
