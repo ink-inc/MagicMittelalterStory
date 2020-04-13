@@ -38,7 +38,8 @@ Windows: Öffne Optionen -> TexStudio konfigurieren
 MacOS: Öffne Preferences
 
 1. Gehe zu Editor: Ersetze Anführungszeichen durch Deutsche Anführungszeichen.
-2. Gehe zu Vervollständigung: Bevorzugte Kommandos: Meist genutzt.
-3. Aktiviere Erweiterte Optionen und gehe zu erweiterter Editor: Stilles Laden von gespeicherten Dateien, wenn sie ... + Symbol als Unicode-Zeichen einfügen
+2. Zeilennummern anzeigen -> nur wichtige Zeilennummern
+3. Gehe zu Vervollständigung: Bevorzugte Kommandos: Meist genutzt.
+4. Aktiviere Erweiterte Optionen und gehe zu erweiterter Editor: Stilles Laden von gespeicherten Dateien, wenn sie ... + Symbol als Unicode-Zeichen einfügen
 
 ## Fertig!!!
