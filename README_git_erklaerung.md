@@ -144,5 +144,5 @@ Dann kannst du auch schon andere auffordern, sich die ersten Punkte deiner Arbit
 Alles, was man in seinem Branch dann weiter bearbeitet, committet und pushed wird automatisch mit hinzugefügt und eure Pull Request aktualisiert sich!
 Wenn du später soweit bist, kannst du das WIP aus dem Namen streichen und bestätigen, dass du bereit bist.
 
-Leider kann man noch nicht rückwirkend aus einer normalen Request eine Draft Request machen. 
-Daher bleibt da nur die Abänderung im Namen.
+Möchtest du rückwirkend aus einer normalen Request eine Draft Request machen, so musst du auf einen Link klicken.
+Der versteckt sich beim Bereich "Reviewers" hinter "Still in progress? Convert to draft".

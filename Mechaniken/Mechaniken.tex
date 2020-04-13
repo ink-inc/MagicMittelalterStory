@@ -27,7 +27,6 @@ numbers=noenddot,% entfernt die Punkte nach den Gliederungsziffern
 \usepackage{caption} % Beschriftungen von Bildern & Tabellen bearbeiten
 \captionsetup{format=plain,
 	font=small,
-	width=0.95\textwidth,
 	labelfont=bf}
 \captionsetup[table]{singlelinecheck=false}
 
@@ -76,19 +75,19 @@ pdfsubject={Handbuch}%
 %	\centering
 %	\caption[Knapper Titel]{Sehr informativer Titel}
 %	\label{tab:key}
-%	\begin{threeparttable}
-%		\begin{tabularx}{\textwidth}{l|ccX} %wenn die Tabelle eh schmaler als die Textbreite ist und eine rein vom Inhalt dynamische Breite gewünscht ist, muss hier und unten das x hinter tabularx sowie die zweite geschweifte Klammer entfernt werden!
-%			\toprule
-%			\textbf{1st Column} & \textbf{2nd Column} & \textbf{3rd Column} & \textbf{4th Column} \\ 
-%			\midrule
-%			QWERTY\tnote{1}   &                     &                     &  \\
-%			ASDFGH   &                     &                     &  \\ 
-%			\bottomrule
-%		\end{tabularx}
-%		\begin{tablenotes}
-%			\item[1] qwerty
-%		\end{tablenotes}
-%	\end{threeparttable}
+%		\begin{threeparttable}
+%			\begin{tabularx}{\textwidth}{l|ccX} %wenn die Tabelle eh schmaler als die Textbreite ist und eine rein vom Inhalt dynamische Breite gewünscht ist, muss hier und unten das x hinter tabularx sowie die zweite geschweifte Klammer entfernt werden!
+%				\toprule
+%				\textbf{1st Column} & \textbf{2nd Colimn} & \textbf{3rd Colimn} & \textbf{4th Colimn} \\ 
+%				\midrule
+%				QWERTY\tnote{1}   &                     &                     &  \\
+%				ASDFGH   &                     &                     &  \\ 
+%				\bottomrule
+%			\end{tabularx}
+%			\begin{tablenotes}
+%				\item[1] qwerty
+%			\end{tablenotes}
+%		\end{threeparttable}
 %\end{table}
 
 %  Aufzählung (1.,2.,...)
@@ -109,7 +108,7 @@ pdfsubject={Handbuch}%
 %		\2 items.
 %\end{outline}
 
-% Gedankenstrich durch: --
+
 
 \begin{document}
 
@@ -118,57 +117,60 @@ pdfsubject={Handbuch}%
 	\vfill
 	\Large{\textbf{Stand {\today}}} \\ \bigskip
 	\vfill
-	\textsf{\textbf{\Huge{Wissenssammlung}}} \\ \bigskip
-	\Large{\textbf{zur Übersicht der Geschichte von MMG der Ink Inc.}} \\ \bigskip
+	\textsf{\textbf{\Huge{Mechaniken}}} \\ \bigskip
+	\Large{\textbf{des Spiels MMG der Ink Inc.}} \\ \bigskip
 	\vfill
 	\includegraphics[width=\linewidth]{Abbildungen/logo.png} \\ \bigskip
 	\vfill
 	\large
 	bearbeitet von\\
-	Medsmiley, Thabb, Mine Schokokeks, MiMi, LuckerStyle, Dommmmmi \\ \bigskip
-	Concept-Art von Fossor, Kriluny
+	Medsmiley, Thabb, Liandarin \\ \bigskip
 \end{titlepage}
 
 \pagenumbering{Roman}
 \tableofcontents
-\listoffigures
+%\listoffigures
 
 
 
 %----------Inhalt-------------
 \chapter*{Einleitung}
 \pagenumbering{arabic}
-Dieses Dokument dient zur Sammlung und Aufbewahrung allen beschlossenen Wissens bezüglich des MMG Spiels der Ink Inc. 
-Die Lore soll einen guten Hintergrund geben, damit eine Vorstellung der Welt existiert. 
-Damit lässt sich dann die Gesellschaft aufbauen, in der der Spieler seinen Charakter das Abenteuer erleben lässt. \\
+Dieses Dokument dient zur Sammlung der verschiedenen Mechaniken, die das Spiel MMG der Ink Inc. gestalten.
+Bei allen Mechaniken sollte der Fakt bedacht werden, dass wir ein Rollenspiel mit Fokus auf die Geschichte und Entwicklung wollen. 
+Der Kampf soll keine primäre Rolle spielen wie bspw. in Skyrim.
 
-Nichts zu suchen haben hier detaillierte NSC- oder Questbeschreibungen. 
-Dieses Netzwerk aus Beziehungen erfassen wir in einer eigens dafür erstellten Plattform. 
-Die Mechaniken wiederum finden sich in der gleichnamigen PDF.
+Nichts zu suchen haben hier detaillierte NSC- oder Questbeschreibungen oder irgendwelche Hintergründe. 
+Das Netzwerk aus Beziehungen erfassen wir in einer eigens dafür erstellten Plattform und die Hintergründe sind im Handbuch zu finden.
 
-\part{Weltenbau}
-\include{Dateien/Karte_Oekologie} 
-\include{Dateien/Magie_Essenz}
-\include{Dateien/Essenz}
-\include{Dateien/Lebensformen}
+\part{Grundlagen}
+\include{Dateien/Allgemeine-Grundlagen}
+\include{Dateien/Ambiente}
+\include{Dateien/Karte}
+\include{Dateien/Quests}
+\include{Dateien/Errungenschaften}
 
+\part{Spielerwerte}
+\include{Dateien/Magie}
+\include{Dateien/Leben}
 
-\part{Geschichte}
-\include{Dateien/Geschichte}
+\part{Kompetenzen}
+\include{Dateien/Faehigkeiten}
+\include{Dateien/Kampf}
 
-\part{Gesellschaft}
-\include{Dateien/Religion}
-\include{Dateien/Regierung}
-\include{Dateien/Kultur}
-\include{Dateien/Alltag}
-\include{Dateien/Wirtschaft}
+\part{Wert}
+\include{Dateien/Geld}
+\include{Dateien/Beute}
 
+\part{Crafting}
+\include{Dateien/Sammeln}
+\include{Dateien/Herstellen}
 
-\part{Abenteuer}
-\include{Dateien/Hauptcharaktere}
-\include{Dateien/Hauptmission}
+\part{???}
+\include{Dateien/Begleiter}
+\include{Dateien/Tiere}
+\include{Dateien/Eigenwohnung}
 
 %----------Anhänge------------
-
 
 \end{document}
