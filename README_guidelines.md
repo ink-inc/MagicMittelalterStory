@@ -4,6 +4,7 @@ Hier findet ihr die aktuellen Guidelines für eine gemeinsame standardisierte Ve
 
 Eine ganz wichtige Aussage zuerst: bei der Benennung von Dateien, Ordnern oder Referenzen NIE Umlaute oder Leerzeichen verwenden!
 Das kann sonst zu Problemen bei involvierten Programmen führen.
+Weiterhin wegen Latex besser Minus "-" anstatt Unterstrich "_" verwenden.
 
 ## GitHub
 ### Branch Namen
@@ -29,6 +30,10 @@ In dem Zusammenhang kann man von "Arten erweitert" sprechen ohne dass es mit den
 
 
 ## Latex
+Es gibt Vorlagen für diverse Dinge in den zwei Master-Dokumenten Handbuch.tex und Mechaniken.tex vor Beginn des Dokuments.
+Diese sind natürlich auskommentiert, können sich aber an die entsprechende Stelle kopiert werden.
+Um mit einem Mal einen ganzen Block an Zeilen auszukommentieren oder zu entkommentieren, kann man einfach die Tastenkombination Strg + t/u verwenden (macOS entsprechend).
+
 ### Zeilen und Absätze
 Die .tex Dokumente sollen auch für unsere Augen so weit wie möglich angenehm zu lesen und damit zu bearbeiten sein. Daher:
 -> ausreichend Leerzeilen einfügen, um Bereiche voneinander abzugrenzen (Leerzeilen werden idR vom Kompiler komplett ignoriert)
@@ -116,3 +121,8 @@ Sinnvollerweise erfolgt diese Verlinkung also einmal in Textblöcken und nur an 
 Verwendung (seltener): "hier auf \npref{sec:planet}" -> "hier auf Andar (S. 10)"
 Hinweis wie bei 2. zur Seite. Dies ist allerdings im Gegensatz zu 2. sinnvoll, immer bei der *ersten Referenz im Kapitel* zu verwenden.
 Denn das Handbuch liegt ja mal ggf. gedruckt vor und man kann dann keinem Hyperlinks folgen.
+
+5. Ich möchte __sowohl auf das __Element als auch die __Seite verweisen: \epref{label}
+-> genau wie bei Nummer 4.
+Verwendung (seltener): "wie in Abb. \epref{fig:planet} dargestellt" -> "wie in Abb. 1.5 (S. 8) dargestellt"
+Hinweis wie bei Nummer 4.

@@ -4,7 +4,7 @@
 
 Damit überprüft das Programm, ob online Änderungen im aktuellen Branch (siehe unten) vorliegen. 
 Sollte dem so sein, wird das angezeigt und ihr bekommt die Option, diese Änderungen zu "pullen" (siehe unten).
-Dies solltet ihr IMMER für den Master ausführen, bevor ihr einen neuen Branch erstellt.
+Dies solltet ihr IMMER für den master ausführen, bevor ihr einen neuen Branch erstellt.
 
 
 ## Pullen (= lokale Dateien aktualisieren -> Gegenstück zum Pushen)
@@ -88,14 +88,16 @@ Wenn ihr eine Pull Request auf der Website erstellt, könnt ihr folgende Dinge m
 - anfordern, wer sich das ansehen soll (Reviewer anfordern).
 - Assignees auswählen. Fügt euch selbst dort ein.
 - ein Label hinzufügen, das eurem Thema entspricht. "Allgemein" bezieht sich auf alles, was nicht mit dem tatsächlichen Inhalt des Handbuchs zu tun hat.
-- ein Projekt zuordnen. Zum Zeitpunkt der Erstellung dieses Guides lautet der Name "Inhalt".
+- ein passendes Projekt zuordnen.
 - Kommentieren, was ihr eigentlich alles so gemacht habt. 
-In der Beschriebung/dem Kommentar könnt ihr auch die Nummer eines Issues eintragen (im Stil von #1), dessen Bearbeitung ihr damit als abgeschlossen erklärt.
-Das führt dazu, dass es im Projekt automatisch als erledigt markiert wird, sobald euer Branch mit dem master verschmolzen wurde.
+Nach dem Erstellen der Pull Request:
+- rechts in der Auflistung von allen Verknüpfungen könnt ihr unten Issues mit der Request verknüpfen, d.h. die damit erledigten Aufgaben verbinden.
+Das Gleiche erreicht ihr über einen Kommentar, der "Closes #00" enthält mit der Nummer eures Issues.
+Das führt dazu, dass es automatisch als erledigt markiert wird, sobald euer Branch mit dem master verschmolzen wurde.
 
 Nun können alle Mitglieder des Lore-Teams sich die Änderungen ansehen und ggf. kommentieren oder sogar fordern, dass etwas geändert wird.
 Wenn mindestens zwei Leute bestätigen (approven) und alle Änderungs-Forderungen erfüllt (resolved) sind, dann kann ein Mitglied des Lore-Teams die Verschmelzung vornehmen.
-Verschmelzen aka Mergen heißt, dass dieser Branch mit dem Master wieder gemerged wieder zusammengeführt wird.
+Verschmelzen aka Mergen heißt, dass dieser Branch mit dem master wieder gemerged wieder zusammengeführt wird.
 Damit sind die Änderungen im master angekommen und somit vollendet: sie werden sozusagen offiziell für angenommen und richtig erklärt und tauchen zukünftig auch bei allen anderen Versionen auf.
 
 Achtung: fordert jemand eine Änderung ein, so muss GENAU DIESE Person sich dann auch wieder die neue Änderung ansehen und nun bestätigen (approven).
@@ -104,12 +106,14 @@ Die einzige Person, die alle Beschränkungen umgehen kann, ist der Administrator
 Achtung: wenn es viele Leute sind, die parallel arbeiten, kann es sein, dass jemand "schneller" mit seiner Arbeit war.
 Dann kommt es dazu, dass seine Änderungen vor deinen dem Master hinzugefügt werden.
 Das führt dazu, dass sich der aktuelle Stand des Masters von dem Stand, als du deine Kopie erstellt hast, unterscheidet.
-Tritt dieser Fall ein, kann GitHub wegen der PDF zickig werden. Um das Aufzulösen solltest du Folgendes tun, wenn du mit deiner Arbeit komplett fertig bist:
+Tritt dieser Fall ein, kann GitHub wegen der PDF zickig werden. 
+Um das Aufzulösen solltest du Folgendes tun, wenn du mit deiner Arbeit komplett fertig bist:
 Während du dich in GitHub Desktop in deinem Branch befindest, klicke oben in der Leiste (Windows: direkt am Fenster, Mac: oben am Bildschirm) auf "Branch".
 Dort wähle "Update from Master". Wenn alle neuen Dinge im Master andere Dateien betreffen als die, die du verändert hast, dann geht das ganz fix und ohne weitere Anmerkungen.
 Sollte es einen Konflikt geben, weil jemand auch in der Datei geschrieben hat, mit der du arbeitest, wirst du aufgefordert, das Problem händisch zu lösen. 
-Wende dich dazu an uns. Es ist nicht schwer, aber einfacher per Gespräch zu klären.
-Das wird im Übrigen immer für die PDF auftreten. Für diese müsst ihr aber nur anklicken, dass ihr die PDF aus dem Master übernehmen wollt. 
+Wende dich dazu an uns. Es ist nicht schwer, aber einfacher per Gespräch zu erklären.
+Das wird im Übrigen immer für die PDF auftreten. 
+Für diese müsst ihr aber nur anklicken, dass ihr die PDF aus dem Master übernehmen wollt. 
 Denn solche Dokumente ("binary files": pdf, png, jpeg, ...) kann das System nicht in Teilen verstehen und nimmt sie nur im Ganzen.
 
 
@@ -129,7 +133,7 @@ Achtung: nur commits können veröffentlicht werden. Einzelne Änderungen, die n
 4. pushen (jedes Mal wenn die Arbeit beendet/pausiert wird)
 
 Wenn man mit der Arbeit fertig ist, für die man den Branch geöffnet hat, dann
-5. Master in den eigenen Branch mergen
+5. master in den eigenen Branch mergen
 6. Pull Request stellen
 7. Discord: lore-todo: Link posten und das Lore Team zum angucken auffordern
 
