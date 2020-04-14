@@ -6,13 +6,15 @@ Relevante Voraussetzungen: du hast einen GitHub Account erstellt und bis aktiv d
 ## Installation
 Zur Installation von GitHub auf eurem Rechner nutzt bitte GitHub Desktop von folgender Website:
 https://desktop.github.com/
-Das hat mehrere Gründe: Zum einen arbeiten wir alle auf die gleiche Art und Weise. Zum anderen ist das die Möglichkeit, mit einer GUI (Graphic User Interface = Grafische Benutzeroberfläche) zu arbeiten -> alle ohne Ahnung vom Programmieren und von Git können so einfach mitarbeiten.
+Das hat mehrere Gründe: Zum einen arbeiten wir alle auf die gleiche Art und Weise. 
+Zum anderen ist das die Möglichkeit, mit einer GUI (Graphic User Interface = Grafische Benutzeroberfläche) zu arbeiten -> alle ohne Ahnung vom Programmieren und von Git können so einfach mitarbeiten.
 
 
 ## Einrichtung
 1. Meldet euch mit dem Account an, mit dem ihr in unser Team aufgenommen wurdet.
 
-2. Diese Seite entscheidet, was andere Leute sehen können. Achtung: JEDER Nutzer im Internet kann theoretisch unser Projekt finden und sich ansehen -> und damit auch den Namen, den ihr jetzt hier eintragt:
+2. Diese Seite entscheidet, was andere Leute sehen können. 
+Achtung: _Jeder Nutzer im Internet kann theoretisch unser Projekt finden und sich ansehen -> und damit auch den Namen, den ihr jetzt hier eintragt:
     a. Tragt bei Name NICHT euren tatsächlichen Namen ein, sondern nutzt ein Pseudonym, zB euren Account-Namen oder den Namen, unter dem wir euch auf Discord kennen.
     b. Lasst die kryptische E-Mail so stehen, wie sie ist.
 
@@ -20,16 +22,20 @@ Das hat mehrere Gründe: Zum einen arbeiten wir alle auf die gleiche Art und Wei
 ## Herunterladen des Projekts
 1. Klicke auf "Clone a Repository from the Internet..."
 
-2. Wähle im Reiter "GitHub.com" unser Projekt (Repository) aus der Liste: "ink-inc/MagicMittelalterStory" und lege ggf. einen anderen Ordnerpfad fest. Hier wird das ganze Projekt gespeichert. Klicke nun auf "Clone".
+2. Wähle im Reiter "GitHub.com" unser Projekt (Repository) aus der Liste: "ink-inc/MagicMittelalterStory" und lege ggf. einen anderen Ordnerpfad fest. 
+Hier wird das ganze Projekt gespeichert. Klicke nun auf "Clone".
 
 -> habt ihr versehentlich auf das Falsche geklickt, könnt ihr es entfernen, indem ihr nun oben links auf "Current Repository" und dann mit Rechtsklick -> "Remove..." auf das Falsche klickt. 
 Nun unbedingt auch den Haken in "Also move this repository to Trash" setzen.
 
--> die Dokumente zum Projekt findet ihr nun im entsprechenden Verzeichnis, wo ihr diese bearbeiten könnt. ABER davor weiterlesen und unbedingt das Beispiel ausführen!
+-> die Dokumente zum Projekt findet ihr nun im entsprechenden Verzeichnis, wo ihr diese bearbeiten könnt. 
+**Aber** davor weiterlesen und unbedingt das Beispiel ausführen!
 
 
 ## Begrifflichkeiten
-An dieser Stelle bitte einmal die README_git_guidlines.md lesen. Diese erklären einige wichtige Begrifflichkeiten. Wenn euch danach noch etwas unverständlich diesbezüglich ist, dann fragt uns bitte :)
+An dieser Stelle bitte einmal die README_git_guidlines.md lesen. 
+Diese erklären einige wichtige Begrifflichkeiten. 
+Wenn euch danach noch etwas unverständlich diesbezüglich ist, dann fragt uns bitte :)
 
 Kurz:
 - Fetch = mit der online Version vergleichen: gibt es Änderungen?
@@ -43,13 +49,16 @@ Kurz:
 Im Großen und Ganzen ist die Oberfläche selbsterklärend.
 
 Schwarzer Button 1: Current Repository
--> hier ist bereits unser Projekt ausgewählt. Wenn du nicht noch andere Projekte hast, ist diese Auswahlfläche für dich irrelevant.
+-> hier ist bereits unser Projekt ausgewählt. 
+Wenn du nicht noch andere Projekte hast, ist diese Auswahlfläche für dich irrelevant.
 
 Schwarzer Button 2: Current Branch
 -> Hier findet ihr alle Branches, die sich lokal und "Remote", also auf den GitHub Servern, befinden.
-Der Haken ist bei dem Branch, in dem ihr euch gerade befindet und arbeitet. Achtung: bevor ihr den Branch wechselt, solltet ihr keine der Dateien mehr offen haben!
+Der Haken ist bei dem Branch, in dem ihr euch gerade befindet und arbeitet. 
+_Achtung: bevor ihr den Branch wechselt, solltet ihr keine der Dateien mehr offen haben!
 Das System funktioniert nun folgendermaßen: je nachdem, welcher Branch hier ausgewählt wurde, ändern sich auch die Dateien im Ordner.
-Es gibt einen versteckten Ordner ".git", in dem all das Nötige dazu gespeichert wird. Hier darfst du NICHTS VERÄNDERN, sonst funktioniert bei dir nichts mehr, wie es soll. 
+Es gibt einen versteckten Ordner ".git", in dem all das Nötige dazu gespeichert wird. 
+Hier darfst du **nichts verändern**, sonst funktioniert bei dir nichts mehr, wie es soll. 
 Die weitere versteckte Datei ".gitignore" sorgt übrigens dafür, dass bestimmte Dateien und Ordner nicht abgeglichen werden. 
 Damit werden nur die wichtigen Dateien übertragen und alles, was durch Latex oder durch euer Betriebssystem an z.B. temporären Dateien entsteht bleibt bei euch und stört nicht die anderen. 
 Am Besten: unverändert lassen!
@@ -96,7 +105,7 @@ Ansonsten weißt du ja, wo du alles abspeicherst (Standard: Eigene Dateien) und 
 Dadurch werden diese sogar eine E-Mail mit der Aufforderung erhalten, sich das anzusehen.
 16. Darunter, bei "Assignees" wähle dich selbst aus.
 17. Bei "Labels" wähle "Allgemein".
-18. Klicke auf "Projects" und wähle das einzige verfügbare mit dem Namen "Inhalt" (zum Zeitpunkt der Erstellung dieser Readme).
+18. Klicke auf "Projects" und wähle "Allgemein".
 Das packt diese Request automatisch in die Aufgabenliste des Projekts.
 19. Klicke auf den großen grünen Button "Create Pull Request". 
 Nun ist die Anfrage eingegangen. Wenn mindestens 2 Leute sie sich angesehen und bestätigt (approved) haben, wird deine Änderung zum master hinzugefügt und offiziell.
@@ -122,7 +131,7 @@ Bevor du nicht gepusht hast, ist es nicht online!
 
 
 ## Falscher Branch!?!?!
-Hast du versehentlich mit deiner Arbeit im falschen Branch begonnen (zB im Master), so ist das unkompliziert SOLANGE NOCH KEIN COMMIT ERFOLGTE. 
+Hast du versehentlich mit deiner Arbeit im falschen Branch begonnen (zB im Master), so ist das unkompliziert **SOLANGE NOCH KEIN COMMIT ERFOLGTE**. 
 In dem Fall bitte uns ansprechen.
 Ansonsten kannst du einfach einen neuen Branch erstellen und wirst dann danach gefragt, ob du die bisherigen Änderungen mitnehmen oder auf dem Master/falschen Branch belassen möchtest.
 

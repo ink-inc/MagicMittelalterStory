@@ -1,0 +1,176 @@
+\documentclass[a4paper,12pt,%
+headsepline,%
+numbers=noenddot,% entfernt die Punkte nach den Gliederungsziffern
+]{scrreprt}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{setspace} 
+
+%-----------Format-------------
+%\usepackage{titlesec} %Titel Format bearbeiten
+\usepackage{setspace} 
+\setstretch{1,15} % 1,5 Zeilenabstand, [singlespacing] oder [doublespacing] auch möglich
+\usepackage{lscape} % für Querformat
+
+%-----------hübsche Darstellung -------------
+\usepackage[per=slash,decimalsymbol=comma,loctolang=ngerman]{siunitx} % SI-Einheiten werden schick dargestellt
+\sisetup{locale = DE} % Komma als Trenner bei Dezimalzahl erkannt
+\sisetup{detect-all} %SI-Einheiten in "normaler" Schriftart
+
+%-----------weiterer Komfort-------------
+\usepackage{textgreek} %Griechische Buchstaben mit \textalpha etc.
+
+%-----------Grafiken und Tabellen-------------
+\usepackage{float} %float-Objekte mit Großbuchstaben an Stelle behalten
+\usepackage{caption} % Beschriftungen von Bildern & Tabellen bearbeiten
+\captionsetup{format=plain,
+	font=small,
+	width=0.95\textwidth,
+	labelfont=bf}
+\captionsetup[table]{singlelinecheck=false,
+	name=Tab.}
+\captionsetup[figure]{name=Abb.}
+
+\usepackage{graphicx} % Grafiken einbinden
+
+\usepackage{booktabs} % Tabellen ordentlich, toprule, midrule, cmidrule, bottomrule
+\usepackage{tabularx} % Tabelle eine bestimmte Breite vorgeben, automatischen Zeilenumbruch innerhalb der Spalten
+\usepackage{threeparttable} % Beschriftung von Tabellen auf Tabellenbreite, Fußnoten an Tabellen uvm; muss um die tabular Umgebung herum gesetzt werden
+\usepackage{multirow} % erlaubt es, Zeilen bzw. Spalten miteinander zu verschmelzen
+\usepackage[table,xcdraw]{xcolor} % farbige Zellen
+
+%-----------Listen-------------
+\usepackage{outlines} %Verschachtelte Listen deutlich einfacher
+\usepackage{enumitem} %Anpassbare Enumerates/Itemizes, Listen global konfigurieren
+\setitemize{nosep} %Abstand zwischen Items, verwende auch itemsep=0p
+
+%----------überprüfen------------
+\usepackage{microtype}
+
+%----------zuletzt laden---------
+\usepackage[%pdflatex,%
+pagebackref=true,%
+pdfauthor={Ink Inc.},%
+pdftitle={Wissenssammlung},%
+pdfsubject={Handbuch}%
+]{hyperref} %
+
+
+
+
+
+
+
+%----------eigene Befehle--------
+\newcommand{\npref}[1]{\nameref{#1} (S. \pageref{#1})} 
+% Überschriften
+% wenn \npref{referenz} aufgerufen wird, wird automatisch eine Sequenz eingefügt: "`Name (s. X)"' zB "`Sylvan (S. 3)"'
+\newcommand{\epref}[1]{\ref{#1} (S. \pageref{#1})} 
+% Tabellen und Abbildungen
+% wenn \epref{referenz} aufgerufen wird, wird automatisch eine Sequenz eingefügt: "`Zahl (s. X)"' zB "`3.5 (S. 3)"'
+\newcommand{\zB}{z.~B.} %automatisches Ersetzen von zB
+
+%----------Vorlagen--------
+%Tabelle
+%\begin{table}[htb]
+%	\centering
+%	\caption[Knapper Titel]{Sehr informativer Titel}
+%	\label{tab:key}
+%	\begin{threeparttable}
+%		\begin{tabularx}{\textwidth}{l|ccX} %wenn die Tabelle eh schmaler als die Textbreite ist und eine rein vom Inhalt dynamische Breite gewünscht ist, muss hier und unten das x hinter tabularx sowie die zweite geschweifte Klammer entfernt werden!
+%			\toprule
+%			\textbf{1st Column} & \textbf{2nd Column} & \textbf{3rd Column} & \textbf{4th Column} \\ 
+%			\midrule
+%			QWERTY\tnote{1}   &                     &                     &  \\
+%			ASDFGH   &                     &                     &  \\ 
+%			\bottomrule
+%		\end{tabularx}
+%		\begin{tablenotes}
+%			\item[1] qwerty
+%		\end{tablenotes}
+%	\end{threeparttable}
+%\end{table}
+
+%  Aufzählung (1.,2.,...)
+%\begin{enumerate}
+%	\item 
+%\end{enumerate}
+
+% Liste mit Symbolen
+%\begin{outline}
+%	\1 This is a first item.
+%	\1[!!!] This is a second, with a custom label.
+%		\2 A level-2 item.
+%			\3 A level 3.
+%				\4 Deepest is level 4.\
+%		2 Back to level 2.
+%\0 A normal paragraph in the middle.\
+%	1 A couple more
+%		\2 items.
+%\end{outline}
+
+% Gedankenstrich durch: --
+
+\begin{document}
+
+\begin{titlepage}
+	\centering
+	\vfill
+	\Large{\textbf{Stand {\today}}} \\ \bigskip
+	\vfill
+	\textsf{\textbf{\Huge{Wissenssammlung}}} \\ \bigskip
+	\Large{\textbf{zur Übersicht der Geschichte von MMG der Ink Inc.}} \\ \bigskip
+	\vfill
+	\includegraphics[width=\linewidth]{Abbildungen/logo.png} \\ \bigskip
+	\vfill
+	\large
+	bearbeitet von\\
+	Medsmiley, Thabb, Mine Schokokeks, MiMi, LuckerStyle, Dommmmmi, Liandarin \\ \bigskip
+	Bilder von Fossor, Kriluny, Liandarin
+\end{titlepage}
+
+\pagenumbering{Roman}
+\tableofcontents
+\listoffigures
+
+
+
+%----------Inhalt-------------
+\chapter*{Einleitung}
+\pagenumbering{arabic}
+Dieses Dokument dient zur Sammlung und Aufbewahrung allen beschlossenen Wissens bezüglich des MMG Spiels der Ink Inc. 
+Die Lore soll einen guten Hintergrund geben, damit eine Vorstellung der Welt existiert. 
+Damit lässt sich dann die Gesellschaft aufbauen, in der der Spieler seinen Charakter das Abenteuer erleben lässt. \\
+
+Nichts zu suchen haben hier detaillierte NSC- oder Questbeschreibungen. 
+Dieses Netzwerk aus Beziehungen erfassen wir in einer eigens dafür erstellten Plattform. 
+Die Mechaniken wiederum finden sich in der gleichnamigen PDF.
+
+\part{Weltenbau}
+\include{Dateien/Karte_Oekologie} 
+\include{Dateien/Magie}
+\include{Dateien/Essenz}
+\include{Dateien/Lebensformen}
+
+
+\part{Geschichte}
+\include{Dateien/Geschichte}
+
+\part{Gesellschaft}
+\include{Dateien/Religion}
+\include{Dateien/Regierung}
+\include{Dateien/Kultur}
+\include{Dateien/Alltag}
+\include{Dateien/Wirtschaft}
+
+
+\part{Abenteuer}
+\include{Dateien/Hauptcharaktere}
+\include{Dateien/Hauptmission}
+
+%----------Anhänge------------
+
+
+\end{document}
