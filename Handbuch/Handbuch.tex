@@ -19,8 +19,6 @@ numbers=noenddot,% entfernt die Punkte nach den Gliederungsziffern
 \sisetup{locale = DE} % Komma als Trenner bei Dezimalzahl erkannt
 \sisetup{detect-all} %SI-Einheiten in "normaler" Schriftart
 
-%-----------weiterer Komfort-------------
-\usepackage{textgreek} %Griechische Buchstaben mit \textalpha etc.
 
 %-----------Grafiken und Tabellen-------------
 \usepackage{float} %float-Objekte mit Großbuchstaben an Stelle behalten
@@ -45,6 +43,14 @@ numbers=noenddot,% entfernt die Punkte nach den Gliederungsziffern
 \usepackage{outlines} %Verschachtelte Listen deutlich einfacher
 \usepackage{enumitem} %Anpassbare Enumerates/Itemizes, Listen global konfigurieren
 \setitemize{nosep} %Abstand zwischen Items, verwende auch itemsep=0p
+
+
+%-----------weiterer Komfort-------------
+\usepackage{textgreek} %Griechische Buchstaben mit \textalpha etc.
+\usepackage{tikz} % Zeitstrahl
+%\usetikzlibrary{snakes}
+\usepackage{chronosys}
+
 
 %----------überprüfen------------
 \usepackage{microtype}
