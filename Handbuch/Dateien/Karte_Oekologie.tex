@@ -51,19 +51,85 @@ Annähernde Daten zu den Dreien finden sich in Tab. \ref{tab:planetendaten}.
 
 \begin{table}[htb]
 	\centering
-	\caption[Planetendaten]{\textbf{Verschiedenste Daten zu den Planeten in der Übersicht.}}
+	\caption{\textbf{Eckdaten des Planetensystems.}}
 	\label{tab:planetendaten}
-	\begin{threeparttable}
-		\begin{tabularx}{\textwidth}{l|ccX} %wenn die Tabelle eh schmaler als die Textbreite ist und eine rein vom Inhalt dynamische Breite gewünscht ist, muss hier und unten das x hinter tabularx sowie die zweite geschweifte Klammer entfernt werden!
+	\begin{threeparttable}[\linewidth]
+		\begin{tabular}{l|ccc}
 			\toprule
-			\textbf{1st Column} & \textbf{2nd Column} & \textbf{3rd Column} & \textbf{4th Column} \\ 
-			\midrule
-			Ich   &        brauche             &        noch             & die \\
-			Tabelle   &       von              &          Alex           & übergeben. \\ 
+			\textbf{Größe} & \textbf{Wert in SI-Einheiten} & \textbf{Wert in natürlichen Größen}\\
+		    \midrule
+		    Masse der Sonne $M_S$ & $2,63\cdot 10^{30}$ kg & $1,3\,M_\odot$\\
+		    Leuchtkraft der Sonne $L_S$ & $1,17\cdot 10^{27}$ W & $3,06\,L_\odot$\\
+		    Temperatur der Sonne $\Theta_S$ & $5.778$ K & $1\,\Theta_\odot$\\
+		    Radius der Sonne $R_S$ & $780.093$ km & $1,12\,R_\odot$\\
+		    Sehwinkel der Sonne $\alpha_S$ & $0,34$° & $0,64\,\alpha_\odot$\\
+		    Absolute Helligkeit der Sonne $M^{bol}_S$ & $3,527$ & $0,73\,M^{bol}_\odot$\\
+		    Scheinbare Helligkeit der Sonne $m_S$ & $-26,83$ & $1,003\,m_\odot$\\
+		    Distanz zur Sonne $d_S$ & $2,62\cdot 10^8$ km & $1,749$ AU\\
+		    Jahresdauer $T_S$ & $420\,d = 336\,T_P$ & $1,15\,yr$\\
+		    Neigung der Planetenachse & $23$° & $0,98\cdot 23,5$°\\
+		    Masse beider Planeten $M_P$ & $5,972\cdot 10^{24}$ kg & $1\,M_\oplus$\\
+		    Dichte der Planeten $\rho_P$ & $5,51\,\frac{g}{cm^3}$ & $1\,\rho_\oplus$\\
+		    Radius der Planeten $\R_P$ & $6.372$ km & $1\,R_\oplus$\\
+		    Tagesdauer $T_P$ & $30$ h & $1,25$ d\\
+		    Monatsdauer (12 Monate) & $28\,T_P$ & $35$ d\\
+		    Abstand der Planeten $d_P$ & $49.785$ km & -\\
+		    Sehwinkel Gara vom Äquator $\alpha_{P,E}$ & $16,90$° & -\\
+		    Sehwinkel Gara von den Polen $\alpha_{P,P}$ & $14,60$° & -\\
+		    Masse des Mondes $M_M$ & $2,854\cdot 10^{23}$ kg & $3,884\,M_\bullet$\\
+		    Dichte des Mondes $\rho_M$ & $3,34\,\frac{g}{cm^3}$ & $1\,\rho_\bullet$\\
+		    Radius des Mondes $R_M$ & $2.728$ km & $1,57\,R_\bullet$\\
+		    Distanz Mond-Planet $d_M$ & $49.785$ km & $0,13\,d_\bullet$\\
+		    Mondumlaufzeit $T_M$ & $17,5$ h & $0,03\,T_\bullet$\\
+		    Sehwinkel Mond am Äquator $\alpha_{M,E}$ & $6,67$° & $\sim 750\,\alpha_\bullet$\\
+		    Sehwinkel Mond bei $30$° $\alpha_{M,30}$ & $7,21$° & $\sim 811\,\alpha_\bullet$\\
+		    Fallbeschleunigung Punkt 1 $g_1$ & $9,56\,\frac{m}{s^2}$ & $0,97\,g_\oplus$\\
+		    Fallbeschleunigung Punkt 2 $g_2$ & $9,70\,\frac{m}{s^2}$ & $0,99\,g_\oplus$\\
+		    Fallbeschleunigung Punkt 3 $g_3$ & $9,91\,\frac{m}{s^2}$ & $1,01\,g_\oplus$\\
+		    Fallbeschleunigung Punkt 4 $g_4$ & $9,96\,\frac{m}{s^2}$ & $1,02\,g_\oplus$
 			\bottomrule
-		\end{tabularx}
+		\end{tabular}
 	\end{threeparttable}
 \end{table}
+
+Kommentare zu den Angaben:
+\begin{outline}
+	\1 Die Symbole $\odot$, $\oplus$ und $\bullet$ stehen für unsere Sonne, unsere Erde und unseren Mond.
+	\1 Die Relationen sind in den Grafiken \ref{fig:planetensystem-fern}, \ref{fig:planetensystem-nah} und \ref{fig:planetensystem-positionen} skizziert. Letztere zeigt auch die Position der 4 berechneten Punkte für die Messung der Fallbeschleunigung.
+	\1 Die Daten der Sonne sind so gewählt, dass die scheinbare Helligkeit und Strahlungsleistung auf Andar wie auf der Erde sind und die Sonne die gleiche Farbe hat wie unsere Sonne.
+	\1 Der Abstand des Planetensystems von der Sonne ist so gewählt, dass die Planeten in der habitablen Zone der Sonne liegen und das Jahr 336 Andar-Tage (420 Erden-Tage) hat, welche sich schön in 12 Monate mit je 28 Tagen aufteilen lassen. Durch dubiose Resonanzen oder göttliche Fügung sind die ganzen Zahlen exakt, sodass es keine Schaltjahre oder ähnliche seltsame Phänomene gibt.
+	\1 Die beiden Planeten vollführen eine doppelt gebundene Rotation (beide schauen sich die ganze Zeit mit der gleichen Seite an) und rotieren einmal pro Tag umeinander (30h). Die Rotationsebene der beiden Planeten ist gerade ausreichend geneigt, dass Gara nie die Sonne verdeckt und man klare Tag-Nacht-Zyklen definieren kann. Die gebundene Rotation sorgt dafür, dass die Rotationsachsen der einzelnen Planeten (Pole) senkrecht zur Verbindungsline zwischen den Planeten liegt.
+	\1 Die doppelt gebundene Rotation führt außerdem dazu, dass immer die gleichen Hemisphären der Planeten außen liegen und diese stark von Meteoriteneinschlägen betroffen sind. Daher ist nur eine Hälfte der beiden Planeten gut bewohnbar. Meteoriten, die auf die inneren Hemisphären treffen könnten, werden zum Großteil vom Mond abgefangen.
+	\1 Die Planeten an sich sind so gewählt, dass sie die gleichen Eigenschaften wie die Erde haben und damit eine stabile Atmosphäre halten und Leben beherbergen können.
+	\1 Der Abstand der Planeten ist so gewählt, dass der Tag auf Andar (oder auch Gara) 30 h lang ist, da viel sich vermutlich negativ auf die Entwicklung von intelligentem Leben ausgewirkt hätte.
+	\1 Der Mond kreist um die Verbindungsachse zwischen den beiden Planeten und steht zu allen Zeiten im dritten Punkt eines gleichseitigen Dreiecks mit diesen. Dieser Punkt gewährt eine erhöhte Stabilität des Systems (vgl. Lagrange-Punkte 4/5). Das hat zur Folge, dass der Mond sehr nah an den Planeten ist und eine sehr kurze Umlaufzeit hat, er umkreist die Planeten innerhalb von 7 Tagen 12 mal. Da nur die nach innen gerichteten Hälften der Planeten von Interesse sind, ignorieren wir die anderen Seiten. Die Flut verläuft dann auf einem Kreis mit 60° Neigung zur Verbindungsachse zwischen den Planeten und hat wegen des Mondes eine Periodendauer von 14h. Zudem ist aufgrund der Nähe des Mondes zu den Planeten die Flut um einiges stärker als auf der Erde.
+	\1 Aufgrund der geringen Entfernung der beiden Planeten ist die scheinbare Größe von Gara am Himmel recht verschieden je nachdem, wo man sich auf Andar befindet. Ähnlich verhält es sich mit dem Mond, wobei dort die absoluten Unterschiede geringer sind, das dieser kleiner ist.
+	\1 Ebenfalls eine Folge des geringen Abstandes ist die vergleichsweise starke Schwankung der Fallbeschleunigung auf der Oberfläche von Andar. In der Nähe der Verbindungslinie zu Gara ist die Anziehungskraft von Gara nach oben gerichtet, sodass die Fallbeschleunigung etwas geringer ist als auf der Erde. Auf der gegenüberliegenden Seite tritt dieser Effekt gerade umgekehrt auf. Auch der Winkel und Abstand zum Mond sowie der Winkel zu den Polen haben einen, wenn auch geringen, Einfluss auf die Fallbeschleunigung und führen zu weiteren Variationen. Effektiv zeigen wird sich das vermutlich kaum, da die relativen Unterschiede nur wenige Prozent betragen und wir uns sowieso nur auf einer Halbkugel von Andar befinden.
+\end{outline}
+
+\begin{figure}[tbh]
+	\centering
+	\includegraphics[width=0.9\linewidth]{Abbildungen/Weltenbau/Welt/planetensystem-fern}
+	\caption[Planetensystem Skizzen 1]{\textbf{Das Planetensystem aus der Draufsicht auf die planetare Ebene.}\\
+	Die Sonne (gelb) und das System der beiden Planeten einschließlich Mondes (blau).}
+	\label{fig:planetensystem-nah}
+\end{figure}
+
+\begin{figure}[tbh]
+	\centering
+	\includegraphics[width=0.9\linewidth]{Abbildungen/Weltenbau/Welt/planetensystem-nah}
+	\caption[Planetensystem Skizzen 2]{\textbf{Das Planetensystem auf der Draufsicht auf die gemeinsame Ebene von Mond und Planeten.}\\
+	Die Planeten Gara (o.) und Andar (u.) mit ihrem Mond Serro (l.).}
+	\label{fig:planetensystem-fern}
+\end{figure}
+
+\begin{figure}[tbh]
+	\centering
+	\includegraphics[width=0.9\linewidth]{Abbildungen/Weltenbau/Welt/planetensystem-positionen}
+	\caption[Planetensystem Skizzen 3]{\textbf{Positionen für Messung der Fallbeschleunigung.}\\
+	Die Planeten Gara (o.) und Andar (u.) mit ihrem Mond Serro (l.). Rote Punkte indizieren die berechneten Stellen für die Fallbeschleunigung.}
+	\label{fig:planetensystem-positionen}
+\end{figure}
 
 \paragraph{Entstehung von Leben}
 Das Leben entwickelte sich auf beiden Planeten unabhängig und basiert vielleicht sogar auf völlig unterschiedlichen molekularen Grundlagen, das lassen wir an dieser Stelle offen.
