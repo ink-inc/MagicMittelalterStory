@@ -19,3 +19,23 @@ Leveln
 	Üben beideutet die Anwendung des Skills in Ausreichender Menge oder Zeit für das Erreichen der kommenden Stufe. Das muss im Allgemeinen während des Spiels erfolgen. Allerdings können da die Lehrmeister - eingeschränkt - helfen. So könnte einem der Schlosser ein paar alte oder falsche oder einfach Übungsschlösser zur Verfügung stellen, damit man an ihnen üben kann. Das kostet natürlich. Macht man dieses Üben unter Aufsicht eines Meisters, dann kommt man schneller voran (man muss zB nicht 20 sondern nur 10 Schlösser knacken). ABER die Menge der Übung, die man bei einem Meister absolvieren kann, variiert je nach aktueller Stufe. So kann man im niedrigsten Bereich alle Übungseinheiten beim Meister absolvieren, doch will man Großmeister werden, dann vllt nur die ersten 20 Prozent...
 	\item andere Skills wiederum gibt es nur in einer Steigerungsform: Man kann sie oder auch nicht und vielleicht kann man besser werden, aber nur in einem marginalen Rahmen und dann nur durch Anwendung (zB tanzen)
 \end{itemize}
+
+\section{Beispiel eines Fähigkeitenbaums}
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[sibling distance=10em,
+        every node/.style = {shape=rectangle, rounded corners,
+            draw, align=center,
+            top color=white, bottom color=blue!20}]]
+        \node {Formulas}
+        child { node {single-line} }
+        child { node {multi-line}
+            child { node {aligned at}
+                child { node {relation sign} }
+                child { node {several places} }
+                child { node {center} } }
+            child { node {first left,\\centered,\\last right} } };
+    \end{tikzpicture}
+    \caption{Fähigkeitenbaum Rhetorik}
+    \label{fig:faehigkeitenbaum_rhetorik}
+\end{figure}
