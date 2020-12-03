@@ -23,18 +23,74 @@ Leveln
 \section{Beispiel eines Fähigkeitenbaums}
 \begin{figure}[h]
     \centering
-    \begin{tikzpicture}[sibling distance=10em,
-        every node/.style = {shape=rectangle, rounded corners,
-            draw, align=center,
-            top color=white, bottom color=blue!20}]]
-        \node {Formulas}
-        child { node {single-line} }
-        child { node {multi-line}
-            child { node {aligned at}
-                child { node {relation sign} }
-                child { node {several places} }
-                child { node {center} } }
-            child { node {first left,\\centered,\\last right} } };
+    \begin{tikzpicture}[
+            grow'=up,
+            sibling distance=8em,
+            level distance=5em,
+            every node/.style = {
+                align=center
+            },
+            base/.style = {
+                draw,shape=ellipse
+            },
+            other/.style = {
+                draw,shape=ellipse,inner sep=1pt,font=\tiny
+            },
+            level/.style = {
+                 draw,shape=rectangle
+            },
+            skill/.style = {
+                 draw,shape=rectangle,rounded corners
+            },
+            level-text/.style = {
+                color=gray
+            },
+            edge from parent path={(\tikzparentnode.north) .. controls +(0,0.25) and +(0,-0.5) .. (\tikzchildnode.south)}
+        ]
+        \node [base] {Rhetorik}
+        child {
+            node [level] (level0) {Überzeugen\\ \& Bekehren}
+            child [missing] {}
+            child {
+                node [skill] {Einschüchtern}
+            }
+            child [fill=none] { child {
+                node [level] (level1) {Überreden\\ (Zuquatschen)}
+                child {
+                    node [skill] {öffentliches Reden}
+                }
+                child {
+                    node [skill] {Schmeicheln\\ \& Betören}
+                }
+                child [fill=none] { child {
+                    node [level] (level2) {mäßige Menschenkenntnis}
+                    child {
+                        node [level] (level3) {gute Menschenkenntnis}
+                        child {
+                            node [level] (level4) {exzellente Menschenkenntnis}
+                            child {
+                                node [level] (level5) {überragende Menschenkenntnis}
+                            }
+                        }
+                    }
+                } }
+                child {
+                    node [skill] (bestechen) {Bestechen}
+                }
+                child [missing] {}
+            } }
+            child {
+                node [skill] {Handel}
+            }
+            child {
+                node [skill] {Lügen}
+            }
+        };
+        \node [level-text] at ([xshift=-10em]{level0}) {Start};
+        \foreach \level in {1, ..., 5} {
+            \node [level-text] at ([xshift=-10em]{level\level}) {\level};
+        }
+        \node [other] (geheimes) at ([xshift=12em,yshift=-2em]{level3}) {Geheimes};
     \end{tikzpicture}
     \caption{Fähigkeitenbaum Rhetorik}
     \label{fig:faehigkeitenbaum_rhetorik}
