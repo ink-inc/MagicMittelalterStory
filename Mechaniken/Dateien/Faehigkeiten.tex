@@ -25,7 +25,7 @@ Leveln
     \centering
     \begin{tikzpicture}[
             grow'=up,
-            sibling distance=8em,
+            sibling distance=6em,
             level distance=5em,
             every node/.style = {
                 align=center
@@ -52,16 +52,17 @@ Leveln
             node [level] (level0) {Überzeugen\\ \& Bekehren}
             child [missing] {}
             child {
-                node [skill] {Einschüchtern}
+                node [skill] (einschuechtern) {Einschüchtern}
             }
             child [fill=none] { child {
                 node [level] (level1) {Überreden\\ (Zuquatschen)}
                 child {
-                    node [skill] {öffentliches Reden}
+                    node [skill] (oeffentliches-reden) {öffentliches\\ Reden}
                 }
                 child {
-                    node [skill] {Schmeicheln\\ \& Betören}
+                    node [skill] (schmeicheln-betoeren) {Schmeicheln\\ \& Betören}
                 }
+                child [missing] {}
                 child [fill=none] { child {
                     node [level] (level2) {mäßige Menschenkenntnis}
                     child {
@@ -74,23 +75,34 @@ Leveln
                         }
                     }
                 } }
+                child [missing] {}
+                child [missing] {}
                 child {
                     node [skill] (bestechen) {Bestechen}
                 }
-                child [missing] {}
             } }
             child {
-                node [skill] {Handel}
+                node [skill] (handel) {Handel}
             }
             child {
-                node [skill] {Lügen}
+                node [skill] (luegen) {Lügen}
             }
         };
         \node [level-text] at ([xshift=-10em]{level0}) {Start};
         \foreach \level in {1, ..., 5} {
             \node [level-text] at ([xshift=-10em]{level\level}) {\level};
         }
-        \node [other] (geheimes) at ([xshift=12em,yshift=-2em]{level3}) {Geheimes};
+        \node [other] (geheimes) at ($(level3)+(12em,-2em)$) {Geheimes};
+
+        \coordinate (level5-left) at ($(level5)-(10em,0em)$);
+        \coordinate (level5-right) at ($(level5)+(10em,0em)$);
+
+        \draw [black] (einschuechtern) -- ($ (level5-left)!(einschuechtern.center)!(level5-right)-(3em,0em) $);
+        \draw [black] (handel) -- ($ (level5-left)!(handel.center)!(level5-right)+(3em,0em) $);
+        \draw [black] (luegen) -- ($ (level5-left)!(luegen.center)!(level5-right) $);
+        \draw [black] (oeffentliches-reden) -- ($ (level5-left)!(oeffentliches-reden.center)!(level5-right) $);
+        \draw [black] (schmeicheln-betoeren) -- ($ (level5-left)!(schmeicheln-betoeren.center)!(level5-right) $);
+        \draw [black] (bestechen) -- ($ (level5-left)!(bestechen.center)!(level5-right) $);
     \end{tikzpicture}
     \caption{Fähigkeitenbaum Rhetorik}
     \label{fig:faehigkeitenbaum_rhetorik}
