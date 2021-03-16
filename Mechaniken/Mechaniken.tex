@@ -6,11 +6,11 @@ numbers=noenddot,% entfernt die Punkte nach den Gliederungsziffern
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
-\usepackage{setspace} 
+\usepackage{setspace}
 
 %-----------Format-------------
 %\usepackage{titlesec} %Titel Format bearbeiten
-\usepackage{setspace} 
+\usepackage{setspace}
 \setstretch{1,15} % 1,5 Zeilenabstand, [singlespacing] oder [doublespacing] auch möglich
 \usepackage{lscape} % für Querformat
 
@@ -32,11 +32,21 @@ numbers=noenddot,% entfernt die Punkte nach den Gliederungsziffern
 
 \usepackage{graphicx} % Grafiken einbinden
 
+\usepackage[usenames,dvipsnames,table,xcdraw]{xcolor} % farbige Zellen
+\usepackage{csquotes}
+
+\usepackage{tikz} % Grafiken selbst generieren
+\usetikzlibrary{babel,angles,quotes,trees,calc,shapes,intersections,backgrounds,positioning}
+
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{physics} % Mathematische Formeln
+
 \usepackage{booktabs} % Tabellen ordentlich, toprule, midrule, cmidrule, bottomrule
 \usepackage{tabularx} % Tabelle eine bestimmte Breite vorgeben, automatischen Zeilenumbruch innerhalb der Spalten
 \usepackage{threeparttable} % Beschriftung von Tabellen auf Tabellenbreite, Fußnoten an Tabellen uvm; muss um die tabular Umgebung herum gesetzt werden
 \usepackage{multirow} % erlaubt es, Zeilen bzw. Spalten miteinander zu verschmelzen
-\usepackage[table,xcdraw]{xcolor} % farbige Zellen
 
 %-----------Listen-------------
 \usepackage{outlines} %Verschachtelte Listen deutlich einfacher
@@ -61,10 +71,10 @@ pdfsubject={Handbuch}%
 
 
 %----------eigene Befehle--------
-\newcommand{\npref}[1]{\nameref{#1} (S. \pageref{#1})} 
+\newcommand{\npref}[1]{\nameref{#1} (S. \pageref{#1})}
 % Überschriften
 % wenn \npref{referenz} aufgerufen wird, wird automatisch eine Sequenz eingefügt: "`Name (s. X)"' zB "`Sylvan (S. 3)"'
-\newcommand{\epref}[1]{\ref{#1} (S. \pageref{#1})} 
+\newcommand{\epref}[1]{\ref{#1} (S. \pageref{#1})}
 % Tabellen und Abbildungen
 % wenn \epref{referenz} aufgerufen wird, wird automatisch eine Sequenz eingefügt: "`Zahl (s. X)"' zB "`3.5 (S. 3)"'
 \newcommand{\zB}{z.~B.} %automatisches Ersetzen von zB
@@ -78,10 +88,10 @@ pdfsubject={Handbuch}%
 %		\begin{threeparttable}
 %			\begin{tabularx}{\textwidth}{l|ccX} %wenn die Tabelle eh schmaler als die Textbreite ist und eine rein vom Inhalt dynamische Breite gewünscht ist, muss hier und unten das x hinter tabularx sowie die zweite geschweifte Klammer entfernt werden!
 %				\toprule
-%				\textbf{1st Column} & \textbf{2nd Colimn} & \textbf{3rd Colimn} & \textbf{4th Colimn} \\ 
+%				\textbf{1st Column} & \textbf{2nd Colimn} & \textbf{3rd Colimn} & \textbf{4th Colimn} \\
 %				\midrule
 %				QWERTY\tnote{1}   &                     &                     &  \\
-%				ASDFGH   &                     &                     &  \\ 
+%				ASDFGH   &                     &                     &  \\
 %				\bottomrule
 %			\end{tabularx}
 %			\begin{tablenotes}
@@ -92,7 +102,7 @@ pdfsubject={Handbuch}%
 
 %  Aufzählung (1.,2.,...)
 %\begin{enumerate}
-%	\item 
+%	\item
 %\end{enumerate}
 
 % Liste mit Symbolen
@@ -137,10 +147,10 @@ pdfsubject={Handbuch}%
 \chapter*{Einleitung}
 \pagenumbering{arabic}
 Dieses Dokument dient zur Sammlung der verschiedenen Mechaniken, die das Spiel MMG der Ink Inc. gestalten.
-Bei allen Mechaniken sollte der Fakt bedacht werden, dass wir ein Rollenspiel mit Fokus auf die Geschichte und Entwicklung wollen. 
+Bei allen Mechaniken sollte der Fakt bedacht werden, dass wir ein Rollenspiel mit Fokus auf die Geschichte und Entwicklung wollen.
 Der Kampf soll keine primäre Rolle spielen wie bspw. in Skyrim.
 
-Nichts zu suchen haben hier detaillierte NSC- oder Questbeschreibungen oder irgendwelche Hintergründe. 
+Nichts zu suchen haben hier detaillierte NSC- oder Questbeschreibungen oder irgendwelche Hintergründe.
 Das Netzwerk aus Beziehungen erfassen wir in einer eigens dafür erstellten Plattform und die Hintergründe sind im Handbuch zu finden.
 
 \part{Grundlagen}
